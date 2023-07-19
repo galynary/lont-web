@@ -16,4 +16,17 @@
 }
 .header__container {
   display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.logo__content {
+  display: flex;
+  gap: 5px;
+}
+
+.header-nav {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */
