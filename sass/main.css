@@ -1,1 +1,19 @@
-/*# sourceMappingURL=main.css.map */
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+.header__container {
+  display: flex;
+}/*# sourceMappingURL=main.css.map */
