@@ -1,11 +1,1 @@
-{
-	"version": 3,
-	"sources": [
-		"components/_container.scss",
-		"main.css",
-		"layouts/_header.scss"
-	],
-	"names": [],
-	"mappings": "AAAA;EACC;IACC,YAAA;IACA,cAAA;ECCA;AACF;ADEA;EACC;IACC,YAAA;ECAA;AACF;ADGA;EACC;IACC,aAAA;ECDA;AACF;ACfA;EACC,aAAA;ADiBD",
-	"file": "main.css"
-}
+{"version":3,"sources":["../sass/components/_container.scss","../sass/sections/_header.scss"],"names":[],"mappings":"AAAA,qCACC,WACC,WAAA,CACA,aAAA,CAAA,CAIF,qCACC,WACC,WAAA,CAAA,CAIF,sCACC,WACC,YAAA,CAAA,CCfF,mBACC,mBAAA,CAAA,mBAAA,CAAA,YAAA,CACA,QAAA,CACA,wBAAA,CAAA,qBAAA,CAAA,kBAAA,CAED,eACC,mBAAA,CAAA,mBAAA,CAAA,YAAA,CACA,OAAA,CAED,aACC,mBAAA,CAAA,mBAAA,CAAA,YAAA,CACA,QAAA,CACA,uBAAA,CAAA,oBAAA,CAAA,sBAAA,CAED,WACC,cAAA,CACA,eAAA,CACA,eAAA,CACA,UAAA","file":"main.min.css"}

@@ -8,13 +8,9 @@
 	gap: 5px;
 }
 .header__nav {
-	display: flex;
-	gap: 30px;
-	justify-content: center;
+	@include flex(flex, null, center, 30px);
 }
 .nav__link {
-	font-size: $text-font-size;
-	font-weight: 500;
-	line-height: 1.5;
-	color: $text-color;
+	@include fonts($fw: 500, $fs: 16px, $lh: 24px, $ls: 0.03em);
+	color: #1a1616;
 }
