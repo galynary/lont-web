@@ -1,15 +1,15 @@
-@mixin flex($d: flex, $ai: center, $jc: center, $cg: 30px) {
+@mixin flex($d, $ai: null, $jc, $g) {
 	display: $d;
 	align-items: $ai;
 	justify-content: $jc;
-	column-gap: $cg;
+	gap: $g;
 }
 @mixin flex-wrap($df, $dw, $dg) {
 	display: $df;
 	flex-wrap: $dw;
 	gap: $dg;
 }
-@mixin fonts($fw: 500, $fs, $lh: 24px, $ls: 0.03em) {
+@mixin font($fw, $fs, $lh, $ls) {
 	font-weight: $fw;
 	font-size: $fs;
 	line-height: $lh/$fs;

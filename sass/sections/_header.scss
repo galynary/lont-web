@@ -8,9 +8,9 @@
 	gap: 5px;
 }
 .header__nav {
-	@include flex(flex, null, center, 30px);
+	display: flex;
+	justify-content: center;
+	gap: 15px;
 }
-.nav__link {
-	@include fonts($fw: 500, $fs: 16px, $lh: 24px, $ls: 0.03em);
-	color: #1a1616;
-}
+/*.nav__link {
+}*/
