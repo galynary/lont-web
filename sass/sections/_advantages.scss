@@ -1,0 +1,21 @@
+.section__title {
+	@include font(700, 30px, 1.4, null);
+	color: $accent-color;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.section__text {
+	@include font(500, 18px, 1.5, null);
+	color: $accent-color;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.preference__list {
+	margin-top: 50px;
+}
+.preference__item {
+	@include font(600, 18px, 1.5, null);
+	color: $accent-color;
+	text-align: center;
+	margin-bottom: 10px;
+}
