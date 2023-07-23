@@ -16,6 +16,40 @@
     padding: 70px 0px;
   }
 }
+.section__title {
+  /*@include font(700, 30px, 1.4, null);*/
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.4;
+  color: #061e7d;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.section__text {
+  /*@include font(500, 18px, 1.5);*/
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #061e7d;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.title {
+  /*	@include font(600, 18px, 1.5);*/
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.text {
+  /*@include font(600, 18px, 1.5);*/
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -688,33 +722,37 @@ body {
   color: #fff;
 }
 
-.section__title {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 1.4;
-  color: #061e7d;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.section__text {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.5;
-  color: #061e7d;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
 .preference__list {
-  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 50px;
 }
 
 .preference__item {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: calc((100% - 100px) / 3);
+      flex-basis: calc((100% - 100px) / 3);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.preference__title {
   color: #061e7d;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+}
+
+.preference__text {
+  color: #1a1616;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

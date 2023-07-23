@@ -4,10 +4,10 @@
 	justify-content: $jc;
 	gap: $g;
 }
-@mixin flex-wrap($df, $dw, $dg) {
+@mixin flex-wrap($df, $dw, $gp) {
 	display: $df;
 	flex-wrap: $dw;
-	gap: $dg;
+	gap: $gp;
 }
 @mixin font($fw, $fs, $lh, $ls) {
 	font-weight: $fw;

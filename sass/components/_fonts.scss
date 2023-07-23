@@ -1,0 +1,30 @@
+.section__title {
+	/*@include font(700, 30px, 1.4, null);*/
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 1.4;
+	color: #061e7d;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.section__text {
+	/*@include font(500, 18px, 1.5);*/
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1.5;
+	color: #061e7d;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.title {
+	/*	@include font(600, 18px, 1.5);*/
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.5;
+}
+.text {
+	/*@include font(600, 18px, 1.5);*/
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+}

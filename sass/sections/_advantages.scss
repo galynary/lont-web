@@ -1,21 +1,22 @@
-.section__title {
-	@include font(700, 30px, 1.4, null);
-	color: $accent-color;
-	text-align: center;
-	margin-bottom: 10px;
-}
-.section__text {
-	@include font(500, 18px, 1.5, null);
-	color: $accent-color;
-	text-align: center;
-	margin-bottom: 10px;
-}
 .preference__list {
-	margin-top: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 50px;
 }
 .preference__item {
-	@include font(600, 18px, 1.5, null);
+	display: flex;
+	flex-direction: column;
+	flex-basis: calc((100% - 100px) / 3);
+	align-items: center;
+}
+.icon__svg {
+}
+.preference__title {
 	color: $accent-color;
 	text-align: center;
-	margin-bottom: 10px;
+	margin-bottom: 12px;
+}
+.preference__text {
+	color: $textColor;
+	text-align: center;
 }
