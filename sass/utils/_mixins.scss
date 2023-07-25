@@ -4,6 +4,11 @@
 	justify-content: $jc;
 	gap: $g;
 }
+@mixin flex2($d, $fd, $ai) {
+	display: $d;
+	flex-direction: $fd;
+	align-items: $ai;
+}
 @mixin flex-wrap($df, $dw, $gp) {
 	display: $df;
 	flex-wrap: $dw;

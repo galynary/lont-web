@@ -1,8 +1,10 @@
 @media screen and (min-width: 480px) {
 	.header__container {
+		height: 120px;
+		padding: 10px 0px;
 		display: flex;
 		gap: 100px;
-		align-items: center;
+		justify-content: center;
 	}
 	.logo__content {
 		display: flex;

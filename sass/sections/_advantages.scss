@@ -10,6 +10,7 @@
 	align-items: center;
 }
 .icon__svg {
+	filter: drop-shadow(0px 8px 7px rgba(0, 0, 0, 0.4));
 }
 .preference__title {
 	color: $accent-color;
