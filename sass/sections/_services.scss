@@ -12,3 +12,7 @@
 	justify-content: space-between;
 	padding: 0px 10px;
 }
+.services__text {
+	@include font(500, 18px, 1.7, null);
+	color: $textColor;
+}

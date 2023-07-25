@@ -4,152 +4,34 @@
     {
       "icon": {
         "paths": [
-          "M932.978 477.867c0 251.351-203.76 455.111-455.111 455.111s-455.111-203.76-455.111-455.111c0-251.351 203.76-455.111 455.111-455.111s455.111 203.76 455.111 455.111z",
-          "M749.965 477.866c0 125.459-32.655 237.979-84.249 318.43-51.753 80.7-120.501 126.514-192.933 126.514-72.431 0-141.179-45.814-192.933-126.514-51.594-80.451-84.249-192.971-84.249-318.43 0-125.458 32.655-237.978 84.249-318.429 51.754-80.7 120.502-126.515 192.933-126.515 72.432 0 141.18 45.814 192.933 126.515 51.594 80.451 84.249 192.971 84.249 318.429z",
-          "M91.506 223.681h772.721v40.67h-772.721v-40.67z",
-          "M30.502 457.532h894.729v40.67h-894.729v-40.67z",
-          "M81.339 701.548h782.888v40.67h-782.888v-40.67z",
-          "M489.383 48.41l4.456 856.533-40.669 0.212-4.456-856.533 40.669-0.212z",
-          "M831.403 827.843l70.999-30.408 58.837 137.375-70.999 30.408-58.837-137.375z",
-          "M729.099 847.068l25.626-300.861 225.833 202.241-8.896 0.691-35.874 9.428-18.244 19.539-117.834 58.095-34.577-2.4-36.033 13.268z"
+          "M1210.334 285.377c15.108 77.216-217.793 159.754-438.138 271.948-365.954 186.334-478.557 476.284-668.118 389.456-109.115-110.793-92.486-650.468 219.908-851.095s807.215 66.477 886.348 189.692z"
         ],
         "attrs": [
           {
-            "fill": "none",
-            "stroke": "rgb(6, 30, 125)",
-            "strokeLinejoin": "miter",
-            "strokeLinecap": "butt",
-            "strokeMiterlimit": "4",
-            "strokeWidth": 45.51111111111111
-          },
-          {
-            "fill": "none",
-            "stroke": "rgb(6, 30, 125)",
-            "strokeLinejoin": "miter",
-            "strokeLinecap": "butt",
-            "strokeMiterlimit": "4",
-            "strokeWidth": 45.51111111111111
-          },
-          {
-            "fill": "rgb(6, 30, 125)"
-          },
-          {
-            "fill": "rgb(6, 30, 125)"
-          },
-          {
-            "fill": "rgb(6, 30, 125)"
-          },
-          {
-            "fill": "rgb(6, 30, 125)"
-          },
-          {
-            "fill": "none",
-            "stroke": "rgb(6, 30, 125)",
-            "strokeLinejoin": "miter",
-            "strokeLinecap": "butt",
-            "strokeMiterlimit": "4",
-            "strokeWidth": 34.13333333333333
-          },
-          {
-            "fill": "rgb(226, 229, 232)",
-            "stroke": "rgb(6, 30, 125)",
-            "strokeLinejoin": "miter",
-            "strokeLinecap": "butt",
-            "strokeMiterlimit": "4",
-            "strokeWidth": 45.51111111111111
+            "fill": "rgb(0, 165, 234)"
           }
         ],
-        "width": 1070,
-        "isMulticolor": true,
-        "isMulticolor2": true,
+        "width": 1252,
+        "isMulticolor": false,
+        "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "tariffs"
-        ],
-        "colorPermutations": {
-          "22622923216301251": [
-            {
-              "s": 0
-            },
-            {
-              "s": 0
-            },
-            {
-              "f": 0
-            },
-            {
-              "f": 0
-            },
-            {
-              "f": 0
-            },
-            {
-              "f": 0
-            },
-            {
-              "s": 0
-            },
-            {
-              "f": 1,
-              "s": 0
-            }
-          ]
-        }
+          "Ellipse 14 (2)"
+        ]
       },
       "attrs": [
         {
-          "fill": "none",
-          "stroke": "rgb(6, 30, 125)",
-          "strokeLinejoin": "miter",
-          "strokeLinecap": "butt",
-          "strokeMiterlimit": "4",
-          "strokeWidth": 45.51111111111111
-        },
-        {
-          "fill": "none",
-          "stroke": "rgb(6, 30, 125)",
-          "strokeLinejoin": "miter",
-          "strokeLinecap": "butt",
-          "strokeMiterlimit": "4",
-          "strokeWidth": 45.51111111111111
-        },
-        {
-          "fill": "rgb(6, 30, 125)"
-        },
-        {
-          "fill": "rgb(6, 30, 125)"
-        },
-        {
-          "fill": "rgb(6, 30, 125)"
-        },
-        {
-          "fill": "rgb(6, 30, 125)"
-        },
-        {
-          "fill": "none",
-          "stroke": "rgb(6, 30, 125)",
-          "strokeLinejoin": "miter",
-          "strokeLinecap": "butt",
-          "strokeMiterlimit": "4",
-          "strokeWidth": 34.13333333333333
-        },
-        {
-          "fill": "rgb(226, 229, 232)",
-          "stroke": "rgb(6, 30, 125)",
-          "strokeLinejoin": "miter",
-          "strokeLinecap": "butt",
-          "strokeMiterlimit": "4",
-          "strokeWidth": 45.51111111111111
+          "fill": "rgb(0, 165, 234)"
         }
       ],
       "properties": {
-        "order": 2,
+        "order": 4,
         "id": 0,
-        "name": "tariffs",
+        "name": "Ellipse-14-2",
         "prevSize": 32
       },
       "setIdx": 0,
-      "setId": 2,
+      "setId": 4,
       "iconIdx": 0
     }
   ],
