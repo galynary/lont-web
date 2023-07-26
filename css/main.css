@@ -800,7 +800,6 @@ body {
   left: -100px;
   -webkit-filter: drop-shadow(0px 8px 7px rgba(0, 0, 0, 0.3));
           filter: drop-shadow(0px 8px 7px rgba(0, 0, 0, 0.3));
-  display: block;
 }
 
 .icon__svg {
@@ -887,4 +886,109 @@ body {
   font-size: 18px;
   line-height: 1.7;
   color: #1a1616;
+}
+
+.baner {
+  position: relative;
+  background-color: #2f303a;
+  max-width: 1600px;
+  overflow: hidden;
+  width: 100%;
+  height: 700px;
+  margin: 0 auto;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgb(33, 61, 163)), to(rgb(164, 34, 167)));
+  background-image: linear-gradient(to right rgb(34, 48, 122), rgb(33, 61, 163), rgb(164, 34, 167));
+}
+
+.icon__baner {
+  left: -100px;
+  bottom: -100px;
+  z-index: 2;
+  display: block;
+  position: absolute;
+  -webkit-filter: drop-shadow(0px 8px 7px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(0px 8px 7px rgba(0, 0, 0, 0.4));
+}
+
+.baner__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  padding: 50px 0px;
+}
+
+.baner__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+
+.baner__texts {
+  margin-bottom: 95px;
+}
+
+.baner__text1 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.7;
+  color: #fff;
+}
+
+.baner__text2 {
+  font-weight: 900;
+  font-size: 55px;
+  line-height: 1.7;
+  letter-spacing: 0.1em;
+  color: #00a5ea;
+  margin-bottom: 30px;
+}
+
+.baner__text-discount {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1.7;
+  color: #752ca6;
+  position: relative;
+  display: block;
+  padding: 15px 20px;
+  margin-bottom: 40px;
+  background-color: #e2e5e8;
+}
+
+.baner__text3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #fff;
+  margin-bottom: 28px;
+}
+
+.baner__content-action {
+  text-align: left;
+}
+
+.baner__text-action {
+  text-align: left;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 1.8;
+  letter-spacing: 0.09em;
+  color: #fff;
+}
+
+.baner__img {
+  display: block;
+  left: auto;
 }/*# sourceMappingURL=main.css.map */

@@ -86,6 +86,9 @@
 <symbol id="icon-ellipse" viewBox="0 0 39 32">
 <path fill="#00a5ea" style="fill: var(--color1, #00A5EA)" d="M37.823 8.918c0.472 2.413-6.806 4.992-13.692 8.498-11.436 5.823-14.955 14.884-20.879 12.171-3.41-3.462-2.89-20.327 6.872-26.597s25.225 2.077 27.698 5.928z"></path>
 </symbol>
+<symbol id="icon-baner" viewBox="0 0 40 32">
+<path d="M37.822 17.454c2.453 9.159-11.911 13.308-20.551 13.308s-15.645-5.278-15.645-11.788c0-6.51-2.045-16.676 6.596-16.676s27.965 4.313 29.6 15.156z"></path>
+</symbol>
 
 <symbol id="icon-tariffs" viewBox="0 0 33 32">
 <path fill="none" stroke="#061e7d" style="stroke: var(--color2, #061e7d)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4222" d="M29.156 14.933c0 7.855-6.367 14.222-14.222 14.222s-14.222-6.367-14.222-14.222c0-7.855 6.367-14.222 14.222-14.222s14.222 6.367 14.222 14.222z"></path>
