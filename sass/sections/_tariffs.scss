@@ -20,8 +20,9 @@
 	left: -100px;
 	filter: drop-shadow(0px 8px 7px rgba(0, 0, 0, 0.3));
 }
-.icon__svg {
+.tariffs__icon {
 	margin-bottom: 10px;
+	filter: drop-shadow(0px 8px 7px rgba(0, 0, 0, 0.4));
 }
 .tariffs__title {
 	@include font(900, 18px, 1.7, null);

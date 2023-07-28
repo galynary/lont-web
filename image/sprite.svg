@@ -86,9 +86,7 @@
 <symbol id="icon-ellipse" viewBox="0 0 39 32">
 <path fill="#00a5ea" style="fill: var(--color1, #00A5EA)" d="M37.823 8.918c0.472 2.413-6.806 4.992-13.692 8.498-11.436 5.823-14.955 14.884-20.879 12.171-3.41-3.462-2.89-20.327 6.872-26.597s25.225 2.077 27.698 5.928z"></path>
 </symbol>
-<symbol id="icon-baner" viewBox="0 0 40 32">
-<path d="M37.822 17.454c2.453 9.159-11.911 13.308-20.551 13.308s-15.645-5.278-15.645-11.788c0-6.51-2.045-16.676 6.596-16.676s27.965 4.313 29.6 15.156z"></path>
-</symbol>
+
 
 <symbol id="icon-tariffs" viewBox="0 0 33 32">
 <path fill="none" stroke="#061e7d" style="stroke: var(--color2, #061e7d)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4222" d="M29.156 14.933c0 7.855-6.367 14.222-14.222 14.222s-14.222-6.367-14.222-14.222c0-7.855 6.367-14.222 14.222-14.222s14.222 6.367 14.222 14.222z"></path>
@@ -100,5 +98,7 @@
 <path fill="none" stroke="#061e7d" style="stroke: var(--color2, #061e7d)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.0667" d="M25.981 25.87l2.219-0.95 1.839 4.293-2.219 0.95-1.839-4.293z"></path>
 <path fill="#e2e5e8" style="fill: var(--color3, #e2e5e8); stroke: var(--color2, #061e7d)" stroke="#061e7d" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4222" d="M22.784 26.471l0.801-9.402 7.057 6.32-0.278 0.022-1.121 0.295-0.57 0.611-3.682 1.815-1.081-0.075-1.126 0.415z"></path>
 </symbol>
+<symbol id="icon-baner" viewBox="0 0 32 32">
+<path width="455" height="362" fill="none" xmlns="http://www.w3.org/2000/svg" filter="url(#a)" d="M427.857 197.454C455.607 301.071 293.118 348 195.372 348c-97.747 0-176.985-59.704-176.985-133.354C18.387 140.997-4.743 26 93.004 26c97.746 0 316.353 48.788 334.853 171.454Z" fill="url(#b)"/></g><defs><linearGradient id="b" x1="223.5" y1="26" x2="223.5" y2="348" gradientUnits="userSpaceOnUse"><stop stop-color="#F05998"/><stop offset="1" stop-color="#CA1561"/></linearGradient><filter id="a" x="0" y="0" width="455" height="362" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dx="4" dy="-6"/><feGaussianBlur stdDeviation="10"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix values="0 0 0 0 0.941667 0 0 0 0 0.349201 0 0 0 0 0.598037 0 0 0 1 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_130_86"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_130_86" result="shape"/></filter></defs></svg>
 </defs>
 </svg>

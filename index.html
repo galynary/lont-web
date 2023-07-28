@@ -145,7 +145,7 @@
 							<svg class="icon__ellipse" width="400px" height="350px">
 								<use href="./image/sprite.svg#icon-ellipse"></use>
 							</svg>
-							<svg class="icon__svg" width="100px" height="100px">
+							<svg class="tariffs__icon" width="100px" height="100px">
 								<use href="./image/sprite.svg#icon-tariffs"></use>
 							</svg>
 							<h3 class="tariffs__title">Інтернет Комфорт</h3>
@@ -159,7 +159,7 @@
 							<svg class="icon__ellipse" width="400px" height="350px">
 								<use href="./image/sprite.svg#icon-ellipse"></use>
 							</svg>
-							<svg class="icon__svg" width="100px" height="100px">
+							<svg class="tariffs__icon" width="100px" height="100px">
 								<use href="./image/sprite.svg#icon-tariffs"></use>
 							</svg>
 							<h3 class="tariffs__title">Інтернет Смарт</h3>
@@ -173,7 +173,7 @@
 							<svg class="icon__ellipse" width="400px" height="350px">
 								<use href="./image/sprite.svg#icon-ellipse"></use>
 							</svg>
-							<svg class="icon__svg" width="100px" height="100px">
+							<svg class="tariffs__icon" width="100px" height="100px">
 								<use href="./image/sprite.svg#icon-tariffs"></use>
 							</svg>
 							<h3 class="tariffs__title">Інтернет Премімум</h3>
@@ -187,7 +187,7 @@
 							<svg class="icon__ellipse" width="400px" height="350px">
 								<use href="./image/sprite.svg#icon-ellipse"></use>
 							</svg>
-							<svg class="icon__svg" width="100px" height="100px">
+							<svg class="tariffs__icon" width="100px" height="100px">
 								<use href="./image/sprite.svg#icon-tariffs"></use>
 							</svg>
 							<h3 class="tariffs__title">Інтернет Бізнес</h3>
@@ -201,9 +201,7 @@
 				</div>
 			</section>
 			<section class="baner">
-				<svg class="icon__baner" width="540px" height="430px">
-					<use href="./image/sprite.svg#icon-baner"></use>
-				</svg>
+				<img src="./image/icon-baner.png" alt="еліпс" class="elipse__img" />
 				<div class="container">
 					<div class="baner__content">
 						<div class="baner__description">
@@ -327,18 +325,45 @@
 					</ul>
 				</div>
 			</section>
-			<section class="form-section section" id="form">
-				<div class="section-container container">
-					<h2 class="section-title title"></h2>
-					<form name="signup_form" autocomplete="on">
-						<input type="name" placeholder="імя" name="name" />
-						<input type="name" placeholder="прізвище" name="name" />
-						<input type="tel" placeholder="телефон" name="tel" />
-						<input type="email" placeholder="email" name="email" />
-						<button type="submit" class="button-form button">
-							Залишити заявку
-						</button>
-					</form>
+			<section class="form__section section" id="form">
+				<div class="section__container container">
+					<div class="internet__connection">
+						<div class="internet-connection__price">
+							<p class="brand__text">Лонт Веб</p>
+							<p class="internet__speed">Швидкісний інтернет до 100Мб/с</p>
+							<ul class="price__list">
+								<li class="price__item">
+									<p class="price__description">
+										Підключення до багатоквартирного будинку від 200грн
+									</p>
+								</li>
+								<li class="price__item">
+									<p class="price__description">
+										Підключення до приватного будинку від 400грн
+									</p>
+								</li>
+								<li class="price__item">
+									<p class="price__description">
+										Підключення Кабельного ТБ від 200грн
+									</p>
+								</li>
+							</ul>
+						</div>
+						<form autocomplete="on" class="form">
+							<h3 class="form__title">Заявка на підключення інтернету</h3>
+							<p class="form__text">
+								Підключаючись до мережі Лонт Веб — Ви отримаєте швидкісний
+								безперебійний інтернет за низькими тарифами
+							</p>
+							<input type="name" placeholder="імя" name="name" />
+							<input type="name" placeholder="прізвище" name="name" />
+							<input type="tel" placeholder="телефон" name="tel" />
+							<input type="email" placeholder="email" name="email" />
+							<button type="submit" class="button-form button">
+								Залишити заявку
+							</button>
+						</form>
+					</div>
 				</div>
 			</section>
 			<section class="contacts-section section" id="contacts">
