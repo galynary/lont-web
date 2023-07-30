@@ -21,7 +21,6 @@
 .baner__content {
 	position: relative;
 	@include flex(flex, center, center, 20px);
-	padding: 50px 0px;
 }
 .baner__description {
 	@include flex2(flex, column, null);
@@ -43,8 +42,6 @@
 .baner__text-discount {
 	@include font(700, 25px, 1.7, null);
 	color: $second-color;
-	position: relative;
-	display: block;
 	padding: 15px 20px;
 	margin-bottom: 40px;
 	background-color: $background-color;

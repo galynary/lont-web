@@ -57,7 +57,7 @@
 						<p class="hero-title__sub">інтернет провайдер</p>
 						<p class="hero__text">Швидкісний інтернет за доступною ціною</p>
 						<div class="hero__buttons">
-							<button type="button" class="button__connect button">
+							<button type="button" class="button__conect button">
 								Підключитися
 							</button>
 							<button type="button" class="button__learn-more button">
@@ -200,7 +200,7 @@
 					</ul>
 				</div>
 			</section>
-			<section class="baner">
+			<section class="baner section">
 				<img src="./image/icon-baner.png" alt="еліпс" class="elipse__img" />
 				<div class="container">
 					<div class="baner__content">
@@ -325,9 +325,10 @@
 					</ul>
 				</div>
 			</section>
-			<section class="form__section section" id="form">
-				<div class="section__container container">
-					<div class="internet__connection">
+			<section class="internet-connection section" id="form">
+				<img src="./image/Ellipse 16.png" alt="еліпс" class="elipse__form" />
+				<div class="internet-connection__container container">
+					<div class="internet-connection__description">
 						<div class="internet-connection__price">
 							<p class="brand__text">Лонт Веб</p>
 							<p class="internet__speed">Швидкісний інтернет до 100Мб/с</p>
@@ -349,20 +350,47 @@
 								</li>
 							</ul>
 						</div>
-						<form autocomplete="on" class="form">
+
+						<div class="form__internet-connection">
 							<h3 class="form__title">Заявка на підключення інтернету</h3>
 							<p class="form__text">
 								Підключаючись до мережі Лонт Веб — Ви отримаєте швидкісний
 								безперебійний інтернет за низькими тарифами
 							</p>
-							<input type="name" placeholder="імя" name="name" />
-							<input type="name" placeholder="прізвище" name="name" />
-							<input type="tel" placeholder="телефон" name="tel" />
-							<input type="email" placeholder="email" name="email" />
-							<button type="submit" class="button-form button">
-								Залишити заявку
-							</button>
-						</form>
+							<form autocomplete="on" class="form">
+								<input
+									type="name"
+									placeholder="імя"
+									name="name"
+									class="input"
+								/>
+								<input
+									type="name"
+									placeholder="прізвище"
+									name="name"
+									class="input"
+								/>
+								<input
+									type="tel"
+									placeholder="телефон"
+									name="tel"
+									class="input"
+								/>
+								<input
+									type="email"
+									placeholder="email"
+									name="email"
+									class="input"
+								/>
+								<button type="submit" class="button__form button">
+									Залишити заявку
+								</button>
+							</form>
+						</div>
+					</div>
+					<div class="smart__price">
+						<p class="smart">Смарт</p>
+						<p class="smart__discount">знижка 10%</p>
 					</div>
 				</div>
 			</section>
