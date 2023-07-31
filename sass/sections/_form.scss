@@ -48,7 +48,7 @@
 	background-color: #e2e5e8;
 }
 .form__text {
-	@include font(500, 16px, 1.5, null);
+	@include font(500, 18px, 1.5, null);
 	color: $white-color;
 	text-align: center;
 	margin-bottom: 32px;
@@ -77,10 +77,18 @@
 	border: none;
 	border-radius: 50px;
 	cursor: pointer;
-	-webkit-transition: background-color 0.3s;
 	transition: background-color 0.3s;
 }
 .smart__price {
-	display: inline-block;
-	z-index: 2;
+	position: absolute;
+	left: 75px;
+	bottom: 25px;
+}
+.smart {
+	@include font(700, 50px, 1.5, 0.2em);
+	color: $white-color;
+}
+.smart__discount {
+	@include font(700, 30px, 1.5, null);
+	color: $white-color;
 }
