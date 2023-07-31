@@ -555,10 +555,13 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    gap: 5px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .logo__icon {
     width: 100px;
@@ -1187,12 +1190,25 @@ body {
   margin-bottom: 30px;
 }
 
+.contacts__tel {
+  margin-bottom: 30px;
+}
+
 .contact__tel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
   font-weight: 600;
   font-size: 18px;
   line-height: 1.5;
-  color: #1a1616;
-  margin-bottom: 30px;
+  color: #ca1561;
 }
 
 .social__list {

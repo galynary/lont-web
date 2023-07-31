@@ -17,11 +17,16 @@
 	color: $second-color;
 	margin-bottom: 30px;
 }
-.contact__tel {
-	@include font(600, 18px, 1.5, null);
-	color: $textColor;
+
+.contacts__tel {
 	margin-bottom: 30px;
 }
+.contact__tel {
+	@include flex(flex, center, center, 10px);
+	@include font(600, 18px, 1.5, null);
+	color: #ca1561;
+}
+
 .social__list {
 	display: flex;
 	gap: 20px;
