@@ -15,11 +15,10 @@
 	bottom: -200px;
 }
 .internet-connection__description {
-	align-content: center;
 	@include flex(flex, baseline, space-between, null);
 }
 .internet-connection__price {
-	@include flex2(flex, column, null,null);
+	@include flex2(flex, column, null);
 }
 .brand__text {
 	@include font(700, 70px, 1.5, null);
@@ -37,12 +36,13 @@
 	margin-bottom: 18px;
 }
 .form__internet-connection {
-	@include flex2(flex, column, center);
+	@include flex2(flex, column, null);
 	max-width: 500px;
 }
 .form__title {
 	@include font(700, 25px, 1.7, null);
 	color: $second-color;
+	text-align: center;
 	padding: 15px 20px;
 	margin-bottom: 25px;
 	background-color: #e2e5e8;

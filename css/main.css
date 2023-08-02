@@ -384,9 +384,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     gap: 5px;
   }
   .logo__icon {
@@ -401,9 +398,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -469,9 +463,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     gap: 5px;
   }
   .logo__icon {
@@ -486,9 +477,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -562,6 +550,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    gap: 5px;
   }
   .logo__icon {
     width: 100px;
@@ -575,9 +564,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -1012,8 +998,6 @@ body {
 }
 
 .internet-connection__description {
-  -ms-flex-line-pack: center;
-      align-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1067,9 +1051,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   max-width: 500px;
 }
 
@@ -1078,6 +1059,7 @@ body {
   font-size: 25px;
   line-height: 1.7;
   color: #752ca6;
+  text-align: center;
   padding: 15px 20px;
   margin-bottom: 25px;
   background-color: #e2e5e8;

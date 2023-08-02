@@ -8,7 +8,6 @@
 	}
 	.logo__content {
 		display: flex;
-		justify-content: space-between;
 		gap: 5px;
 	}
 	.logo__icon {
@@ -18,7 +17,6 @@
 	.logo__description {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 		align-items: flex-start;
 	}
 	.logo__text1 {
@@ -68,7 +66,6 @@
 	}
 	.logo__content {
 		display: flex;
-		justify-content: space-between;
 		gap: 5px;
 	}
 	.logo__icon {
@@ -78,7 +75,6 @@
 	.logo__description {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 		align-items: flex-start;
 	}
 	.logo__text1 {
@@ -129,6 +125,7 @@
 	}
 	.logo__content {
 		@include flex2(flex, row, center);
+		gap: 5px;
 	}
 	.logo__icon {
 		width: 100px;
@@ -137,7 +134,6 @@
 	.logo__description {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 		align-items: flex-start;
 	}
 	.logo__text1 {
