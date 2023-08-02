@@ -19,7 +19,7 @@
 	@include flex(flex, baseline, space-between, null);
 }
 .internet-connection__price {
-	@include flex2(flex, column, null);
+	@include flex2(flex, column, null,null);
 }
 .brand__text {
 	@include font(700, 70px, 1.5, null);
