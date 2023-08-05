@@ -29,13 +29,13 @@
 						<p class="logo__text2">Інтернет сервіс провайдер</p>
 					</div>
 				</div>
-				<nav class="header__nav">
+				<ul class="header__nav">
 					<li><a href="/#" class="nav__link">Переваги</a></li>
 					<li><a href="/#" class="nav__link">Послуги</a></li>
 					<li><a href="/#" class="nav__link">Тарифи</a></li>
 					<li><a href="/#" class="nav__link">Реквізити</a></li>
 					<li><a href="/#" class="nav__link">Контакти</a></li>
-				</nav>
+				</ul>
 				<div class="nav__tel">
 					<a href="tel:+30502623123" class="nav-link__tel">
 						<svg class="icon__tel" width="25px" height="35px">
@@ -43,6 +43,49 @@
 						</svg>
 						+3 (050) 26 23 123</a
 					>
+				</div>
+				<button
+					type="button"
+					class="menu-toggle js-open-menu"
+					aria-expanded="false"
+					aria-controls="mobile-menu"
+				>
+					<svg class="icon-open" data-menu-open widh="40">
+						<use class="icon__menu" href="./image/sprite.svg#icon-menu"></use>
+					</svg>
+				</button>
+				<div class="menu__container js-menu-container" id="mobile__menu">
+					<button
+						type="button"
+						class="menu-toggle js-close-menu"
+						data-menu-close
+					>
+						<svg class="icon-close" data-menu-close widh="40">
+							<use
+								class="icon-close"
+								href="./image/sprite.svg#icon-close"
+							></use>
+						</svg>
+					</button>
+					<div class="mobile-menu__container">
+						<ul class="mobile__nav list">
+							<li class="mobile-nav__item">
+								<a href="/#" class="mobile-nav__link">Переваги</a>
+							</li>
+							<li class="mobile-nav__item">
+								<a href="/#" class="mobile-nav__link">Послуги</a>
+							</li>
+							<li class="mobile-nav__item">
+								<a href="/#" class="mobile-nav__link">Тарифи</a>
+							</li>
+							<li class="mobile-nav__item">
+								<a href="/#" class="mobile-nav__link">Реквізити</a>
+							</li>
+							<li class="mobile-nav__item">
+								<a href="/#" class="mobile-nav__link">Контакти</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -445,5 +488,12 @@
 				</div>
 			</section>
 		</main>
+		<script defer src="./js/mobile-menu.js"></script>
+		<script
+			defer
+			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+			crossorigin="anonymous"
+		></script>
 	</body>
 </html>
