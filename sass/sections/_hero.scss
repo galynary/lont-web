@@ -20,20 +20,21 @@
 .ellipse1 {
 	position: absolute;
 	left: -200px;
-	bottom: -190px;
-	background-size: cover;
+	bottom: 190px;
+	z-index: 2;
+	/*background-size: cover;
 	background-repeat: no-repeat;
 	background-position: left, bottom;
-	background-image: url("../../image/ellipse 3.png");
+	background-image: url("../../image/ellipse 3.png");*/
 }
 .ellipse2 {
 	position: absolute;
 	top: -300px;
 	right: -300px;
-	background-size: cover;
+	/*background-size: cover;
 	background-repeat: no-repeat;
 	background-position: top, right;
-	background-image: url("../../image/ellipse 4.png");
+	background-image: url("../../image/ellipse 4.png");*/
 }
 .hero__content {
 	padding-top: 200px;
