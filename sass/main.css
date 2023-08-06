@@ -645,23 +645,15 @@ body {
 
 .ellipse1 {
   position: absolute;
-  left: -200px;
+  left: 200px;
   bottom: 190px;
-  z-index: 2;
-  /*background-size: cover;
-  background-repeat: no-repeat;
-  background-position: left, bottom;
-  background-image: url("../../image/ellipse 3.png");*/
+  box-shadow: 0 8px 8px 5px rgba(46, 64, 157, 0.3);
 }
 
 .ellipse2 {
   position: absolute;
-  top: -300px;
-  right: -300px;
-  /*background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top, right;
-  background-image: url("../../image/ellipse 4.png");*/
+  top: 300px;
+  right: -200px;
 }
 
 .hero__content {
@@ -672,7 +664,7 @@ body {
 .hero__title {
   font-weight: 700;
   font-size: 55px;
-  color: #fff;
+  color: #170970;
   margin-bottom: 10px;
 }
 
@@ -1112,7 +1104,7 @@ body {
 
 .social__list {
   display: flex;
-  gap: 20px;
+  gap: 100px;
   cursor: pointer;
 }
 
