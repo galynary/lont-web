@@ -1,78 +1,244 @@
-.hero {
-    position: relative;
-    background-color: #2f303a;
-    max-width: 1600px;
-    overflow: hidden;
-    width: 100%;
-    height: 700px;
-    margin: 0 auto;
-    text-align: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: linear-gradient(
-            rgba(15, 42, 111, 0.6),
-            rgba(15, 42, 111, 0.88)
-        ),
-        url('../../image/background.jpg');
+@media screen and (min-width: 480px) {
+    .hero {
+        position: relative;
+        background-color: #2f303a;
+        max-width: 1600px;
+        overflow: hidden;
+        width: 100%;
+        height: 700px;
+        margin: 0 auto;
+        text-align: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../../image/backroung3.jpg);
+    }
+
+    .ellipse {
+        position: absolute;
+        left: -500px;
+        bottom: -550px;
+        display: block;
+    }
+    .ellipse3 {
+        position: absolute;
+        top: -500px;
+        right: -600px;
+        display: block;
+    }
+    .svg__icon1 {
+        position: absolute;
+        left: -30px;
+        bottom: -30px;
+    }
+    .svg__icon2 {
+        position: absolute;
+        right: -200px;
+        top: -100px;
+    }
+    .svg__icon3 {
+        position: absolute;
+        left: -50px;
+        top: -100px;
+    }
+    .svg-container3 {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        display: inline-block; /* Ensure the container doesn't take full width */
+    }
+
+    .ellipse1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .svg-container {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        display: inline-block; /* Ensure the container doesn't take full width */
+    }
+
+    .hero__content {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+    .hero__title {
+        font-weight: 700;
+        font-size: 55px;
+        color: $white-color;
+        margin-bottom: 10px;
+    }
+    .hero-title__sub {
+        font-weight: 700;
+        font-size: 45px;
+        color: #fff;
+        margin-bottom: 25px;
+    }
+    .hero__text {
+        font-weight: 500;
+        font-size: 22px;
+        color: #fff;
+        margin-bottom: 50px;
+    }
+    .hero__buttons {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
+    .button {
+        display: inline-block;
+        padding: 12px 22px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #d9d9d9;
+        color: #1a1616;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .button:hover,
+    .button:focus {
+        background-color: #a422a7;
+        color: #fff;
+    }
+}
+@media screen and (min-width: 768px) {
+    .hero {
+        background-image: url(../../image/backroung2.jpg);
+    }
+    .ellipse3 {
+        position: absolute;
+        top: -500px;
+        right: -600px;
+        display: block;
+    }
+    .svg__icon1 {
+        position: absolute;
+        left: 50px;
+        top: 60px;
+    }
+    .svg__icon2 {
+        right: 10px;
+        top: 400px;
+    }
+
+    .ellipse1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .svg-container {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        display: inline-block; /* Ensure the container doesn't take full width */
+    }
+
+    .hero__content {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+    .hero__title {
+        font-weight: 700;
+        font-size: 55px;
+        color: $white-color;
+        margin-bottom: 10px;
+    }
+    .hero-title__sub {
+        font-weight: 700;
+        font-size: 45px;
+        color: #fff;
+        margin-bottom: 25px;
+    }
+    .hero__text {
+        font-weight: 500;
+        font-size: 22px;
+        color: #fff;
+        margin-bottom: 50px;
+    }
+    .hero__buttons {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
+    .button {
+        display: inline-block;
+        padding: 12px 22px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #d9d9d9;
+        color: #1a1616;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .button:hover,
+    .button:focus {
+        background-color: #a422a7;
+        color: #fff;
+    }
 }
 
-.ellipse {
-    position: absolute;
-    left: -500px;
-    bottom: -600px;
-    display: block;
-}
+@media screen and (min-width: 1200px) {
+    .hero {
+        background-image: url(../../image/backroung.jpg);
+    }
+    .svg__icon1 {
+        left: 50px;
+        top: 60px;
+    }
+    .svg__icon2 {
+        right: 10px;
+        top: 400px;
+    }
 
-.ellipse2 {
-    position: absolute;
-    top: 300px;
-    right: -200px;
-}
+    .ellipse1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .svg-container {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        display: inline-block; /* Ensure the container doesn't take full width */
+    }
 
-.hero__content {
-    padding-top: 200px;
-    padding-bottom: 200px;
-}
-.hero__title {
-    font-weight: 700;
-    font-size: 55px;
-    color: $white-color;
-    margin-bottom: 10px;
-}
-.hero-title__sub {
-    font-weight: 700;
-    font-size: 45px;
-    color: #fff;
-    margin-bottom: 25px;
-}
-.hero__text {
-    font-weight: 500;
-    font-size: 22px;
-    color: #fff;
-    margin-bottom: 50px;
-}
-.hero__buttons {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-}
-.button {
-    display: inline-block;
-    padding: 12px 22px;
-    font-size: 16px;
-    text-align: center;
-    text-decoration: none;
-    background-color: #d9d9d9;
-    color: #1a1616;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.button:hover,
-.button:focus {
-    background-color: #a422a7;
-    color: #fff;
+    .hero__content {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+    .hero__title {
+        font-weight: 700;
+        font-size: 55px;
+        color: $white-color;
+        margin-bottom: 10px;
+    }
+    .hero-title__sub {
+        font-weight: 700;
+        font-size: 45px;
+        color: #fff;
+        margin-bottom: 25px;
+    }
+    .hero__text {
+        font-weight: 500;
+        font-size: 22px;
+        color: #fff;
+        margin-bottom: 50px;
+    }
 }
