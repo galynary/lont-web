@@ -11,9 +11,15 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        background-image: url(../../image/backroung3.jpg);
+        background-image: url(../../image/backroung-mob.jpg);
     }
-
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .hero {
+            background-image: url(../../image/backroung-mob-2.jpg);
+        }
+    }
     .ellipse {
         position: absolute;
         left: -500px;
@@ -28,19 +34,15 @@
     }
     .svg__icon1 {
         position: absolute;
-        left: -30px;
-        bottom: -30px;
+        left: 10px;
+        top: 40px;
     }
     .svg__icon2 {
         position: absolute;
-        right: -200px;
-        top: -100px;
+        right: -50px;
+        top: 500px;
     }
-    .svg__icon3 {
-        position: absolute;
-        left: -50px;
-        top: -100px;
-    }
+
     .svg-container3 {
         position: relative;
         width: 200px;
@@ -64,24 +66,22 @@
     }
 
     .hero__content {
+        position: relative;
         padding-top: 200px;
         padding-bottom: 200px;
+        z-index: 1;
     }
     .hero__title {
-        font-weight: 700;
-        font-size: 55px;
+        @include font(700, 45px, 1.5, null);
         color: $white-color;
-        margin-bottom: 10px;
     }
     .hero-title__sub {
-        font-weight: 700;
-        font-size: 45px;
-        color: #fff;
+        @include font(700, 45px, 1.5, null);
+        color: $white-color;
         margin-bottom: 25px;
     }
     .hero__text {
-        font-weight: 500;
-        font-size: 22px;
+        @include font(500, 22px, 1.5, null);
         color: #fff;
         margin-bottom: 50px;
     }
@@ -93,10 +93,10 @@
     .button {
         display: inline-block;
         padding: 12px 22px;
-        font-size: 16px;
+        @include font(600, 16px, 1.5, null);
         text-align: center;
-        text-decoration: none;
         background-color: #d9d9d9;
+        box-shadow: 0px 6px 4px 0px rgba(201, 185, 185, 0.25);
         color: #1a1616;
         border: none;
         border-radius: 50px;
@@ -108,87 +108,32 @@
     .button:focus {
         background-color: #a422a7;
         color: #fff;
+        box-shadow: none;
+        transform: scale(1.05);
     }
 }
 @media screen and (min-width: 768px) {
     .hero {
-        background-image: url(../../image/backroung2.jpg);
+        background-image: url(../../image/backroung-tab.jpg);
+    }
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .hero {
+            background-image: url(../../image/backroung-tab-2.jpg);
+        }
     }
     .ellipse3 {
-        position: absolute;
         top: -500px;
         right: -600px;
         display: block;
     }
     .svg__icon1 {
-        position: absolute;
-        left: 50px;
+        left: -100px;
         top: 60px;
     }
     .svg__icon2 {
-        right: 10px;
-        top: 400px;
-    }
-
-    .ellipse1 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .svg-container {
-        position: relative;
-        width: 200px;
-        height: 200px;
-        border-radius: 100px;
-        display: inline-block; /* Ensure the container doesn't take full width */
-    }
-
-    .hero__content {
-        padding-top: 200px;
-        padding-bottom: 200px;
-    }
-    .hero__title {
-        font-weight: 700;
-        font-size: 55px;
-        color: $white-color;
-        margin-bottom: 10px;
-    }
-    .hero-title__sub {
-        font-weight: 700;
-        font-size: 45px;
-        color: #fff;
-        margin-bottom: 25px;
-    }
-    .hero__text {
-        font-weight: 500;
-        font-size: 22px;
-        color: #fff;
-        margin-bottom: 50px;
-    }
-    .hero__buttons {
-        display: flex;
-        gap: 30px;
-        justify-content: center;
-    }
-    .button {
-        display: inline-block;
-        padding: 12px 22px;
-        font-size: 16px;
-        text-align: center;
-        text-decoration: none;
-        background-color: #d9d9d9;
-        color: #1a1616;
-        border: none;
-        border-radius: 50px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-    }
-
-    .button:hover,
-    .button:focus {
-        background-color: #a422a7;
-        color: #fff;
+        right: -100px;
     }
 }
 
@@ -196,49 +141,18 @@
     .hero {
         background-image: url(../../image/backroung.jpg);
     }
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .hero {
+            background-image: url(../../image/backroung-2.jpg);
+        }
+    }
     .svg__icon1 {
-        left: 50px;
+        left: -50px;
         top: 60px;
     }
     .svg__icon2 {
-        right: 10px;
-        top: 400px;
-    }
-
-    .ellipse1 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .svg-container {
-        position: relative;
-        width: 200px;
-        height: 200px;
-        border-radius: 100px;
-        display: inline-block; /* Ensure the container doesn't take full width */
-    }
-
-    .hero__content {
-        padding-top: 200px;
-        padding-bottom: 200px;
-    }
-    .hero__title {
-        font-weight: 700;
-        font-size: 55px;
-        color: $white-color;
-        margin-bottom: 10px;
-    }
-    .hero-title__sub {
-        font-weight: 700;
-        font-size: 45px;
-        color: #fff;
-        margin-bottom: 25px;
-    }
-    .hero__text {
-        font-weight: 500;
-        font-size: 22px;
-        color: #fff;
-        margin-bottom: 50px;
+        right: 20px;
     }
 }
