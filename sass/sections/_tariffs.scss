@@ -1,10 +1,12 @@
-.tariffs__list {
+@media screen and (min-width: 480px) {
+	.tariffs__list {
 	@include flex-wrap(flex, wrap, 10px);
 }
 .tariffs__item {
 	max-width: 281px;
 	height: auto;
 	padding: 50px 20px;
+	display: flex;
 	background-color: $background-color;
 	box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
 	border-radius: 20px;
@@ -57,4 +59,15 @@
 .button__connect:hover,
 .button__connect:focus {
 	background-color: $second-color;
+}
+}
+@media screen and (min-width: 768px) {
+	.tariffs__list {
+		@include flex-wrap(flex, wrap, 50px);
+		justify-content: center;
+		width: 100%;
+	}
+	.tariffs__item {
+        flex-basis: calc((50% - 15px));
+    }
 }

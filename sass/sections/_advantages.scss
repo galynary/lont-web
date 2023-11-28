@@ -1,8 +1,10 @@
 @media screen and (min-width: 480px) {
     .preference__list {
-        display: block;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     }
-    .preference__list :not(:last-child) {
+    .preference__item :not(:last-child) {
         margin-bottom: 50px;
     }
 
@@ -32,10 +34,18 @@
     .preference__list {
         gap: 30px;
     }
+    .preference__list :not(:last-child) {
+        margin-bottom: 0px;
+    }
     .preference__item {
         flex-basis: calc((50% - 15px));
     }
     .preference__text {
         width: 300px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .preference__item {
+        flex-basis: calc((25% - 15px));
     }
 }

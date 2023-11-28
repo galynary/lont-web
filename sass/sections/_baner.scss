@@ -1,31 +1,49 @@
-.banner {
+.baner {
 	position: relative;
-	background-color: #2f303a;
+	background-image: linear-gradient(
+		to right, rgba(34, 48, 122, 1),
+				 rgba(33, 61, 163, 1),
+				 rgba(164, 34, 167, 1)
+	);
 	max-width: 1600px;
 	overflow: hidden;
 	width: 100%;
 	height: 700px;
 	margin: 0 auto;
 	background-size: cover;
-	background-color: linear-gradient(
-		to right, rgba(34, 48, 122, 1),
-				 rgba(33, 61, 163, 1),
-				 rgba(164, 34, 167, 1)
-	);
 }
 .elipse__img {
+	display: none;
 	position: absolute;
 	left: -90px;
-	bottom: -100px;
+	bottom: -50px;
+}
+.svich-desc {
+	display: none;
+}
+.svich-mob {
+	display: block;
+}
+.elipse-mob__img {
+	display: block;
+	position: absolute;
+	left: -90px;
+	bottom: -50px;
+	z-index: 1;
+
 }
 
 .baner__content {
 	position: relative;
 	@include flex(flex, center, center, 20px);
+    padding: 20px;
+	padding-top: 50px;
+	z-index: 2;
+	width: 100%;
 }
 .baner__description {
 	@include flex2(flex, column, null);
-	text-align: left;
+	text-align: center;
 }
 .baner__texts {
 	margin-bottom: 55px;
@@ -43,7 +61,7 @@
 .baner__text-discount {
 	@include font(700, 25px, 1.7, null);
 	color: $second-color;
-	padding: 15px 20px;
+	padding: 15px 80px;
 	margin-bottom: 40px;
 	background-color: $background-color;
 }
@@ -52,11 +70,9 @@
 	@include font(500, 16px, 1.4, null);
 	color: $white-color;
 }
-.baner__content-action {
-	text-align: left;
-}
+
 .baner__text-action {
-	text-align: left;
+	text-align: center;
 	@include font(600, 25px, 1.8, 0.09em);
 	color: $white-color;
 }
@@ -64,4 +80,38 @@
 	display: block;
 	height: 100%;
 	left: auto;
+}
+@media screen and (min-width: 578px) {
+	.baner__text-discount {
+		padding: 15px 20px;
+		}
+}
+
+@media screen and (min-width: 1000px) {
+	.baner__description {
+		text-align: left;
+}
+.baner__text-discount {
+	padding: 20px 50px;
+	}
+
+.svich-desc {
+	display: block;
+}
+.baner__text-action {
+	text-align: left;
+}
+.svich-mob {
+	display: none;
+}
+.baner__content {
+@include flex(flex, center, space-between, 20px);
+padding: 20px 20px;
+}
+.elipse__img {
+	display: block;
+}
+.elipse-mob__img {
+	display: none;
+}
 }
