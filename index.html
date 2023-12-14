@@ -87,7 +87,8 @@
 			</div>
 		</header>
 		<main>
-			<section class="hero">
+			<div class="slider__container">
+				<div class=" slide hero">
 				<div class="svg__icon1">
 					<div class="svg-container">
 						<svg class="ellipse1" width="400" height="300">
@@ -132,7 +133,16 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</div>
+			<div class="slide"></div>
+			  <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+			<button class="next" onclick="plusSlides(1)">&#10095;</button>
+		  </div>
+		  <div class="dots" style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+		  </div>
 			<section class="preference__section section" id="preference">
 				<div class="section__container container">
 					<h2 class="section__title">Переваги ЛОНТ ВЕБ</h2>
