@@ -5,7 +5,7 @@
 .tariffs__item {
 	max-width: 281px;
 	height: auto;
-	padding: 50px 20px;
+	padding: 50px 0px;
 	display: flex;
 	background-color: $background-color;
 	box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
@@ -63,9 +63,10 @@
 }
 @media screen and (min-width: 768px) {
 	.tariffs__list {
-		@include flex-wrap(flex, wrap, 50px);
+		@include flex-wrap(flex, wrap, 30px);
 		justify-content: center;
 		width: 100%;
+	
 	}
 	.tariffs__item {
         flex-basis: calc((50% - 15px));

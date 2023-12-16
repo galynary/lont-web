@@ -9,12 +9,18 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
 		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&family=Kanit:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
-			rel="stylesheet"
-		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&family=Kanit:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link href="https://myfonts.ru/myfonts?fonts=bryndan-write" rel="stylesheet" type="text/css" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&family=Kanit:wght@400;500;600;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="./sass/main.css" />
 	</head>
 	<body>
@@ -88,53 +94,54 @@
 		</header>
 		<main>
 			<div class="slider__container">
-				<div class=" slide hero">
-				<div class="svg__icon1">
-					<div class="svg-container">
-						<svg class="ellipse1" width="400" height="300">
-							<circle r="100" cx="200" cy="150" fill="url(#myGradient)" />
-							<defs>
-								<radialgradient id="myGradient" cx="85%" cy="20%" r="80%">
-									<stop offset="2%" stop-color="#5CACF5" />
-									<stop offset="80%" stop-color="#170970" />
-								</radialgradient>
-							</defs>
-						</svg>
-					</div>
-				</div>
-				<div class="svg__icon2">
-					<div class="svg-container2">
-						<svg class="ellipse2" width="400" height="300">
-							<circle r="100" cx="200" cy="150" fill="url(#myGradient2)" />
-							<defs>
-								<radialgradient id="myGradient2" cx="35%" cy="2%" r="80%">
-									<stop offset="2%" stop-color="#DF86E1" />
-									<stop offset="80%" stop-color="#5C075E" />
-								</radialgradient>
-							</defs>
-						</svg>
-					</div>
-				</div>
-				<!--	<img src="./image/ellipse1.png" alt="" class="ellipse" />-->
-				<!--<img src="./image/ellipse 2.png" alt="" class="ellipse3" />-->
-
-				<div class="hero__container container">
-					<div class="hero__content">
-						<h1 class="hero__title">ЛОНТ ВЕБ</h1>
-						<p class="hero-title__sub">інтернет провайдер</p>
-						<p class="hero__text">Швидкісний інтернет за доступною ціною</p>
-						<div class="hero__buttons">
-							<button type="button" class="button__conect button">
-								Підключитися
-							</button>
-							<button type="button" class="button__learn-more button">
-								Дізнатися більше
-							</button>
+				<div class="slider-inner__container">
+					<div class=" slide hero">
+					 <div class="hero__container container">
+							<div class="hero__content">
+								<div class="hero__description">
+									<h1 class="hero__title">ЛОНТ ВЕБ</h1>
+									<p class="hero-title__sub">інтернет провайдер</p>
+									<p class="hero__text">Швидкісний інтернет за доступною ціною</p>
+									<div class="hero__buttons">
+										<button type="button" class="button__conect button">
+											Підключитися
+										</button>
+										<button type="button" class="button__learn-more button">
+											Дізнатися більше
+										</button>
+									</div>
+								</div>
+								<div class="hero__wrap-img">
+									<img class="hero__img" src="./image/woman.png">
+								</div>
+							</div>
 						</div>
 					</div>
+					<div class="slide television">
+						<div class="television__container container">
+							<div class="television__inner">
+								<div class="television__description">
+									<h2 class="television__title">цифрове кабельне <br> телебачення від <br><span class="television__span">ЛОНТ ВЕБ</span></h2>
+										<ul class="television__list">
+											<li class="television__item">56 каналів у цифровій якості формату DVB-C</li>
+											<li class="television__item">Кілька десятків каналів в HD якості</li>
+											<li class="television__item">Висока якість зображення та звуку</li>
+											<li class="television__item">Електронний телегід</li>
+										</ul>
+								</div>
+								<div class="television__right">
+									<div class="television__wrap-img">
+										<img class="television__img" src="./image/телевізор.png">
+									</div>
+									<p class="television__text">Всього 100грн. за міс.</p>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="slide television"></div>
 				</div>
-			</div>
-			<div class="slide"></div>
+			
 			  <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
 			<button class="next" onclick="plusSlides(1)">&#10095;</button>
 		  </div>
@@ -527,6 +534,7 @@
 			</section>
 		</main>
 		<script defer src="./js/mobile-menu.js"></script>
+		<script defer src="./js/slide.js"></script>
 		<script
 			defer
 			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
