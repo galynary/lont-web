@@ -1,19 +1,20 @@
 @media screen and (min-width: 480px) {
 	.tariffs__list {
-	@include flex-wrap(flex, wrap, 10px);
+    display: flex;
+    gap:30px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 .tariffs__item {
-	max-width: 281px;
-	height: auto;
-	padding: 50px 0px;
+  height: auto;
+	padding: 50px 50px;
 	display: flex;
 	background-color: $background-color;
 	box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
 	border-radius: 20px;
-	flex-basis: calc((100% - 100px) / 3);
 	position: relative;
-	overflow: hidden;
-	text-align: center;
+    text-align: center;
 	@include flex2(flex, column, center);
 }
 .icon__ellipse {
@@ -63,18 +64,24 @@
 }
 @media screen and (min-width: 768px) {
 	.tariffs__list {
-		@include flex-wrap(flex, wrap, 30px);
-		justify-content: center;
-		width: 100%;
-	
+		flex-direction: row;
+	    justify-content: space-between;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+		align-items: center;
+		margin: 0 auto;
 	}
 	.tariffs__item {
-        flex-basis: calc((50% - 15px));
+		flex-wrap: wrap;
     }
 }
 @media screen and (min-width: 1200px) {
 	.tariffs__list {
-	    justify-content: space-between;
-		gap: 10px;
-	}
+	gap: 10px;
+		
+}
+.tariffs__item {
+	flex-wrap: nowrap;
+}
 }

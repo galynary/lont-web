@@ -1,0 +1,41 @@
+@media screen and (min-width: 320px) {
+	.details-section {
+background-color: #cfe7f1;
+}
+.details__description {
+	font-family: "Montserrat";
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	gap:50px;
+}
+.details__internet {
+	color:$card-button-color;
+}
+.details__internet-text {
+	line-height: 1.7;
+}
+.details__cable-tv {
+	color:$card-button-color;
+}
+.details__cable-tv-title {
+	margin-bottom: 20px;
+}
+.details__internet-title {
+	margin-bottom: 20px;
+}
+.details__cable-tv-text {
+	line-height: 1.7;
+}
+}
+@media screen and (min-width: 768px) {
+	.details__description {
+		display: flex;
+		flex-direction: row;
+		gap:0px;
+		justify-content: space-between;
+	}
+}
+@media screen and (min-width: 1200px) {
+	
+}

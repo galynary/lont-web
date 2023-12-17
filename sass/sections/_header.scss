@@ -1,7 +1,7 @@
 @media screen and (min-width: 480px) {
     .header__container {
        width: 100%;
-       padding: 10px 0px;
+       padding: 10px 20px;
        display: flex;
         align-items: center;
         justify-content: space-between;
@@ -12,8 +12,8 @@
         align-items: center;
     }
     .logo__icon {
-        width: 100px;
-        height: 100px;
+        width: 70px;
+        height: 60px;
     }
     .logo__description {
         display: flex;
@@ -53,9 +53,6 @@
     }
 
     .js-open-menu {
-        position: absolute;
-        right: 15px;
-        top: 20px;
         padding: 20px;
         border: none;
         background: rgba(0, 0, 0, 0);
@@ -151,10 +148,6 @@
         gap: 100px;
     }
 
-    .logo__icon {
-        width: 100px;
-        height: 100px;
-    }
     .logo__description {
         display: flex;
         flex-direction: column;
@@ -185,19 +178,23 @@
     .nav__link:focus {
         color: #a422a7;
     }
+    .nav__tel {
+        display: inline-block;
+       
+    }
 
     .menu__container {
         display: none;
     }
 }
-@media screen and (min-width: 768px) and (max-width: 1150px) {
+@media screen and (min-width: 1200px) {
     .nav__tel {
         position: absolute;
         display: inline-block;
         right: 120px;
     }
-}
-@media screen and (min-width: 1150px) {
+
+
     .header__nav {
         display: flex;
         align-items: center;
@@ -211,14 +208,8 @@
         position: relative;
         right: 0px;
     }
-}
 
-@media screen and (min-width: 1200px) {
-    .logo__icon {
-        width: 70px;
-        height: 60px;
-    }
-    .logo__description {
+  .logo__description {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
