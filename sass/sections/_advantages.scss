@@ -48,4 +48,9 @@
     .preference__item {
         flex-basis: calc((25% - 15px));
     }
+    .preference__list {
+        justify-content: space-between;
+        gap: 50px;
+        width: 100%;
+    }
 }

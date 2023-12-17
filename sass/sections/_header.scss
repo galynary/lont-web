@@ -1,8 +1,8 @@
 @media screen and (min-width: 480px) {
     .header__container {
        width: 100%;
-        padding: 15px 15px;
-        display: flex;
+       padding: 10px 0px;
+       display: flex;
         align-items: center;
         justify-content: space-between;
     }
@@ -36,8 +36,8 @@
         display: none;
     }
     .nav-link__tel {
-        @include font(600, 16px, 1.2, 0.03em);
-        color: $second-color;
+        @include font(700, 16px, 1.2, 0.03em);
+        color:#104EAB;
         display: flex;
         align-items: center;
         gap: 10px;
@@ -215,8 +215,8 @@
 
 @media screen and (min-width: 1200px) {
     .logo__icon {
-        width: 100px;
-        height: 100px;
+        width: 70px;
+        height: 60px;
     }
     .logo__description {
         display: flex;
@@ -251,6 +251,6 @@
     }
     .nav__link:hover,
     .nav__link:focus {
-        color: #a422a7;
+        color: #2C4DA1;
     }
 }

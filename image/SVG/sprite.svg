@@ -57,7 +57,7 @@
 <path fill="#00a5ea" style="fill: var(--color5, #00a5ea); stroke: var(--color4, #061e7d)" stroke="#061e7d" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.5053" d="M21.213 18.992l0.896-0.4 0.614 1.376-0.896 0.4-0.614-1.376z"></path>
 <path fill="#00a5ea" style="fill: var(--color5, #00a5ea); stroke: var(--color4, #061e7d)" stroke="#061e7d" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.6737" d="M20.204 19.311l-0.287-3.9 3.28 2.112-0.014 0.003-0.029 0.007-0.028 0.012-0.437 0.193-0.054 0.081-0.147 0.218-1.418 1.005-0.459 0.041-0.063 0.035-0.345 0.193z"></path>
 </symbol>
-<symbol id="icon-svg5" viewBox="0 0 32 32">
+<symbol id="icon-SVG5" viewBox="0 0 32 32">
 <path fill="#00a5ea" style="fill: var(--color5, #00a5ea); stroke: var(--color4, #061e7d)" stroke="#061e7d" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.8421" d="M28.211 13.979c0 6.744-5.467 12.211-12.211 12.211s-12.211-5.467-12.211-12.211c0-6.744 5.467-12.211 12.211-12.211s12.211 5.467 12.211 12.211z"></path>
 <path fill="#061e7d" style="fill: var(--color4, #061e7d)" d="M10.568 18.628l-0.783-0-0.348-0.169-0.171-0.262 0.004-0.665 0.006-1.096 0.013-2.361 0.013-2.361 0.006-1.096 0.005-0.928 0.211-0.253 0.174-0.084 0.174-0.077 0.348-0.007 0.403 0.007-0.053 9.353z"></path>
 <path fill="#061e7d" style="fill: var(--color4, #061e7d)" d="M19.713 9.284l1.767-0.004 0.324 0.004 0.255 0.081 0.255 0.168 0.255 0.337v7.831l-0.085 0.505-0.3 0.251-0.392 0.085-0.392 0.078-0.785 0.008-0.909-0.005 0.008-9.341z"></path>
@@ -71,7 +71,7 @@
 <path fill="#061e7d" style="fill: var(--color4, #061e7d)" d="M13.018 16.006l-0.019-3.52 0.505-0.003 0.019 3.52-0.505 0.003z"></path>
 <path fill="#061e7d" style="fill: var(--color4, #061e7d)" d="M15.346 16.005l-0.020-3.555 0.505-0.003 0.020 3.555-0.505 0.003z"></path>
 </symbol>
-<symbol id="icon-svg6" viewBox="0 0 32 32">
+<symbol id="icon-SVG6" viewBox="0 0 32 32">
 <path fill="#00a5ea" style="fill: var(--color5, #00a5ea); stroke: var(--color4, #061e7d)" stroke="#061e7d" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.8421" d="M28.211 13.979c0 6.744-5.467 12.211-12.211 12.211s-12.211-5.467-12.211-12.211c0-6.744 5.467-12.211 12.211-12.211s12.211 5.467 12.211 12.211z"></path>
 <path fill="#061e7d" style="fill: var(--color4, #061e7d)" d="M10.824 19.511h1.13l-0.028-0.275h0.275v-0.275h0.275v-0.551h0.275v-0.275h0.551v0.826h-0.275v0.551h-0.275v0.275h-0.275v0.275h-2.203v-1.928h0.275v-0.275h0.275v-0.275h0.275v-0.275h0.551v-0.275h0.275v0.275h0.275v0.551h-0.826v0.275h-0.275v0.275h-0.275v1.101z"></path>
 <path fill="#061e7d" style="fill: var(--color4, #061e7d)" d="M11.926 16.206h0.551v0.551h-0.551v-0.551z"></path>

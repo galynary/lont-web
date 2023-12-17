@@ -1,10 +1,18 @@
-.slider__container {
+
+@media screen and (min-width: 480px) {
+  .slider-inner__container {
+    display: flex;
+  height: 500px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .slider__container {
     width: 100%;
     overflow: hidden;
   }
   .slider-inner__container {
     display: flex;
-    max-height: 800px;
+  height: 700px;
   }
 
   .slide {
@@ -45,3 +53,5 @@
   .active {
     background-color: #717171;
   }
+ 
+}

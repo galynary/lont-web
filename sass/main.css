@@ -369,7 +369,7 @@ body {
 @media screen and (min-width: 480px) {
   .header__container {
     width: 100%;
-    padding: 15px 15px;
+    padding: 10px 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -404,11 +404,11 @@ body {
     display: none;
   }
   .nav-link__tel {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    color: #a422a7;
+    color: #104EAB;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -560,8 +560,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .logo__icon {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 60px;
   }
   .logo__description {
     display: flex;
@@ -595,64 +595,63 @@ body {
   }
   .nav__link:hover,
   .nav__link:focus {
-    color: #a422a7;
+    color: #2C4DA1;
   }
 }
-.slider__container {
-  width: 100%;
-  overflow: hidden;
+@media screen and (min-width: 480px) {
+  .slider-inner__container {
+    display: flex;
+    height: 500px;
+  }
 }
-
-.slider-inner__container {
-  display: flex;
-  max-height: 800px;
+@media screen and (min-width: 1200px) {
+  .slider__container {
+    width: 100%;
+    overflow: hidden;
+  }
+  .slider-inner__container {
+    display: flex;
+    height: 700px;
+  }
+  .slide {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    padding: 10px;
+  }
+  .prev {
+    left: 0;
+  }
+  .next {
+    right: 0;
+  }
+  .dots {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .active {
+    background-color: #717171;
+  }
 }
-
-.slide {
-  display: none;
-  width: 100%;
-  text-align: center;
-}
-
-.prev, .next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 24px;
-  cursor: pointer;
-  color: #fff;
-  background-color: #333;
-  border: none;
-  padding: 10px;
-}
-
-.prev {
-  left: 0;
-}
-
-.next {
-  right: 0;
-}
-
-.dots {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 5px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  cursor: pointer;
-}
-
-.active {
-  background-color: #717171;
-}
-
 .television {
   background-image: url("../../image/фон.png");
 }
@@ -669,15 +668,16 @@ body {
 }
 
 .television__description {
-  padding: 100px 0px 50px 0px;
+  padding: 100px 0px 130px 0px;
   position: relative;
   text-align: left;
 }
 
 .television__title {
   position: relative;
+  font-family: "Roboto";
   line-height: 1.5;
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: 0.08em;
   color: #fff;
   text-transform: uppercase;
@@ -685,7 +685,7 @@ body {
 }
 
 .television__span {
-  color: rgb(23, 26, 230);
+  color: #2b148f;
   font-size: 40px;
 }
 
@@ -704,12 +704,12 @@ body {
 .television__wrap-img {
   position: relative;
   top: 50px;
-  max-width: 600px;
+  max-width: 700px;
 }
 
 .television__text {
   position: relative;
-  bottom: 50px;
+  bottom: 100px;
   right: -150px;
   color: #fff;
   font-size: 25px;
@@ -722,7 +722,6 @@ body {
     background-image: url("../../image/фон.png");
     overflow: hidden;
     width: 100%;
-    height: 700px;
     flex: 1;
     margin: 0 auto;
   }
@@ -738,15 +737,14 @@ body {
   .hero__title {
     font-weight: 700;
     font-size: 45px;
-    line-height: 1.5;
     color: #fff;
   }
   .hero-title__sub {
     font-weight: 700;
-    font-size: 45px;
+    font-size: 30px;
     line-height: 1.5;
     color: #fff;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
   }
   .hero__text {
     font-weight: 500;
@@ -762,7 +760,7 @@ body {
   }
   .button {
     display: inline-block;
-    padding: 12px 22px;
+    padding: 12px 30px;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
@@ -777,7 +775,7 @@ body {
   }
   .button:hover,
   .button:focus {
-    background-color: #a422a7;
+    background-color: #104eab;
     color: #fff;
     box-shadow: none;
     transform: scale(1.05);
@@ -790,6 +788,9 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
+  .hero__img {
+    max-width: 400px;
+  }
   .ellipse3 {
     top: -500px;
     right: -600px;
@@ -801,6 +802,14 @@ body {
   }
   .svg__icon2 {
     right: -100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__buttons {
+    justify-content: flex-start;
+  }
+  .hero__description {
+    padding: 200px 0px 100px 0px;
   }
 }
 @media screen and (min-width: 480px) {
@@ -851,6 +860,11 @@ body {
 @media screen and (min-width: 1200px) {
   .preference__item {
     flex-basis: calc(25% - 15px);
+  }
+  .preference__list {
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 480px) {
@@ -908,7 +922,7 @@ body {
   }
   .button__connect {
     display: inline-block;
-    padding: 12px 35px;
+    padding: 10px 45px;
     font-size: 16px;
     text-align: center;
     text-decoration: none;
@@ -922,7 +936,7 @@ body {
   }
   .button__connect:hover,
   .button__connect:focus {
-    background-color: #a422a7;
+    background-color: #061e7d;
   }
 }
 @media screen and (min-width: 768px) {
@@ -935,6 +949,12 @@ body {
   }
   .tariffs__item {
     flex-basis: calc(50% - 15px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tariffs__list {
+    justify-content: space-between;
+    gap: 10px;
   }
 }
 .services__list {
