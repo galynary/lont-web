@@ -1,22 +1,27 @@
 .internet-connection {
 	position: relative;
 	z-index: 1;
-	background-color: #2f303a;
-	max-width: 1600px;
+	background-image: url("../../image/фон.png");
 	overflow: hidden;
 	width: 100%;
+	right:0;
 	margin: 0 auto;
 	padding: 100px 0px;
-	background-image: linear-gradient(rgb(6, 30, 125), rgb(60, 96, 189));
+	background-repeat: no-repeat;
+    background-position: right;
+	background-size: cover;
 }
-.elipse__form {
-	position: absolute;
-	left: -90px;
-	bottom: -200px;
-}
+
 .internet-connection__description {
 	@include flex(flex, baseline, space-between, null);
 }
+.internet-connection__container {
+	background-image: url("../../image/ноутбук.png");
+	background-repeat: no-repeat;
+    background-position: right;
+	background-size: cover;
+}
+
 .internet-connection__price {
 	@include flex2(flex, column, null);
 }
@@ -36,6 +41,7 @@
 	margin-bottom: 10px;
 }
 .form__internet-connection {
+	
 	@include flex2(flex, column, null);
 	max-width: 500px;
 }
