@@ -1080,10 +1080,10 @@ body {
 
 .brand__text {
   font-weight: 700;
-  font-size: 70px;
+  font-size: 50px;
   line-height: 1.5;
   color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .internet__speed {
@@ -1091,7 +1091,7 @@ body {
   font-size: 24px;
   line-height: 1.7;
   color: #00a5ea;
-  margin-bottom: 27px;
+  margin-bottom: 20px;
 }
 
 .price__description {
@@ -1099,7 +1099,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #fff;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
 }
 
 .form__internet-connection {
@@ -1110,20 +1110,19 @@ body {
 
 .form__title {
   font-weight: 700;
-  font-size: 25px;
-  line-height: 1.7;
-  color: #a422a7;
+  font-size: 35px;
+  line-height: 1.5;
+  color: #fff;
   text-align: center;
   padding: 15px 20px;
   margin-bottom: 25px;
-  background-color: #e2e5e8;
 }
 
 .form__text {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.5;
-  color: #fff;
+  color: #00A5EA;
   text-align: center;
   margin-bottom: 32px;
 }
@@ -1137,26 +1136,32 @@ body {
 
 .input {
   width: 400px;
-  padding: 12px 10px;
+  padding: 12px 15px;
   font-size: 15px;
   line-height: 1.3;
   color: #1a1616;
   border-radius: 50px;
+  border-color: none;
 }
 
 .button__form {
   display: inline-block;
   margin-top: 10px;
-  padding: 15px 130px;
+  padding: 15px 120px;
   font-size: 16px;
   text-align: center;
   text-decoration: none;
-  background-color: #a422a7;
-  color: #fff;
+  background-color: #e2e5e8;
+  color: #635959;
   border: none;
   border-radius: 50px;
   cursor: pointer;
   transition: background-color 0.3s;
+}
+
+.button__form:hover,
+.button__form:focus {
+  background-color: #104eab;
 }
 
 .smart__price {
