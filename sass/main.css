@@ -714,6 +714,9 @@ body {
     width: 100%;
     flex: 1;
     margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
   .hero__content {
     display: block;
@@ -824,7 +827,7 @@ body {
 }
 @media screen and (min-width: 480px) {
   .preference__section {
-    background-color: #e2e5e8;
+    background-color: #ddedf6;
   }
   .preference__list {
     display: flex;
@@ -999,7 +1002,7 @@ body {
 
 @media screen and (min-width: 320px) {
   .details-section {
-    background-color: #cfe7f1;
+    background-color: #ddedf6;
   }
   .details__description {
     font-family: "Montserrat";
@@ -1049,143 +1052,160 @@ body {
   font-style: normal;
   font-display: swap;
 }
-.internet-connection {
-  position: relative;
-  z-index: 1;
-  background-image: url("../../image/фон.png");
-  overflow: hidden;
-  width: 100%;
-  right: 0;
-  margin: 0 auto;
-  padding: 100px 0px;
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: cover;
+@media screen and (min-width: 480px) {
+  .internet-connection {
+    position: relative;
+    z-index: 1;
+    background-color: #66BDDD;
+    background-image: url("../../image/form-fon111.png");
+    overflow: hidden;
+    width: 100%;
+    height: 800px;
+    right: 0;
+    margin: 0 auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+  }
+  .internet-connection__description {
+    padding: 100px 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .internet-connection__container {
+    width: 100%;
+  }
+  .internet-connection__img {
+    position: relative;
+    left: 0px;
+  }
+  .internet-connection__wrap-img {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    max-width: 500px;
+    height: 100%;
+  }
+  .internet-connection__price {
+    display: flex;
+    flex-direction: column;
+  }
+  .brand__text {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.5;
+    color: #061e7d;
+    margin-bottom: 10px;
+  }
+  .internet__speed {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.7;
+    color: #061e7d;
+    margin-bottom: 20px;
+  }
+  .price__description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #1a1616;
+    margin-bottom: 10px;
+  }
+  .form__internet-connection {
+    text-align: center;
+    align-items: center;
+    position: relative;
+    max-width: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .form__title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 1.5;
+    color: #061e7d;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .form__text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #061e7d;
+    margin-bottom: 32px;
+    max-width: 450px;
+  }
+  .form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .input {
+    width: 400px;
+    padding: 12px 15px;
+    font-size: 15px;
+    line-height: 1.3;
+    color: #1a1616;
+    border-radius: 50px;
+    border-color: none;
+  }
+  .button__form {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 15px 120px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #e2e5e8;
+    color: #635959;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .button__form:hover,
+  .button__form:focus {
+    background-color: #104eab;
+  }
+  .smart__price {
+    position: absolute;
+    left: 75px;
+    bottom: 25px;
+  }
+  .smart {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.5;
+    letter-spacing: 0.2em;
+    color: #fff;
+  }
+  .smart__discount {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.5;
+    color: #fff;
+  }
 }
-
-.internet-connection__description {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+@media screen and (min-width: 768px) {
+  .form__internet-connection {
+    align-items: start;
+  }
 }
-
-.internet-connection__container {
-  background-image: url("../../image/ноутбук.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: cover;
+@media screen and (min-width: 1200px) {
+  .form__title {
+    text-align: left;
+  }
+  .form__internet-connection {
+    text-align: left;
+  }
 }
-
-.internet-connection__price {
-  display: flex;
-  flex-direction: column;
-}
-
-.brand__text {
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 1.5;
-  color: #fff;
-  margin-bottom: 10px;
-}
-
-.internet__speed {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.7;
-  color: #00a5ea;
-  margin-bottom: 20px;
-}
-
-.price__description {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #fff;
-  margin-bottom: 10px;
-}
-
-.form__internet-connection {
-  display: flex;
-  flex-direction: column;
-  max-width: 500px;
-}
-
-.form__title {
-  font-weight: 700;
-  font-size: 35px;
-  line-height: 1.5;
-  color: #fff;
-  text-align: center;
-  padding: 15px 20px;
-  margin-bottom: 25px;
-}
-
-.form__text {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.5;
-  color: #00A5EA;
-  text-align: center;
-  margin-bottom: 32px;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-.input {
-  width: 400px;
-  padding: 12px 15px;
-  font-size: 15px;
-  line-height: 1.3;
-  color: #1a1616;
-  border-radius: 50px;
-  border-color: none;
-}
-
-.button__form {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 15px 120px;
-  font-size: 16px;
-  text-align: center;
-  text-decoration: none;
-  background-color: #e2e5e8;
-  color: #635959;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.button__form:hover,
-.button__form:focus {
-  background-color: #104eab;
-}
-
-.smart__price {
-  position: absolute;
-  left: 75px;
-  bottom: 25px;
-}
-
-.smart {
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 1.5;
-  letter-spacing: 0.2em;
-  color: #fff;
-}
-
-.smart__discount {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 1.5;
-  color: #fff;
+.contacts__section {
+  background-color: #ddedf6;
 }
 
 .address {

@@ -1,25 +1,38 @@
-.internet-connection {
+@media screen and (min-width: 480px) {
+	.internet-connection {
 	position: relative;
 	z-index: 1;
-	background-image: url("../../image/фон.png");
+	background-color:#66BDDD;
+	background-image: url("../../image/form-fon111.png");
 	overflow: hidden;
 	width: 100%;
+	height: 800px;
 	right:0;
 	margin: 0 auto;
-	padding: 100px 0px;
+padding-top: 0px;
+padding-bottom: 0px;
 	background-repeat: no-repeat;
     background-position: right;
 	background-size: cover;
 }
 
 .internet-connection__description {
-	@include flex(flex, baseline, space-between, null);
+	padding: 100px 0px;
+	@include flex(flex, null, space-between, null);
 }
 .internet-connection__container {
-	background-image: url("../../image/ноутбук.png");
-	background-repeat: no-repeat;
-    background-position: right;
-	background-size: cover;
+width: 100%;
+}
+.internet-connection__img {
+	position: relative;
+	left: 0px;
+}
+.internet-connection__wrap-img {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	max-width: 500px;
+	height: 100%;
 }
 
 .internet-connection__price {
@@ -27,38 +40,42 @@
 }
 .brand__text {
 	@include font(700, 50px, 1.5, null);
-	color: $white-color;
+	color: $accent-color;
 	margin-bottom: 10px;
 }
 .internet__speed {
-	@include font(700, 24px, 1.7, null);
-	color: $card-decoration-color;
+	@include font(500, 24px, 1.7, null);
+	color: $accent-color;
 	margin-bottom: 20px;
 }
 .price__description {
 	@include font(500, 16px, 1.5, null);
-	color: $white-color;
+	color: $textColor;
 	margin-bottom: 10px;
 }
 .form__internet-connection {
+	text-align: center;
+	align-items: center;
+	position: relative;
+max-width: 600px;
+	height: auto;
+@include flex2(flex, column, null);
 	
-	@include flex2(flex, column, null);
-	max-width: 500px;
 }
 .form__title {
 	@include font(700, 35px, 1.5, null);
-	color: $white-color;
+	color: $accent-color;
 	text-align: center;
-	padding: 15px 20px;
-	margin-bottom: 25px;
+    margin-bottom: 25px;
 }
 .form__text {
 	@include font(500, 18px, 1.5, null);
-	color: #00A5EA;
-	text-align: center;
+	color: $accent-color;
 	margin-bottom: 32px;
+	max-width: 450px;
 }
 .form {
+	position: relative;
 	@include flex2(flex, column, center);
 	gap: 10px;
 }
@@ -101,4 +118,18 @@
 .smart__discount {
 	@include font(700, 30px, 1.5, null);
 	color: $white-color;
+}
+}
+@media screen and (min-width: 768px) {
+	.form__internet-connection {
+		align-items: start;
+}
+}
+@media screen and (min-width: 1200px) {
+	.form__title {
+		text-align: left;
+}
+.form__internet-connection {
+	text-align: left;
+}
 }
