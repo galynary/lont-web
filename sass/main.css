@@ -1070,7 +1070,6 @@ body {
     padding-top: 0px;
     padding-bottom: 0px;
     background-repeat: no-repeat;
-    background-position: right;
     background-size: cover;
   }
   .internet-connection__description {
@@ -1197,12 +1196,12 @@ body {
 }
 @media screen and (min-width: 768px) {
   .form__internet-connection {
-    align-items: start;
+    align-items: end;
   }
 }
 @media screen and (min-width: 1200px) {
   .form__title {
-    text-align: left;
+    text-align: right;
   }
   .form__internet-connection {
     text-align: left;
