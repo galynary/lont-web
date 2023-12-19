@@ -593,6 +593,10 @@ body {
     display: flex;
     height: 500px;
   }
+  .dots {
+    position: absolute;
+    left: 50%;
+  }
 }
 @media screen and (min-width: 1200px) {
   .slider__container {
