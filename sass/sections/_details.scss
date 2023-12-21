@@ -6,7 +6,9 @@ background-color: #ddedf6;
 	font-family: "Montserrat";
 	margin-top: 50px;
 	display: flex;
+	text-align: center;
 	flex-direction: column;
+	justify-content: center;
 	gap:50px;
 }
 .details__internet {
@@ -34,6 +36,7 @@ background-color: #ddedf6;
 		flex-direction: row;
 		gap:0px;
 		justify-content: space-between;
+		text-align: left;
 	}
 }
 @media screen and (min-width: 1200px) {

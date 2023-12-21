@@ -1,51 +1,51 @@
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
 	.internet-connection {
 	position: relative;
 	z-index: 1;
-	background-color:#66BDDD;
-	background-image: url("../../image/form-fon111.png");
-	overflow: hidden;
+	background-color:#7DCAE4;
+    overflow: hidden;
 	width: 100%;
-	height: 800px;
 	right:0;
 	margin: 0 auto;
 padding-top: 0px;
 padding-bottom: 0px;
+background-position: left;
 	background-repeat: no-repeat;
    background-size: cover;
 }
 
 .internet-connection__description {
-	padding: 100px 0px;
+	padding: 70px 0px;
 	@include flex(flex, null, space-between, null);
+	flex-direction: column;
+	align-items: center;
+	gap: 50px;
 }
 .internet-connection__container {
 width: 100%;
 }
+
 .internet-connection__img {
 	position: relative;
 	left: 0px;
 }
 .internet-connection__wrap-img {
-	position: absolute;
-	left: 0px;
-	bottom: 0px;
-	max-width: 500px;
-	height: 100%;
+	display: none;
 }
 
 .internet-connection__price {
 	@include flex2(flex, column, null);
+	text-align: center;
 }
 .brand__text {
-	@include font(700, 50px, 1.5, null);
+	@include font(700, 40px, 1.5, null);
 	color: $accent-color;
-	margin-bottom: 10px;
+	margin-bottom: 0px;
 }
 .internet__speed {
 	@include font(500, 24px, 1.7, null);
 	color: $accent-color;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 .price__description {
 	@include font(500, 16px, 1.5, null);
@@ -62,14 +62,14 @@ max-width: 600px;
 	
 }
 .form__title {
-	@include font(700, 35px, 1.5, null);
+	@include font(700, 32px, 1.5, null);
 	color: $accent-color;
 	text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 .form__text {
-	@include font(500, 18px, 1.5, null);
-	color: $accent-color;
+	@include font(500, 16px, 2.0, null);
+	color: #1a1616;
 	margin-bottom: 32px;
 	max-width: 450px;
 }
@@ -85,7 +85,7 @@ max-width: 600px;
 	line-height: 1.3;
 	color: $textColor;
 	border-radius: 50px;
-	border-color: none;
+	border: 1px solid #7DCAE4;
 }
 .button__form {
 	display: inline-block;
@@ -120,15 +120,64 @@ max-width: 600px;
 }
 }
 @media screen and (min-width: 768px) {
-	.form__internet-connection {
-		align-items: end;
+
+.internet-connection__description {
+    flex-direction: column;
+}
+
+	.internet-connection__wrap-img {
+		display: block;
+		position: absolute;
+		left: 0px;
+		bottom: 0px;
+		max-width: 250px;
 }
 }
 @media screen and (min-width: 1200px) {
+	.internet-connection__description {
+		padding: 100px 0px;
+		@include flex(flex, null, space-between, null);
+		flex-direction: row;
+		gap: 0px;
+		align-items: baseline;
+	}
+	.internet-connection__wrap-img {
+		max-width: 500px;
+	}
+	.form__internet-connection {
+		align-items: end;
+}
 	.form__title {
 		text-align: right;
 }
 .form__internet-connection {
-	text-align: left;
+	text-align: right;
 }
+
+.internet-connection__price {
+	@include flex2(flex, column, null);
+	text-align: left;
+}   
+.brand__text {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.internet__speed {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.7;
+    color: #061e7d;
+    margin-bottom: 20px;
+}
+.form__title {
+	@include font(700, 35px, 1.5, null);
+    margin-bottom: 25px;
+}
+.form__text {
+	@include font(500, 18px, 1.7, null);
+	 margin-bottom: 32px;
+}
+
 }

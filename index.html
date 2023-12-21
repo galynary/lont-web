@@ -122,6 +122,13 @@
 							<div class="television__inner">
 								<div class="television__description">
 									<h2 class="television__title">цифрове кабельне <br> телебачення від <br><span class="television__span">ЛОНТ ВЕБ</span></h2>
+									<div class="wrap-television__button">
+										<button type="button" class="television__button">
+											Дізнатися тарифи
+										</button>
+									</div>
+									
+									
 										<ul class="television__list">
 											<li class="television__item">56 каналів у цифровій якості формату DVB-C</li>
 											<li class="television__item">Кілька десятків каналів в HD якості</li>
@@ -144,12 +151,13 @@
 			
 			  <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
 			<button class="next" onclick="plusSlides(1)">&#10095;</button>
+			<div class="dots" style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+			  </div>
 		  </div>
-		  <div class="dots" style="text-align:center">
-			<span class="dot" onclick="currentSlide(1)"></span>
-			<span class="dot" onclick="currentSlide(2)"></span>
-			<span class="dot" onclick="currentSlide(3)"></span>
-		  </div>
+		 
 			<section class="preference__section section" id="preference">
 				<div class="section__container container">
 					<h2 class="section__title">Переваги ЛОНТ ВЕБ</h2>
@@ -412,7 +420,9 @@
 			</section>
 			<section class="internet-connection section" id="form">
 				<div class="internet-connection__container container">
-					
+					<div class="internet-connection__wrap-img">
+						<img class="internet-connection__wrap-img" src="./image/Group 1.png">
+					</div>
 					<div class="internet-connection__description">
 						<div class="internet-connection__price">
 							<p class="brand__text">Лонт Веб</p>
@@ -496,16 +506,12 @@
 						<ul class="social__list">
 							<li class="social__item">
 								<a href="#" class="social__icon link">
-									<svg class="icon__facebook" width="50px" height="150px">
-										<use href="./image/facebook.svg"></use>
-									</svg>
+								
 								</a>
 							</li>
 							<li class="social__item">
 								<a href="#" class="social__icon link">
-									<svg class="icon__viber" width="50px" height="150px">
-										<use href="./image/viber.svg"></use>
-									</svg>
+								
 								</a>
 							</li>
 						</ul>
@@ -520,8 +526,8 @@
 								<use href="./image/sprite.svg#icon-Logo"></use>
 							</svg>
 							<div class="logo__description">
-								<p class="logo__text1">ТОВ “Лонт Веб”</p>
-								<p class="logo__text2">Інтернет сервіс провайдер</p>
+								<p class="logo__text1 footer-logo">ТОВ “Лонт Веб”</p>
+								<p class="logo__text2 footer-logo">Інтернет сервіс провайдер</p>
 							</div>
 						</div>
 						<p class="footer__copyright">

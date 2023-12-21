@@ -596,6 +596,7 @@ body {
   .dots {
     position: absolute;
     left: 50%;
+    top: 720px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -646,73 +647,94 @@ body {
     background-color: #717171;
   }
 }
-.television {
-  background-image: url("../../image/фон.png");
+@media screen and (min-width: 320px) {
+  .television {
+    background-image: url("../../image/фон.png");
+  }
+  .television__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  .television__description {
+    display: flex;
+    flex-direction: column;
+  }
+  .television__description {
+    padding: 100px 0px 130px 0px;
+    position: relative;
+    text-align: left;
+  }
+  .television__title {
+    position: relative;
+    font-family: "Roboto";
+    line-height: 1.5;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .television__span {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 900;
+  }
+  .television__list {
+    position: relative;
+  }
+  .television__button {
+    display: inline-block;
+    padding: 12px 30px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    background-color: #d9d9d9;
+    box-shadow: 0px 6px 4px 0px rgba(201, 185, 185, 0.25);
+    color: #635959;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 200px;
+  }
+  .button:hover,
+  .button:focus {
+    background-color: #104eab;
+    color: #fff;
+    box-shadow: none;
+    transform: scale(1.05);
+  }
+  .television__item {
+    color: rgb(251, 251, 251);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.7;
+    letter-spacing: 0.08em;
+  }
+  .television__wrap-img {
+    position: relative;
+    top: 50px;
+    max-width: 700px;
+  }
+  .television__text {
+    position: relative;
+    bottom: 100px;
+    right: -150px;
+    color: #fff;
+    font-size: 25px;
+  }
 }
-
-.television__inner {
-  display: flex;
-  justify-content: space-between;
+@media screen and (min-width: 320px) {
+  .internet-connection__description .internet-connection__description {
+    flex-direction: column;
+  }
 }
-
-.television__description {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.television__description {
-  padding: 100px 0px 130px 0px;
-  position: relative;
-  text-align: left;
-}
-
-.television__title {
-  position: relative;
-  font-family: "Roboto";
-  line-height: 1.5;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 30px;
-}
-
-.television__span {
-  color: #2b148f;
-  font-size: 40px;
-}
-
-.television__list {
-  position: relative;
-}
-
-.television__item {
-  color: rgb(251, 251, 251);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.7;
-  letter-spacing: 0.08em;
-}
-
-.television__wrap-img {
-  position: relative;
-  top: 50px;
-  max-width: 700px;
-}
-
-.television__text {
-  position: relative;
-  bottom: 100px;
-  right: -150px;
-  color: #fff;
-  font-size: 25px;
-}
-
 @media screen and (min-width: 480px) {
   .hero {
     position: relative;
-    background-color: #2f303a;
+    background-color: #66BDDD;
     background-image: url("../../image/фон.png");
     overflow: hidden;
     width: 100%;
@@ -1012,7 +1034,9 @@ body {
     font-family: "Montserrat";
     margin-top: 50px;
     display: flex;
+    text-align: center;
     flex-direction: column;
+    justify-content: center;
     gap: 50px;
   }
   .details__internet {
@@ -1040,6 +1064,7 @@ body {
     flex-direction: row;
     gap: 0px;
     justify-content: space-between;
+    text-align: left;
   }
 }
 @font-face {
@@ -1056,26 +1081,28 @@ body {
   font-style: normal;
   font-display: swap;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .internet-connection {
     position: relative;
     z-index: 1;
-    background-color: #66BDDD;
-    background-image: url("../../image/form-fon111.png");
+    background-color: #7DCAE4;
     overflow: hidden;
     width: 100%;
-    height: 800px;
     right: 0;
     margin: 0 auto;
     padding-top: 0px;
     padding-bottom: 0px;
+    background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
   }
   .internet-connection__description {
-    padding: 100px 0px;
+    padding: 70px 0px;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
   }
   .internet-connection__container {
     width: 100%;
@@ -1085,29 +1112,26 @@ body {
     left: 0px;
   }
   .internet-connection__wrap-img {
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    max-width: 500px;
-    height: 100%;
+    display: none;
   }
   .internet-connection__price {
     display: flex;
     flex-direction: column;
+    text-align: center;
   }
   .brand__text {
     font-weight: 700;
-    font-size: 50px;
+    font-size: 40px;
     line-height: 1.5;
     color: #061e7d;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
   }
   .internet__speed {
     font-weight: 500;
     font-size: 24px;
     line-height: 1.7;
     color: #061e7d;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .price__description {
     font-weight: 500;
@@ -1127,17 +1151,17 @@ body {
   }
   .form__title {
     font-weight: 700;
-    font-size: 35px;
+    font-size: 32px;
     line-height: 1.5;
     color: #061e7d;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
   }
   .form__text {
     font-weight: 500;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #061e7d;
+    font-size: 16px;
+    line-height: 2;
+    color: #1a1616;
     margin-bottom: 32px;
     max-width: 450px;
   }
@@ -1155,7 +1179,7 @@ body {
     line-height: 1.3;
     color: #1a1616;
     border-radius: 50px;
-    border-color: none;
+    border: 1px solid #7DCAE4;
   }
   .button__form {
     display: inline-block;
@@ -1195,16 +1219,67 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
-  .form__internet-connection {
-    align-items: end;
+  .internet-connection__description {
+    flex-direction: column;
+  }
+  .internet-connection__wrap-img {
+    display: block;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    max-width: 250px;
   }
 }
 @media screen and (min-width: 1200px) {
+  .internet-connection__description {
+    padding: 100px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 0px;
+    align-items: baseline;
+  }
+  .internet-connection__wrap-img {
+    max-width: 500px;
+  }
+  .form__internet-connection {
+    align-items: end;
+  }
   .form__title {
     text-align: right;
   }
   .form__internet-connection {
+    text-align: right;
+  }
+  .internet-connection__price {
+    display: flex;
+    flex-direction: column;
     text-align: left;
+  }
+  .brand__text {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  .internet__speed {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.7;
+    color: #061e7d;
+    margin-bottom: 20px;
+  }
+  .form__title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+  }
+  .form__text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 32px;
   }
 }
 .contacts__section {
@@ -1231,14 +1306,14 @@ body {
   font-size: 18px;
   line-height: 1.5;
   color: #1a1616;
-  margin-bottom: 7px;
+  margin-bottom: 10px;
 }
 
 .free__time {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.5;
-  color: #a422a7;
+  color: #061e7d;
   margin-bottom: 30px;
 }
 
@@ -1254,7 +1329,7 @@ body {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.5;
-  color: #ca1561;
+  color: #061e7d;
 }
 
 .social__list {
@@ -1268,11 +1343,32 @@ body {
   align-items: center;
 }
 
+.social__icon {
+  display: block;
+  cursor: pointer;
+}
+
+.icon__facebook {
+  display: block;
+  width: 50px;
+  height: 150px;
+}
+
+.footer__section {
+  background-color: #7DCAE4;
+  padding: 40px 0px;
+}
+
 .footer__inner {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .footer__copyright {
   margin-left: auto;
+}
+
+.footer-logo {
+  color: #1a1616;
 }/*# sourceMappingURL=main.css.map */
