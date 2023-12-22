@@ -7,16 +7,18 @@
 	align-items: center;
 }
 .tariffs__item {
+	flex: 1;
+	height: 450px;
   height: auto;
-  width: 284px;
-  height: 420px;
-	padding: 50px 20px;
+  max-width: 300px;
+	padding: 50px 50px;
 	display: flex;
 	background-color: $background-color;
 	box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
 	border-radius: 20px;
 	position: relative;
     text-align: center;
+	flex: 1;
 	@include flex2(flex, column, center);
 }
 .icon__ellipse {

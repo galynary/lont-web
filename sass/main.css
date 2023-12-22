@@ -989,7 +989,9 @@ body {
   }
   .tariffs__item {
     height: auto;
-    padding: 50px 50px;
+    width: 284px;
+    height: 420px;
+    padding: 50px 20px;
     display: flex;
     background-color: #e2e5e8;
     box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
@@ -1057,7 +1059,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    align-items: center;
+    align-items: baseline;
     margin: 0 auto;
   }
   .tariffs__item {
