@@ -1,3 +1,7 @@
+
+.contacts__section {
+	background-color: #ddedf6;
+}
 .address {
 	@include flex2(flex, column, flex-start);
 	margin-top: 50px;
@@ -10,11 +14,11 @@
 .work__time {
 	@include font(500, 18px, 1.5, null);
 	color: $textColor;
-	margin-bottom: 7px;
+	margin-bottom: 10px;
 }
 .free__time {
 	@include font(600, 18px, 1.5, null);
-	color: $second-color;
+	color: $accent-color;
 	margin-bottom: 30px;
 }
 
@@ -24,7 +28,7 @@
 .contact__tel {
 	@include flex(flex, center, center, 10px);
 	@include font(600, 18px, 1.5, null);
-	color: #ca1561;
+	color: $accent-color;
 }
 
 .social__list {
@@ -35,4 +39,14 @@
 .social__item {
 	display: flex;
 	align-items: center;
+}
+.social__icon {
+	display: block;
+	cursor: pointer;
+}
+
+.icon__facebook {
+	display: block;
+	width: 50px;
+	height: 150px;
 }

@@ -1,11 +1,13 @@
 @media screen and (min-width: 480px) {
     .header__container {
-        max-width: 1600px;
-        width: 100%;
-        padding: 15px 15px;
-        display: flex;
+       width: 100%;
+       padding: 10px 20px;
+       display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+    .header__container {
+        gap: 0px;
     }
     .logo__content {
         display: flex;
@@ -13,8 +15,8 @@
         align-items: center;
     }
     .logo__icon {
-        width: 100px;
-        height: 100px;
+        width: 70px;
+        height: 60px;
     }
     .logo__description {
         display: flex;
@@ -37,8 +39,8 @@
         display: none;
     }
     .nav-link__tel {
-        @include font(600, 16px, 1.2, 0.03em);
-        color: $second-color;
+        @include font(700, 16px, 1.2, 0.03em);
+        color:#104EAB;
         display: flex;
         align-items: center;
         gap: 10px;
@@ -54,9 +56,6 @@
     }
 
     .js-open-menu {
-        position: absolute;
-        right: 15px;
-        top: 20px;
         padding: 20px;
         border: none;
         background: rgba(0, 0, 0, 0);
@@ -145,17 +144,40 @@
         line-height: 1.17;
         color: #212121;
     }
+    .client {
+        display: flex;
+    }
+    .client-link {
+        display: flex;
+    }
+    .user__backroung {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: #ddedf6;
+    }
+    .user__description  {
+        position: absolute;
+        top:150px;
+        left: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transform: translateX(-50%);
+    }
+    .user__text {
+       color: $accent-color; 
+       font-size: 30px;
+       text-align: center;
+       line-height: 1.7;
+    }
 }
 
 @media screen and (min-width: 768px) {
     .header__container {
-        gap: 100px;
+        gap: 0px;
     }
 
-    .logo__icon {
-        width: 100px;
-        height: 100px;
-    }
     .logo__description {
         display: flex;
         flex-direction: column;
@@ -186,19 +208,26 @@
     .nav__link:focus {
         color: #a422a7;
     }
+    .nav__tel {
+        display: inline-block;
+       
+    }
 
     .menu__container {
         display: none;
     }
 }
-@media screen and (min-width: 768px) and (max-width: 1150px) {
+@media screen and (min-width: 1200px) {
+    .header__container {
+        gap: 100px;
+    }
     .nav__tel {
         position: absolute;
         display: inline-block;
         right: 120px;
     }
-}
-@media screen and (min-width: 1150px) {
+
+
     .header__nav {
         display: flex;
         align-items: center;
@@ -212,14 +241,8 @@
         position: relative;
         right: 0px;
     }
-}
 
-@media screen and (min-width: 1200px) {
-    .logo__icon {
-        width: 100px;
-        height: 100px;
-    }
-    .logo__description {
+  .logo__description {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -252,6 +275,6 @@
     }
     .nav__link:hover,
     .nav__link:focus {
-        color: #a422a7;
+        color: #2C4DA1;
     }
 }

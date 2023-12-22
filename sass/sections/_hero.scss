@@ -1,84 +1,34 @@
 @media screen and (min-width: 480px) {
     .hero {
         position: relative;
-        background-color: #2f303a;
-        max-width: 1600px;
+        background-color: #66BDDD;
+        background-image: url("../../image/фон.png");
         overflow: hidden;
         width: 100%;
-        height: 700px;
+        flex:1;
         margin: 0 auto;
-        text-align: center;
-        background-size: cover;
         background-repeat: no-repeat;
-        background-position: center;
-        background-image: url(../../image/backroung-mob.jpg);
+    background-position: center;
+	background-size: cover;
     }
-    @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        .hero {
-            background-image: url(../../image/backroung-mob-2.jpg);
-        }
-    }
-    .ellipse {
-        position: absolute;
-        left: -500px;
-        bottom: -550px;
-        display: block;
-    }
-    .ellipse3 {
-        position: absolute;
-        top: -500px;
-        right: -600px;
-        display: block;
-    }
-    .svg__icon1 {
-        position: absolute;
-        left: 10px;
-        top: 40px;
-    }
-    .svg__icon2 {
-        position: absolute;
-        right: -50px;
-        top: 500px;
-    }
-
-    .svg-container3 {
-        position: relative;
-        width: 200px;
-        height: 200px;
-        border-radius: 100px;
-        display: inline-block; /* Ensure the container doesn't take full width */
-    }
-
-    .ellipse1 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .svg-container {
-        position: relative;
-        width: 200px;
-        height: 200px;
-        border-radius: 100px;
-        display: inline-block; /* Ensure the container doesn't take full width */
-    }
-
     .hero__content {
-        position: relative;
-        padding-top: 200px;
-        padding-bottom: 200px;
-        z-index: 1;
+     display:block;
+    }
+    .hero__description {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 100px 0px;
+
     }
     .hero__title {
-        @include font(700, 45px, 1.5, null);
+        @include font(700, 45px, null, null);
         color: $white-color;
-    }
+       }
     .hero-title__sub {
-        @include font(700, 45px, 1.5, null);
+        @include font(700,30px, 1.5, null);
         color: $white-color;
-        margin-bottom: 25px;
+        margin-bottom: 15px;
     }
     .hero__text {
         @include font(500, 22px, 1.5, null);
@@ -92,12 +42,12 @@
     }
     .button {
         display: inline-block;
-        padding: 12px 22px;
+        padding: 12px 30px;
         @include font(600, 16px, 1.5, null);
         text-align: center;
         background-color: #d9d9d9;
         box-shadow: 0px 6px 4px 0px rgba(201, 185, 185, 0.25);
-        color: #1a1616;
+        color: #635959;
         border: none;
         border-radius: 50px;
         cursor: pointer;
@@ -106,26 +56,40 @@
 
     .button:hover,
     .button:focus {
-        background-color: #a422a7;
+        background-color: #104eab;
         color: #fff;
         box-shadow: none;
         transform: scale(1.05);
+    }
+    .hero__wrap-img {
+        display: none;
+    }
+    .hero__img {
+        max-width: 400px;
     }
     .section {
         padding: 70px 0px;
     }
 }
 @media screen and (min-width: 768px) {
-    .hero {
-        background-image: url(../../image/backroung-tab.jpg);
+    .hero__content {
+        display: flex;
+       }
+    .hero__description {
+      text-align: left;
     }
-    @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        .hero {
-            background-image: url(../../image/backroung-tab-2.jpg);
-        }
+     .hero__buttons {
+        display: flex;
+        gap: 30px;
+        justify-content:flex-start;
     }
+    .hero__wrap-img {
+        display: block;
+    }
+    .hero__img {
+        max-width: 400px;
+    }
+  
     .ellipse3 {
         top: -500px;
         right: -600px;
@@ -141,21 +105,16 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .hero {
-        background-image: url(../../image/backroung.jpg);
+    .hero__img {
+        max-width: 600px;
     }
-    @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        .hero {
-            background-image: url(../../image/backroung-2.jpg);
-        }
+  
+    .hero__buttons {
+     justify-content:flex-start;
+    }  
+    .hero__description {
+        padding: 200px 0px 100px 20px;
+
     }
-    .svg__icon1 {
-        left: -50px;
-        top: 60px;
-    }
-    .svg__icon2 {
-        right: 20px;
-    }
+    
 }

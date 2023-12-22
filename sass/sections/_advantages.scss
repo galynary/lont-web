@@ -1,4 +1,7 @@
 @media screen and (min-width: 480px) {
+    .preference__section {
+        background-color: #ddedf6;
+    }
     .preference__list {
         display: flex;
         justify-content: center;
@@ -33,6 +36,7 @@
 @media screen and (min-width: 768px) {
     .preference__list {
         gap: 30px;
+        justify-content: space-between;
     }
     .preference__list :not(:last-child) {
         margin-bottom: 0px;
@@ -47,5 +51,9 @@
 @media screen and (min-width: 1200px) {
     .preference__item {
         flex-basis: calc((25% - 15px));
+    }
+    .preference__list {
+       gap: 50px;
+        width: 100%;
     }
 }

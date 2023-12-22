@@ -9,12 +9,18 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
 		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&family=Kanit:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
-			rel="stylesheet"
-		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&family=Kanit:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link href="https://myfonts.ru/myfonts?fonts=bryndan-write" rel="stylesheet" type="text/css" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&family=Kanit:wght@400;500;600;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="./sass/main.css" />
 	</head>
 	<body>
@@ -42,6 +48,14 @@
 							<use href="./image/sprite.svg#icon-phone"></use>
 						</svg>
 						+3 (050) 26 23 123</a
+					>
+				</div>
+				<div class="client">
+					<a href="user.html" class="client-link">
+						<svg class="icon__tel" width="25px" height="35px">
+							<use href="./image/sprite.svg#icon-client"></use>
+						</svg>
+						</a
 					>
 				</div>
 				<button
@@ -87,52 +101,71 @@
 			</div>
 		</header>
 		<main>
-			<section class="hero">
-				<div class="svg__icon1">
-					<div class="svg-container">
-						<svg class="ellipse1" width="400" height="300">
-							<circle r="100" cx="200" cy="150" fill="url(#myGradient)" />
-							<defs>
-								<radialgradient id="myGradient" cx="85%" cy="20%" r="80%">
-									<stop offset="2%" stop-color="#5CACF5" />
-									<stop offset="80%" stop-color="#170970" />
-								</radialgradient>
-							</defs>
-						</svg>
-					</div>
-				</div>
-				<div class="svg__icon2">
-					<div class="svg-container2">
-						<svg class="ellipse2" width="400" height="300">
-							<circle r="100" cx="200" cy="150" fill="url(#myGradient2)" />
-							<defs>
-								<radialgradient id="myGradient2" cx="35%" cy="2%" r="80%">
-									<stop offset="2%" stop-color="#DF86E1" />
-									<stop offset="80%" stop-color="#5C075E" />
-								</radialgradient>
-							</defs>
-						</svg>
-					</div>
-				</div>
-				<!--	<img src="./image/ellipse1.png" alt="" class="ellipse" />-->
-				<!--<img src="./image/ellipse 2.png" alt="" class="ellipse3" />-->
-
-				<div class="hero__container container">
-					<div class="hero__content">
-						<h1 class="hero__title">ЛОНТ ВЕБ</h1>
-						<p class="hero-title__sub">інтернет провайдер</p>
-						<p class="hero__text">Швидкісний інтернет за доступною ціною</p>
-						<div class="hero__buttons">
-							<button type="button" class="button__conect button">
-								Підключитися
-							</button>
-							<button type="button" class="button__learn-more button">
-								Дізнатися більше
-							</button>
+			<div class="slider__container">
+				<div class="slider-inner__container">
+					<div class=" slide hero">
+					 <div class="hero__container container">
+							<div class="hero__content">
+								<div class="hero__description">
+									<h1 class="hero__title">ЛОНТ ВЕБ</h1>
+									<p class="hero-title__sub">інтернет провайдер</p>
+									<p class="hero__text">Швидкісний інтернет за доступною ціною</p>
+									<div class="hero__buttons">
+										<button type="button" class="button__conect button">
+											Замовити підключення
+										</button>
+										<!--<button type="button" class="button__learn-more button">
+											Дізнатися більше
+										</button>-->
+									</div>
+								</div>
+								<div class="hero__wrap-img">
+									<img class="hero__img" src="./image/woman.png">
+								</div>
+							</div>
 						</div>
 					</div>
+					<div class="slide television">
+						<div class="television__container container">
+							<div class="television__inner">
+								<div class="television__description">
+									<h2 class="television__title">цифрове кабельне <br> телебачення від <br><span class="television__span">ЛОНТ ВЕБ</span></h2>
+									<div class="wrap-television__button">
+										<button type="button" class="television__button">
+											Дізнатися тарифи
+										</button>
+									</div>
+									
+									
+										<ul class="television__list">
+											<li class="television__item">56 каналів у цифровій якості формату DVB-C</li>
+											<li class="television__item">Кілька десятків каналів в HD якості</li>
+											<li class="television__item">Висока якість зображення та звуку</li>
+											<li class="television__item">Електронний телегід</li>
+										</ul>
+								</div>
+								<div class="television__right">
+									<div class="television__wrap-img">
+										<img class="television__img" src="./image/телевізор.png">
+									</div>
+									<p class="television__text">Всього 100грн. за міс.</p>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="slide television"></div>
 				</div>
-			</section>
+			
+			  <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+			<button class="next" onclick="plusSlides(1)">&#10095;</button>
+			<div class="dots" style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+			  </div>
+		  </div>
+		 
 			<section class="preference__section section" id="preference">
 				<div class="section__container container">
 					<h2 class="section__title">Переваги ЛОНТ ВЕБ</h2>
@@ -266,32 +299,6 @@
 					</ul>
 				</div>
 			</section>
-			<section class="baner section">
-				<img src="./image/ellipse-banner.png" alt="еліпс" class="elipse__img" />
-				<div class="container">
-					<div class="baner__content">
-						<div class="baner__description">
-							<div class="baner__texts">
-								<p class="baner__text1">Підключайте пакет</p>
-								<p class="baner__text2">ПРЕМІМУМ</p>
-								<p class="baner__text-discount">
-									отримайте скидку 70% на 6 місяців
-								</p>
-								<p class="baner__text3">
-									спеціальна пропозиція тільки для нових клієнтів
-								</p>
-							</div>
-							<div class="baner__content-action">
-								<p class="baner__text-action">акція діє до 20.09.2023р</p>
-							</div>
-						</div>
-						<div class="baner__img">
-							<img src="./image/svich.png" class="svich-desc" alt="чорний свіч" />
-						  </div>
-					</div>
-					<img src="./image/elipse-mob.png" alt="еліпс" class="elipse-mob__img" />
-				</div>
-			</section>
 			<section class="services-section section" id="services">
 				<div class="section-container container">
 					<h2 class="section__title">Наші послуги</h2>
@@ -392,13 +399,38 @@
 					</ul>
 				</div>
 			</section>
+			<section class="details-section section" id="details">
+				<div class="section-container container">
+					<h2 class="section__title">Реквізити для оплати</h2>
+					<ul class="details__description">
+						<li class="details__internet">
+							<h3 class="details__internet-title">Інтернет</h3>
+							<p class="details__internet-text">ФОП Білкей А.Й.<br>
+								Код: 1721602779<br>
+								Банк: АТ КБ “Приватбанк”<br>
+								Рахунок:<br>
+								UA503052990000026000043603326<br>
+								Призначення платежу:<br>
+								Ваша адресa</p>
+						</li>
+						<li class="details__cable-tv">
+							<h3 class="details__cable-tv-title">Кабельне ТБ</h3>
+							<p class="details__cable-tv-text">ТОВ “Лонт Веб”
+								Код: 40986273 <br>
+								Банк: АТ КБ “Приватбанк” <br>
+								Рахунок: <br>
+								UA333052990000026000043602662 <br>
+								Призначення платежу: <br>
+								Ваша адреса</p>
+						</li>
+					</ul>
+					</div>
+			</section>
 			<section class="internet-connection section" id="form">
-				<img src="#" alt="еліпс" class="elipse__form" />
-				<div class="smart__price">
-					<p class="smart">Смарт</p>
-					<p class="smart__discount">знижка 10%</p>
-				</div>
 				<div class="internet-connection__container container">
+					<div class="internet-connection__wrap-img">
+						<img class="internet-connection__wrap-img" src="./image/Group 1.png">
+					</div>
 					<div class="internet-connection__description">
 						<div class="internet-connection__price">
 							<p class="brand__text">Лонт Веб</p>
@@ -424,11 +456,12 @@
 
 						<div class="form__internet-connection">
 							<h3 class="form__title">Заявка на підключення інтернету</h3>
-							<p class="form__text">
+							 <p class="form__text">
 								Підключаючись до мережі Лонт Веб — Ви отримаєте швидкісний
 								безперебійний інтернет за низькими тарифами
 							</p>
 							<form autocomplete="on" class="form">
+							
 								<input
 									type="name"
 									placeholder="імя"
@@ -481,16 +514,12 @@
 						<ul class="social__list">
 							<li class="social__item">
 								<a href="#" class="social__icon link">
-									<svg class="icon__facebook" width="50px" height="150px">
-										<use href="./image/facebook.svg"></use>
-									</svg>
+								
 								</a>
 							</li>
 							<li class="social__item">
 								<a href="#" class="social__icon link">
-									<svg class="icon__viber" width="50px" height="150px">
-										<use href="./image/viber.svg"></use>
-									</svg>
+								
 								</a>
 							</li>
 						</ul>
@@ -505,8 +534,8 @@
 								<use href="./image/sprite.svg#icon-Logo"></use>
 							</svg>
 							<div class="logo__description">
-								<p class="logo__text1">ТОВ “Лонт Веб”</p>
-								<p class="logo__text2">Інтернет сервіс провайдер</p>
+								<p class="logo__text1 footer-logo">ТОВ “Лонт Веб”</p>
+								<p class="logo__text2 footer-logo">Інтернет сервіс провайдер</p>
 							</div>
 						</div>
 						<p class="footer__copyright">
@@ -517,6 +546,7 @@
 			</section>
 		</main>
 		<script defer src="./js/mobile-menu.js"></script>
+		<script defer src="./js/slide.js"></script>
 		<script
 			defer
 			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
