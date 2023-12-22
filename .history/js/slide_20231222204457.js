@@ -18,5 +18,5 @@ function showSlides() {
   slides[currentSlideIndex - 1].style.display = "block";
   dots[currentSlideIndex - 1].classList.add("active");
 
-  setTimeout(showSlides, 7000); // Інтервал перемикання слайдів у мілісекундах (в даному випадку - 2000 мс або 2 секунди)
+  setTimeout(showSlides, 2000); // Інтервал перемикання слайдів у мілісекундах (в даному випадку - 2000 мс або 2 секунди)
 }

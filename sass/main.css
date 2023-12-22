@@ -374,6 +374,7 @@ body {
     padding: 10px 20px;
     display: flex;
     align-items: center;
+    gap: 10px;
     justify-content: space-between;
   }
   .header__container {
@@ -388,14 +389,9 @@ body {
     width: 70px;
     height: 60px;
   }
-  .logo__description {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
   .logo__text1 {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 1.5;
     color: #104eab;
   }
@@ -404,6 +400,11 @@ body {
     font-size: 12px;
     line-height: 1.5;
     color: #104eab;
+  }
+  .logo__description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
   .header__nav {
     display: none;
@@ -528,23 +529,13 @@ body {
   .header__container {
     gap: 0px;
   }
+  .logo__text1 {
+    font-size: 18px;
+  }
   .logo__description {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-  }
-  .logo__text1 {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.5;
-    color: #104eab;
-  }
-  .logo__text2 {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.5;
-    letter-spacing: 0, 2em;
-    color: #104eab;
   }
   .nav__link {
     font-weight: 600;
@@ -565,9 +556,6 @@ body {
   }
 }
 @media screen and (min-width: 1200px) {
-  .header__container {
-    gap: 100px;
-  }
   .nav__tel {
     position: absolute;
     display: inline-block;
@@ -590,19 +578,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-  }
-  .logo__text1 {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.5;
-    color: #104eab;
-  }
-  .logo__text2 {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.5;
-    letter-spacing: 0, 2em;
-    color: #104eab;
   }
   .header__nav {
     display: flex;
@@ -683,19 +658,20 @@ body {
 @media screen and (min-width: 320px) {
   .television {
     background-image: url("../../image/фон.png");
+    background-color: #66BDDD;
+    width: 100%;
   }
   .television__inner {
-    display: flex;
-    justify-content: space-between;
+    display: block;
   }
   .television__description {
     display: flex;
     flex-direction: column;
-  }
-  .television__description {
     padding: 100px 0px 130px 0px;
     position: relative;
-    text-align: left;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
   .television__title {
     position: relative;
@@ -715,6 +691,7 @@ body {
   }
   .television__list {
     position: relative;
+    display: none;
   }
   .television__button {
     display: inline-block;
@@ -748,8 +725,7 @@ body {
   }
   .television__wrap-img {
     position: relative;
-    top: 50px;
-    max-width: 700px;
+    display: none;
   }
   .television__text {
     position: relative;
@@ -757,11 +733,72 @@ body {
     right: -150px;
     color: #fff;
     font-size: 25px;
+    display: none;
   }
 }
-@media screen and (min-width: 320px) {
-  .internet-connection__description .internet-connection__description {
+@media screen and (min-width: 768px) {
+  .television__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  .television__text {
+    display: block;
+  }
+  .internet-connection__description {
     flex-direction: column;
+  }
+  .television__description {
+    display: flex;
+    flex-direction: column;
+    padding: 130px 0px 130px 0px;
+    text-align: left;
+    align-items: start;
+  }
+  .television__wrap-img {
+    display: block;
+    max-width: 400px;
+    top: 100px;
+  }
+  .television__text {
+    bottom: -40px;
+    right: -180px;
+    font-size: 17px;
+  }
+  .television__title {
+    position: relative;
+    font-family: "Roboto";
+    line-height: 1.5;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .television__wrap-img {
+    max-width: 700px;
+    top: 50px;
+    justify-content: start;
+  }
+  .television__text {
+    bottom: 100px;
+    right: -150px;
+    font-size: 25px;
+  }
+  .television__description {
+    padding: 100px 0px 130px 0px;
+  }
+  .television__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  .television__title {
+    font-size: 30px;
+  }
+  .television__list {
+    display: block;
   }
 }
 @media screen and (min-width: 480px) {
@@ -1367,7 +1404,7 @@ body {
 
 .social__list {
   display: flex;
-  gap: 100px;
+  gap: 20px;
   cursor: pointer;
 }
 
@@ -1400,8 +1437,4 @@ body {
 
 .footer__copyright {
   margin-left: auto;
-}
-
-.footer-logo {
-  color: #1a1616;
 }/*# sourceMappingURL=main.css.map */

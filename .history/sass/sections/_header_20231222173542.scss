@@ -21,7 +21,7 @@
     }
     .logo__text1 {
         font-weight: 600;
-        font-size: 14px;
+        font-size: 18px;
         line-height: 1.5;
         color: #104eab;
     }
@@ -178,10 +178,6 @@
 @media screen and (min-width: 768px) {
     .header__container {
         gap: 0px;
-    }
-    .logo__text1 {
-        font-size: 18px;
-      
     }
 
     .logo__description {

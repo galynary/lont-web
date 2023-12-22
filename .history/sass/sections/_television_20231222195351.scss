@@ -95,13 +95,10 @@
             flex-direction: column;
         }
             .television__description {
-              display: flex;
-             flex-direction: column;
-             padding: 130px 0px 130px 0px;
-             text-align: left;
-             align-items:start;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0px 130px 0px;
     }
-    
     .television__wrap-img {
         display: block; 
 max-width: 400px;
@@ -112,7 +109,10 @@ max-width: 400px;
         right: -180px;
         font-size: 17px;
     }
-  
+    .television__description {
+        text-align: left;
+        align-items:start;
+    }
     .television__title {
         position: relative;
         font-family: "Roboto";

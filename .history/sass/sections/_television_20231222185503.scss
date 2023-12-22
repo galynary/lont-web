@@ -79,7 +79,6 @@
     right: -150px;
     color: $white-color;
     font-size: 25px;
-    display: none;
 }
 }
 @media screen and (min-width: 768px) {
@@ -87,42 +86,23 @@
         display: flex;
         justify-content: space-between;
     }
-    .television__text {
-        display: block;
-    }
    
         .internet-connection__description {
             flex-direction: column;
-        }
-            .television__description {
-              display: flex;
-             flex-direction: column;
-             padding: 130px 0px 130px 0px;
-             text-align: left;
-             align-items:start;
     }
-    
     .television__wrap-img {
         display: block; 
 max-width: 400px;
-        top:100px;
+        top:145px;
     }
     .television__text {
-        bottom: -40px;
-        right: -180px;
+        bottom: -70px;
+        right: -160px;
         font-size: 17px;
     }
-  
-    .television__title {
-        position: relative;
-        font-family: "Roboto";
-        line-height: 1.5;
-        font-weight: 700;
-        letter-spacing: 0.08em;
-        color: #fff;
-        text-transform: uppercase;
-        font-size: 25px;
-        margin-bottom: 30px;
+    .television__description {
+        padding: 130px 0px 130px 0px;
+        text-align: left;
     }
    
 }
@@ -144,11 +124,7 @@ max-width: 400px;
                 display: flex;
                 justify-content: space-between;
             }
-            .television__title {
-                font-size: 30px;
-               
-            }
             .television__list {
-                display: block;
+                display: flex;
             }
 }

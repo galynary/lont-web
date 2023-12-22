@@ -19,18 +19,6 @@
         width: 70px;
         height: 60px;
     }
-    .logo__text1 {
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 1.5;
-        color: #104eab;
-    }
-    .logo__text2 {
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 1.5;
-        color: #104eab;
-    }
     .logo__description {
         display: flex;
         flex-direction: column;
@@ -179,10 +167,6 @@
     .header__container {
         gap: 0px;
     }
-    .logo__text1 {
-        font-size: 18px;
-      
-    }
 
     .logo__description {
         display: flex;
@@ -238,7 +222,18 @@
         flex-direction: column;
         align-items: flex-start;
     }
-  
+    .logo__text1 {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.5;
+        color: #104eab;
+    }
+    .logo__text2 {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.5;
+        color: #104eab;
+    }
     .header__nav {
         display: flex;
         align-items: center;
