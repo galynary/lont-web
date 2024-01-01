@@ -71,12 +71,9 @@
 		display: flex;
 		flex-wrap: wrap;
 		gap: 30px;
-		align-items: baseline;
 		margin: 0 auto;
 	}
-	.tariffs__item {
-		flex-wrap: wrap;
-    }
+
 	
 }
 @media screen and (min-width: 1200px) {
