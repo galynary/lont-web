@@ -1,0 +1,183 @@
+@media screen and (min-width: 320px) {
+	.internet-connection {
+	position: relative;
+	z-index: 1;
+	background-color:#7DCAE4;
+    overflow: hidden;
+	width: 100%;
+	right:0;
+	margin: 0 auto;
+padding-top: 0px;
+padding-bottom: 0px;
+background-position: left;
+	background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.internet-connection__description {
+	padding: 70px 0px;
+	@include flex(flex, null, space-between, null);
+	flex-direction: column;
+	align-items: center;
+	gap: 50px;
+}
+.internet-connection__container {
+width: 100%;
+}
+
+.internet-connection__img {
+	position: relative;
+	left: 0px;
+}
+.internet-connection__wrap-img {
+	display: none;
+}
+
+.internet-connection__price {
+	@include flex2(flex, column, null);
+	text-align: center;
+}
+.brand__text {
+	@include font(700, 40px, 1.5, null);
+	color: $accent-color;
+	margin-bottom: 0px;
+}
+.internet__speed {
+	@include font(500, 24px, 1.7, null);
+	color: $accent-color;
+	margin-bottom: 10px;
+}
+.price__description {
+	@include font(500, 16px, 1.5, null);
+	color: $textColor;
+	margin-bottom: 10px;
+}
+.form__internet-connection {
+	text-align: center;
+	align-items: center;
+	position: relative;
+max-width: 600px;
+	height: auto;
+@include flex2(flex, column, null);
+	
+}
+.form__title {
+	@include font(700, 32px, 1.5, null);
+	color: $accent-color;
+	text-align: center;
+    margin-bottom: 10px;
+}
+.form__text {
+	@include font(500, 16px, 2.0, null);
+	color: #1a1616;
+	margin-bottom: 32px;
+	max-width: 450px;
+}
+.form {
+	position: relative;
+	@include flex2(flex, column, center);
+	gap: 10px;
+}
+.input {
+	width: 400px;
+	padding: 12px 15px;
+	font-size: 15px;
+	line-height: 1.3;
+	color: $textColor;
+	border-radius: 50px;
+	border: 1px solid #7DCAE4;
+}
+.button__form {
+	display: inline-block;
+	margin-top: 10px;
+	padding: 15px 120px;
+	font-size: 16px;
+	text-align: center;
+	text-decoration: none;
+	background-color: $background-color;
+	color: #635959;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+.button__form:hover,
+.button__form:focus {
+	background-color:#104eab;
+ }
+.smart__price {
+	position: absolute;
+	left: 75px;
+	bottom: 25px;
+}
+.smart {
+	@include font(700, 50px, 1.5, 0.2em);
+	color: $white-color;
+}
+.smart__discount {
+	@include font(700, 30px, 1.5, null);
+	color: $white-color;
+}
+}
+@media screen and (min-width: 768px) {
+
+.internet-connection__description {
+    flex-direction: column;
+}
+
+	.internet-connection__wrap-img {
+		display: block;
+		position: absolute;
+		left: 0px;
+		bottom: 0px;
+		max-width: 250px;
+}
+}
+@media screen and (min-width: 1200px) {
+	.internet-connection__description {
+		padding: 100px 0px;
+		@include flex(flex, null, space-between, null);
+		flex-direction: row;
+		gap: 0px;
+		align-items: baseline;
+	}
+	.internet-connection__wrap-img {
+		max-width: 500px;
+	}
+	.form__internet-connection {
+		align-items: end;
+}
+	.form__title {
+		text-align: right;
+}
+.form__internet-connection {
+	text-align: right;
+}
+
+.internet-connection__price {
+	@include flex2(flex, column, null);
+	text-align: left;
+}   
+.brand__text {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.internet__speed {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.7;
+    color: #061e7d;
+    margin-bottom: 20px;
+}
+.form__title {
+	@include font(700, 35px, 1.5, null);
+    margin-bottom: 25px;
+}
+.form__text {
+	@include font(500, 18px, 1.7, null);
+	 margin-bottom: 32px;
+}
+
+}
