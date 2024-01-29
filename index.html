@@ -466,21 +466,27 @@
 									placeholder="імя"
 									name="name"
 									class="input"
+									id="name"
+									required
 								/>
 								<input
 									type="name"
 									placeholder="адреса"
-									name="name"
+									name="address"
 									class="input"
+									id="address"
+									required
 								/>
 								<input
 									type="tel"
 									placeholder="телефон"
-									name="tel"
+									name="phone"
 									class="input"
+									id="phone"
+									required
 								/>
 							
-								<button type="submit" class="button__form button">
+								<button type="submit" class="button__form button" onclick="submitForm()">
 									Залишити заявку
 								</button>
 							</form>
@@ -545,6 +551,7 @@
 		</main>
 		<script defer src="./js/mobile-menu.js"></script>
 		<script defer src="./js/slide.js"></script>
+		<script defer src="./js/form.js"></script>
 		<script
 			defer
 			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
