@@ -708,8 +708,8 @@ body {
     transition: background-color 0.3s;
     margin-bottom: 200px;
   }
-  .television__button:hover,
-  .television__button:focus {
+  .button:hover,
+  .button:focus {
     background-color: #104eab;
     color: #fff;
     box-shadow: none;
@@ -877,26 +877,6 @@ body {
   .section {
     padding: 70px 0px;
   }
-  .topBtn {
-    display: block;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: #DDEDF6;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 50%;
-    font-size: 18px;
-    border: 1px solid #061e7d;
-  }
-  .topBtn:hover {
-    background-color: #7DCAE4;
-    /* Add a dark-grey background on hover */
-  }
 }
 @media screen and (min-width: 768px) {
   .hero__content {
@@ -937,7 +917,7 @@ body {
     justify-content: flex-start;
   }
   .hero__description {
-    padding: 100px 0px 100px 20px;
+    padding: 200px 0px 100px 20px;
   }
 }
 @media screen and (min-width: 480px) {
@@ -1259,6 +1239,7 @@ body {
     align-items: center;
     gap: 10px;
   }
+  select,
   .input {
     width: 400px;
     padding: 12px 15px;

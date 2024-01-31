@@ -476,7 +476,13 @@
 									class="input"
 									id="address"
 									required
-								/>
+									autocomplete="address-level1">
+									<datalist id="addresses">
+										<option value="Вулиця 1, Місто 1, Область 1">
+										<option value="Вулиця 2, Місто 2, Область 2">
+										<option value="Вулиця 3, Місто 3, Область 3">
+										</datalist>
+								
 								<input
 									type="tel"
 									placeholder="телефон"
@@ -485,6 +491,14 @@
 									id="phone"
 									required
 								/>
+								
+							<!--	<label for="tariff">Виберіть тариф:</label>-->
+							 <select  placeholder="Виберіть тариф" id="tariff" onchange="updateInput()" required>
+								<option value="" selected disabled hidden>Виберіть тариф</option>
+								<option value="basic">Базовий тариф</option>
+								<option value="standard">Стандартний тариф</option>
+								<option value="premium">Преміум тариф</option>
+							  </select>
 							
 								<button type="submit" class="button__form button" onclick="submitForm()">
 									Залишити заявку
@@ -548,10 +562,6 @@
 					</div>
 				</div>
 			</section>
-			<a  href="#" onclick="topFunction()" class="topBtn" title="Повернутися наверх">
-				<img  src="/image/Arrow-top.png" width="20px">
-			</a>
-
 		</main>
 		<script defer src="./js/mobile-menu.js"></script>
 		<script defer src="./js/slide.js"></script>
