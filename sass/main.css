@@ -877,6 +877,18 @@ body {
   .section {
     padding: 70px 0px;
   }
+  #scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
 }
 @media screen and (min-width: 768px) {
   .hero__content {
@@ -1151,7 +1163,6 @@ body {
 @media screen and (min-width: 320px) {
   .internet-connection {
     position: relative;
-    z-index: 1;
     background-color: #7DCAE4;
     overflow: hidden;
     width: 100%;
@@ -1293,7 +1304,7 @@ body {
   .internet-connection__wrap-img {
     display: block;
     position: absolute;
-    left: 0px;
+    left: 30px;
     bottom: 0px;
     max-width: 250px;
   }

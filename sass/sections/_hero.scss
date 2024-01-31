@@ -70,6 +70,18 @@
     .section {
         padding: 70px 0px;
     }
+    #scrollToTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px;
+        background-color: transparent;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
 }
 @media screen and (min-width: 768px) {
     .hero__content {
