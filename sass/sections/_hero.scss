@@ -1,4 +1,4 @@
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
     .hero {
         position: relative;
         background-color: #66BDDD;
@@ -14,26 +14,45 @@
     .hero__content {
      display:block;
     }
+    .hero__inner {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 250px 0px;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    }
     .hero__description {
         display: flex;
         flex-direction: column;
+        padding: 100px 0px 130px 0px;
+        position: relative;
         text-align: center;
-        padding: 100px 0px;
+        align-items: center;
 
     }
     .hero__title {
-        @include font(700, 45px, null, null);
+        @include font(700, 40px, null, null);
         color: $white-color;
+        font-family: "Montserrat";
+        margin-bottom: 5px;
+        letter-spacing: 0.05em;
+    
        }
     .hero-title__sub {
         @include font(700,30px, 1.5, null);
         color: $white-color;
-        margin-bottom: 15px;
+        margin-bottom: 5px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        font-family: "Montserrat";
     }
     .hero__text {
-        @include font(500, 22px, 1.5, null);
+        @include font(500, 18px, 1.5, null);
         color: #fff;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
     .hero__buttons {
         display: flex;
@@ -86,9 +105,20 @@
 @media screen and (min-width: 768px) {
     .hero__content {
         display: flex;
+        justify-content: space-between;
+       }
+       .hero__inner {
+        display: flex;
+        align-items: start;
+        text-align: start;
+        justify-content: space-between;
        }
     .hero__description {
-      text-align: left;
+        display: flex;
+        flex-direction: column;
+         padding: 120px 0px 0px 0px;
+        text-align: left;
+        align-items:start;
     }
      .hero__buttons {
         display: flex;
@@ -117,6 +147,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .television__inner {
+        display: flex;
+        justify-content: space-between;
+    }
     .hero__img {
         max-width: 600px;
     }
@@ -125,7 +159,7 @@
      justify-content:flex-start;
     }  
     .hero__description {
-        padding: 200px 0px 100px 20px;
+        padding: 120px 0px 0px 0px;
 
     }
     

@@ -14,14 +14,13 @@
     position: relative;
     text-align: center;
     align-items:center;
-    justify-content: center;
+    
 }
 .television__title {
     position: relative;
-    font-family: "Roboto";
-    line-height: 1.5;
+    line-height: 1.2;
     font-weight: 700;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.03em;
     color: $white-color;
     text-transform: uppercase;
     font-size: 30px;
@@ -30,7 +29,7 @@
 .television__span {
     color:$white-color;
     font-size: 40px;
-    font-weight: 900;
+    font-weight: 700;
 
 }
 .television__list {
@@ -49,7 +48,8 @@
         border-radius: 50px;
         cursor: pointer;
         transition: background-color 0.3s;
-        margin-bottom: 200px;
+        margin-bottom: 20px;
+
     }
 
     .button:hover,
@@ -96,7 +96,7 @@
             .television__description {
               display: flex;
              flex-direction: column;
-             padding: 130px 0px 130px 0px;
+             padding: 120px 0px 0px 0px;
              text-align: left;
              align-items:start;
     }
@@ -114,13 +114,13 @@ max-width: 400px;
   
     .television__title {
         position: relative;
-        font-family: "Roboto";
+        font-family: "Montserrat";
         line-height: 1.5;
         font-weight: 700;
         letter-spacing: 0.08em;
-        color: #fff;
+        color: #ebf1f5;
         text-transform: uppercase;
-        font-size: 25px;
+        font-size: 20px;
         margin-bottom: 30px;
     }
    
@@ -137,7 +137,8 @@ max-width: 400px;
                 font-size: 25px;
             }
             .television__description {
-                padding: 100px 0px 130px 0px;
+                padding: 120px 0px 0px 0px;
+           
             }
             .television__inner {
                 display: flex;
@@ -149,5 +150,6 @@ max-width: 400px;
             }
             .television__list {
                 display: block;
+                padding-top: 150px;
             }
 }

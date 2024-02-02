@@ -55,8 +55,9 @@ width: 100%;
 	text-align: center;
 	align-items: center;
 	position: relative;
-max-width: 600px;
+width: 100%;
 	height: auto;
+	
 @include flex2(flex, column, null);
 	
 }
@@ -76,10 +77,12 @@ max-width: 600px;
 	position: relative;
 	@include flex2(flex, column, center);
 	gap: 10px;
+	
 }
 select,
 .input {
-	width: 400px;
+	max-width: 400px;
+	width: 100%;
 	padding: 12px 15px;
 	font-size: 15px;
 	line-height: 1.3;
