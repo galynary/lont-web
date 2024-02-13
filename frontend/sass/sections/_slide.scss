@@ -1,0 +1,63 @@
+
+@media screen and (min-width: 480px) {
+  .slider-inner__container {
+    display: flex;
+  height: 500px;
+  }
+  .dots {
+    position: absolute;
+    left:50%;
+   top:720px;
+    
+  }
+}
+@media screen and (min-width: 1200px) {
+  .slider__container {
+    width: 100%;
+    overflow: hidden;
+  }
+  .slider-inner__container {
+    display: flex;
+  height: 700px;
+  }
+
+  .slide {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    padding: 10px;
+  }
+
+  .prev { left: 0; }
+  .next { right: 0; }
+
+  .dots {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .active {
+    background-color: #717171;
+  }
+ 
+}
