@@ -1,0 +1,18 @@
+.services__list {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+.services__item:not(:last-child) {
+	margin-bottom: 10px;
+}
+.services__content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0px 10px;
+}
+.services__text {
+	@include font(500, 18px, 1.7, null);
+	color: $textColor;
+}
