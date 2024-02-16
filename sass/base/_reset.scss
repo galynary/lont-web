@@ -1,0 +1,53 @@
+*,
+::after,
+::before {
+	box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+ul,
+li,
+a {
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+.list {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+address {
+	font-style: normal;
+}
+
+button {
+	cursor: pointer;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+body {
+	font-family: "Monserrat", sans-serif;
+	font-size: 16px;
+	justify-content: center;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0px 15px;
+}
