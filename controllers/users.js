@@ -1,95 +1,86 @@
-const { schemas  } = require("../models/user");
-const { User } = require("../models/contact");
+
+const { schemas } = require("../models/user");
+const { User } = require("../models/user");
 const { ctrlWrapper, HttpError } = require("../helpers");
 
-const addUser = async (req, res) => {
-	try {
-		const { name, address, phone, tariff } = req.body;
+const registerUser = async (req, res) => {
+  try {
+    const { name, address, phone, tariff } = req.body;
 
-		// Перевірка, чи користувач з такими даними вже існує
-		const existingUser = await User.findOne({ name, address, phone, tariff });
-		if (existingUser) {
-			throw HttpError(409, "На цю адресу вже була подана заявка");
-		}
+    const existingUser = await User.findOne({ name, address, phone, tariff });
+    if (existingUser) {
+      throw new HttpError(409, "На цю адресу вже заявка подана");
+    }
 
-		// Створення нового користувача
-		const newUser = new User({
-			name,
-			address,
-			phone,
-			tariff,
-		});
-		await newUser.save();
+    const newUser = new User({
+      name,
+      address,
+      phone,
+      tariff,
+    });
+    await newUser.save();
 
-		// Відправлення відповіді клієнту
-		res.send(`Дякуємо, ${name}! Ваша заявка прийнята.`);
-	} catch (error) {
-		// Обробка помилок
-		console.error("Error in registration:", error);
-		res.status(error.status || 500).json({ error: error.message || "Internal Server Error" });
-	}
+    res.send(`Дякую, ${name}! Вашу заявку прийнято.`);
+  } catch (error) {
+    console.error("Error in registration:", error);
+    res.status(error.status || 500).json({ error: error.message || "Внутрішня помилка сервера" });
+  }
 };
 
 
-
-
-const listUsers = async (req, res) => {
-	const { _id: owner } = req.user;
-	const { page = 1, limit = 20 } = req.query;
-	// пагінація контактів
-	const skip = (page - 1) * limit;
-	const result = await User.find({ owner }, "-createdAt -updatedAt", {
-		skip,
-		limit,
-	}).populate("owner", "name, email");
-	res.status(200).json(result);
-};
 
 const getUserById = async (req, res) => {
-	const { error } = schemas.registerSchema.validate(req.body);
+  const { error } = schemas.updateSchema.validate(req.body);
 	if (error) {
 		throw HttpError(404, error.message);
 	}
-	const { id } = req.params;
-	const result = await User.findById({ id });
-	// const result = await User.findOne({ _id: UserId });
-	res.status(200).json(result);
+  try {
+    const { id } = req.params;
+    const result = await User.findById(id);
+    res.status(200).json(result);
+  } catch (error) {
+    console.error("Error getting user by ID:", error);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
 };
 
-
-
-const removeUser = async (req, res, next) => {
-	const { UserId } = req.params;
-	const result = await User.removeUser(UserId);
-	if (!result) {
-		throw HttpError(404, "Not found");
-	}
-	res.status(200).json({ message: "User deleted" });
+const removeUser = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const result = await User.findByIdAndDelete(id);
+    if (!result) {
+      throw new HttpError(404, "User not found");
+    }
+    res.status(200).json({ message: "User deleted" });
+  } catch (error) {
+    console.error("Error removing user:", error);
+    res.status(error.status || 500).json({ error: error.message || "Internal Server Error" });
+  }
 };
 
 const updateUser = async (req, res) => {
-	const { error } = schemas.updateSchema.validate(req.body);
-	if (error) {
-		throw HttpError(404, "missing fields");
-	}
-	const { UserId } = req.params;
-	const result = await User.findIdAndUpdate(UserId, req.body);
-	if (!result) {
-		throw HttpError(404, "Not found");
-	}
-	res.status(200).json(result);
+  try {
+    const { id } = req.params;
+    const { error } = schemas.updateSchema.validate(req.body);
+    if (error) {
+      throw new HttpError(400, "Missing or invalid fields in request body");
+    }
+    const result = await User.findByIdAndUpdate(id, req.body, { new: true });
+    if (!result) {
+      throw new HttpError(404, "User not found");
+    }
+    res.status(200).json(result);
+  } catch (error) {
+    console.error("Error updating user:", error);
+    res.status(error.status || 500).json({ error: error.message || "Internal Server Error" });
+  }
 };
-
-
 
 module.exports = {
-	listUsers: ctrlWrapper(listUsers),
-	getUserById: ctrlWrapper(getUserById),
-	addUser: ctrlWrapper(addUser),
-	removeUser: ctrlWrapper(removeUser),
-	updateUser: ctrlWrapper(updateUser)
-	
+  getUserById: ctrlWrapper(getUserById),
+  registerUser: ctrlWrapper(registerUser ),
+  removeUser: ctrlWrapper(removeUser),
+  updateUser: ctrlWrapper(updateUser)
 };
-
 
 
