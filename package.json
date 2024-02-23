@@ -66,4 +66,4 @@
 		"workbox-webpack-plugin": "^7.0.0"
 	},
 	"description": "My webpack project"
-  }
+}

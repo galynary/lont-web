@@ -1,7 +1,7 @@
 const { Schema, model } = require("mongoose");
 const Joi = require("joi");
 
-const phoneRegexp = /^(\+38)?0\d{9}$/;
+const phoneRegexp = /^\d{3} \d{2} \d{3} \d{2} \d{2}$/;
 
 const handleMongooseError = (error, data, next) => {
     const { name, code } = error;
@@ -19,7 +19,6 @@ const userSchema = new Schema({
     },
     address: {
         type: String,
-        enum: ["Легоцького 1", "Легоцького 3", "Легоцького 5", "Лінтура 1", "Лінтура 7", "Легоцького 5", "Минайська 22"],
         required: true,
     },
     phone: {
@@ -39,13 +38,13 @@ userSchema.post("save", handleMongooseError);
 
 const registerSchema = Joi.object({
     name: Joi.string().required(),
-    address: Joi.string().valid("Легоцького 1", "Легоцького 3", "Легоцького 5", "Лінтура 1", "Лінтура 7", "Легоцького 5", "Минайська 22").required(),
+    address: Joi.string().required(),
     phone: Joi.string().pattern(phoneRegexp).required(),
     tariff: Joi.string().valid("Базовий", "Сімейний", "Бізнес").required(),
 });
 const updateSchema = Joi.object({
     name: Joi.string().required(),
-    address: Joi.string().valid("Легоцького 1", "Легоцького 3", "Легоцького 5", "Лінтура 1", "Лінтура 7", "Легоцького 5", "Минайська 22").required(),
+    address: Joi.string().required(),
     phone: Joi.string().pattern(phoneRegexp).required(),
     tariff: Joi.string().valid("Базовий", "Сімейний", "Бізнес").required(),
 });
