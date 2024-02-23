@@ -1,3 +1,4 @@
+// підключення до бази даних
 const mongoose = require("mongoose");
 
 const app = require("./app");

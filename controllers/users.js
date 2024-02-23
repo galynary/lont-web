@@ -75,7 +75,7 @@ const updateUser = async (req, res) => {
 
 module.exports = {
   getUserById: ctrlWrapper(getUserById),
-  registerUser: ctrlWrapper(registerUser ),
+  registerUser: ctrlWrapper(registerUser),
   removeUser: ctrlWrapper(removeUser),
   updateUser: ctrlWrapper(updateUser)
 };
