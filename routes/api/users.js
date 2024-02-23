@@ -2,7 +2,7 @@
 const express = require("express");
 const { schemas } = require("../../models/user"); // Змінили шлях до схеми користувача
 const controllers = require("../../controllers/users"); // Змінили шлях до контролерів користувача
-const { validateBody, isValidId } = require("../middlewares"); // Змінили шлях до проміжних обробників
+const { validateBody, isValidId } = require("../../middlewares"); // Змінили шлях до проміжних обробників
 
 const router = express.Router();
 
