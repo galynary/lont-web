@@ -20,7 +20,7 @@ const sendEmail = async () => {
 	const email = {
 		from: "galyna.rybak789@gmail.com",
 		to: "halyna1010@meta.ua",
-		subject: "Email test",
+		subject: "заявка на підключення!",
 		html: "<p>Прийшла нова заявка на підключення!</p>",
 	};
 
