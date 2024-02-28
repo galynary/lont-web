@@ -2,7 +2,7 @@
     "name": "parcel-project-template",
     "version": "2.0.0",
     "description": "",
-    "homepage": "https://galynary.github.io/Home",
+    "homepage": "https://galynary.github.io/Lont-Web",
     "scripts": {
       "start": "parcel src/*.html",
       "build": "parcel build src/*.html --public-url /Lont-Web/"
