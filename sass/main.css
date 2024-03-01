@@ -21,7 +21,7 @@
   }
 }
 .section__title {
-  font-weight: 700;
+  font-weight: 900;
   font-size: 30px;
   line-height: 1.5;
   color: #061e7d;
@@ -311,6 +311,10 @@ summary {
   display: list-item;
 }
 
+@font-face {
+  font-family: "Conthrax";
+  src: url("../../src/conthrax/conthrax-sb.otf"), format("otf");
+}
 *,
 ::after,
 ::before {
