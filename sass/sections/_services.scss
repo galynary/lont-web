@@ -14,5 +14,9 @@
 }
 .services__text {
 	@include font(500, 18px, 1.7, null);
-	color: $textColor;
+	color: $white-color;
+}
+.services__align {
+	color: #0e099f;
+	opacity: 0.1;
 }

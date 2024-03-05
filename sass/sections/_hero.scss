@@ -1,15 +1,12 @@
 @media screen and (min-width: 320px) {
     .hero {
         position: relative;
-        background-color: #66BDDD;
-        background-image: url("../../image/фон.png");
-        overflow: hidden;
-        width: 100%;
+        top: 50px;
+        background-repeat: no-repeat;
+	    background-position: right;
         flex:1;
         margin: 0 auto;
-        background-repeat: no-repeat;
-    background-position: center;
-	background-size: cover;
+      
     }
     .hero__content {
      display:block;
@@ -35,22 +32,22 @@
     }
     .hero__title {
         @include font(700, 40px, null, null);
-        color: $white-color;
+        color:$accent-color;
         font-family: "Montserrat";
         margin-bottom: 5px;
         letter-spacing: 0.05em;
     
        }
     .hero-title__sub {
-        @include font(700,30px, 1.5, null);
-        color: $white-color;
+        @include font(700,25px, 1.5, null);
+        color: $gray-color;
         margin-bottom: 5px;
         letter-spacing: 0.05em;
         text-transform: uppercase;
         font-family: "Montserrat";
     }
     .hero__text {
-        @include font(500, 18px, 1.5, null);
+        @include font(500, 16px, 1.5, null);
         color: #fff;
         margin-bottom: 30px;
     }
@@ -64,9 +61,8 @@
         padding: 12px 30px;
         @include font(600, 16px, 1.5, null);
         text-align: center;
-        background-color: #d9d9d9;
-        box-shadow: 0px 6px 4px 0px rgba(201, 185, 185, 0.25);
-        color: #635959;
+        background-color: $accent-color;
+        color: $second-color;
         border: none;
         border-radius: 50px;
         cursor: pointer;
@@ -75,20 +71,18 @@
 
     .button:hover,
     .button:focus {
-        background-color: #104eab;
-        color: #fff;
-        box-shadow: none;
-        transform: scale(1.05);
+        background-color: #30e7ed;
+        transform: scale(1.02);
     }
+
+    
     .hero__wrap-img {
         display: none;
     }
     .hero__img {
         max-width: 400px;
     }
-    .section {
-        padding: 70px 0px;
-    }
+   
     #scrollToTopBtn {
         display: none;
         position: fixed;
@@ -103,6 +97,9 @@
     }
 }
 @media screen and (min-width: 768px) {
+    .hero {
+        background-image: url("../../image/головний\ екран.png");
+     }
     .hero__content {
         display: flex;
         justify-content: space-between;
@@ -147,6 +144,9 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .hero {
+        background-image: url("../../image/головний\ екран.png");
+     }
     .television__inner {
         display: flex;
         justify-content: space-between;
@@ -163,4 +163,9 @@
 
     }
     
+}
+@media screen and (min-width: 1400px) {
+.hero {
+   background-image: url("../../image/головний\ екран.png");
+}
 }

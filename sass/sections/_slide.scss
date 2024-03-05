@@ -1,5 +1,9 @@
 
 @media screen and (min-width: 480px) {
+  .slider__container {
+    width: 100%;
+    overflow: hidden;
+  }
   .slider-inner__container {
     display: flex;
   height: 500px;
@@ -33,7 +37,7 @@
     font-size: 24px;
     cursor: pointer;
     color: #fff;
-    background-color: #333;
+    background-color: #0f0a4e;
     border: none;
     padding: 10px;
   }
@@ -47,17 +51,17 @@
   }
 
   .dot {
-    height: 15px;
-    width: 15px;
+    height: 8px;
+    width: 8px;
     margin: 0 5px;
-    background-color: #bbb;
+    background-color:  #150e75;
     border-radius: 50%;
     display: inline-block;
     cursor: pointer;
   }
 
   .active {
-    background-color: #717171;
+    background-color: $accent-color
   }
  
 }

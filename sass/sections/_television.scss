@@ -1,7 +1,7 @@
 @media screen and (min-width: 320px) {
+   
     .television {
-    background-image: url("../../image/фон.png");
-    width: 100%;
+width: 100%;
 }
 .television__inner  {
     display: block;
@@ -21,13 +21,13 @@
     line-height: 1.2;
     font-weight: 700;
     letter-spacing: 0.03em;
-    color: $white-color;
+    color: $accent-color;
     text-transform: uppercase;
     font-size: 30px;
     margin-bottom: 30px;
 }
 .television__span {
-    color:$white-color;
+    color:$accent-color;
     font-size: 40px;
     font-weight: 700;
 
@@ -41,9 +41,9 @@
         padding: 12px 30px;
         @include font(600, 16px, 1.5, null);
         text-align: center;
-        background-color: #d9d9d9;
-        box-shadow: 0px 6px 4px 0px rgba(201, 185, 185, 0.25);
-        color: #635959;
+        /*background: linear-gradient(to top left,#0033FD, #67CEEF);*/
+       background-color: $accent-color;
+        color: $second-color;
         border: none;
         border-radius: 50px;
         cursor: pointer;
@@ -51,22 +51,32 @@
         margin-bottom: 20px;
 
     }
+  
 
-    .button:hover,
-    .button:focus {
-        background-color: #104eab;
-        color: #fff;
-        box-shadow: none;
-        transform: scale(1.05);
+    .television__button:hover,
+    .television__button:focus {
+        background-color: #30e7ed;
+        transform: scale(1.02);
     }
 
 
 .television__item {
-    color: rgb(251, 251, 251);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.7;
-    letter-spacing: 0.08em;
+    @include font(500, 16px, 1.7, 0.10em);
+    color: rgb(203, 198, 198);
+    position: relative;
+ 
+              
+}
+.television__item::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url("../../image/marker.png");
+    background-repeat: no-repeat;
+    font-size: 18px; 
+    line-height: 1;
+    background-size: cover;
+   
 }
 .television__wrap-img {
     position: relative;
@@ -152,4 +162,9 @@ max-width: 400px;
                 display: block;
                 padding-top: 150px;
             }
+}
+@media screen and (min-width: 1400px) {
+    .television {
+    background-image: url("../../image/фон\ цифрове\ телебачення\ 1600.png");
+    }
 }

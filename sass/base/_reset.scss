@@ -45,7 +45,15 @@ body {
 	font-family: "Monserrat", sans-serif;
 	font-size: 16px;
 	justify-content: center;
-}
+	background-color: #083284;
+	background-image: url("../../image/lont-web.png");
+		width: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	
+
 
 .container {
 	margin: 0 auto;

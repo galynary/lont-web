@@ -7,7 +7,8 @@
     font-family: "Monserrat", sans-serif, "Roboto", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   }
   .section {
-    padding: 70px 0px;
+    width: 100%;
+    display: block;
   }
 }
 @media screen and (min-width: 768px) {
@@ -20,22 +21,31 @@
     max-width: 1200px;
   }
 }
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1600px;
+  }
+}
 .section__title {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 30px;
   line-height: 1.5;
-  color: #061e7d;
+  color: #67CEEF;
+  text-transform: uppercase;
   text-align: center;
   margin-bottom: 10px;
+  padding-top: 70px;
+  letter-spacing: 0.05em;
 }
 
 .section__text {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
-  color: #061e7d;
+  color: #d5d2d2;
   text-align: center;
   margin-bottom: 50px;
+  letter-spacing: 0.1em;
 }
 
 .title {
@@ -107,7 +117,6 @@ Grouping content
 hr {
   height: 0;
   /* 1 */
-  color: inherit;
   /* 2 */
 }
 
@@ -365,6 +374,12 @@ body {
   font-family: "Monserrat", sans-serif;
   font-size: 16px;
   justify-content: center;
+  background-color: #083284;
+  background-image: url("../../image/lont-web.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .container {
@@ -373,13 +388,20 @@ body {
 }
 
 @media screen and (min-width: 320px) {
-  .header__container {
+  .header {
+    position: absolute;
+    z-index: 1;
     width: 100%;
+    right: 0px;
+    left: 0px;
+  }
+  .header__inner {
     padding: 10px 20px;
     display: flex;
     align-items: center;
     gap: 10px;
     justify-content: space-between;
+    background-color: transparent;
   }
   .header__container {
     gap: 0px;
@@ -417,8 +439,8 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.2;
-    letter-spacing: 0.03em;
-    color: #104EAB;
+    letter-spacing: 0.1em;
+    color: #67CEEF;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -523,7 +545,7 @@ body {
     transform: translateX(-50%);
   }
   .user__text {
-    color: #061e7d;
+    color: #67CEEF;
     font-size: 30px;
     text-align: center;
     line-height: 1.7;
@@ -542,11 +564,11 @@ body {
     align-items: flex-start;
   }
   .nav__link {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 16px;
     line-height: 24/16;
-    letter-spacing: 0.03em;
-    color: #635959;
+    letter-spacing: 0.15em;
+    color: #fff;
   }
   .nav__link:hover,
   .nav__link:focus {
@@ -588,19 +610,12 @@ body {
     align-items: center;
     gap: 25px;
   }
-  .nav__link {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24/16;
-    letter-spacing: 0.03em;
-    color: #635959;
-  }
-  .nav__link:hover,
-  .nav__link:focus {
-    color: #2C4DA1;
-  }
 }
 @media screen and (min-width: 480px) {
+  .slider__container {
+    width: 100%;
+    overflow: hidden;
+  }
   .slider-inner__container {
     display: flex;
     height: 500px;
@@ -632,7 +647,7 @@ body {
     font-size: 24px;
     cursor: pointer;
     color: #fff;
-    background-color: #333;
+    background-color: #0f0a4e;
     border: none;
     padding: 10px;
   }
@@ -647,21 +662,20 @@ body {
     margin-top: 20px;
   }
   .dot {
-    height: 15px;
-    width: 15px;
+    height: 8px;
+    width: 8px;
     margin: 0 5px;
-    background-color: #bbb;
+    background-color: #150e75;
     border-radius: 50%;
     display: inline-block;
     cursor: pointer;
   }
   .active {
-    background-color: #717171;
+    background-color: #67CEEF;
   }
 }
 @media screen and (min-width: 320px) {
   .television {
-    background-image: url("../../image/фон.png");
     width: 100%;
   }
   .television__inner {
@@ -680,13 +694,13 @@ body {
     line-height: 1.2;
     font-weight: 700;
     letter-spacing: 0.03em;
-    color: #fff;
+    color: #67CEEF;
     text-transform: uppercase;
     font-size: 30px;
     margin-bottom: 30px;
   }
   .television__span {
-    color: #fff;
+    color: #67CEEF;
     font-size: 40px;
     font-weight: 700;
   }
@@ -701,28 +715,37 @@ body {
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
-    background-color: #d9d9d9;
-    box-shadow: 0px 6px 4px 0px rgba(201, 185, 185, 0.25);
-    color: #635959;
+    /*background: linear-gradient(to top left,#0033FD, #67CEEF);*/
+    background-color: #67CEEF;
+    color: #2c4da1;
     border: none;
     border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s;
     margin-bottom: 20px;
   }
-  .button:hover,
-  .button:focus {
-    background-color: #104eab;
-    color: #fff;
-    box-shadow: none;
-    transform: scale(1.05);
+  .television__button:hover,
+  .television__button:focus {
+    background-color: #30e7ed;
+    transform: scale(1.02);
   }
   .television__item {
-    color: rgb(251, 251, 251);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.7;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.1em;
+    color: rgb(203, 198, 198);
+    position: relative;
+  }
+  .television__item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("../../image/marker.png");
+    background-repeat: no-repeat;
+    font-size: 18px;
+    line-height: 1;
+    background-size: cover;
   }
   .television__wrap-img {
     position: relative;
@@ -803,18 +826,19 @@ body {
     padding-top: 150px;
   }
 }
+@media screen and (min-width: 1400px) {
+  .television {
+    background-image: url("../../image/фон цифрове телебачення 1600.png");
+  }
+}
 @media screen and (min-width: 320px) {
   .hero {
     position: relative;
-    background-color: #66BDDD;
-    background-image: url("../../image/фон.png");
-    overflow: hidden;
-    width: 100%;
+    top: 50px;
+    background-repeat: no-repeat;
+    background-position: right;
     flex: 1;
     margin: 0 auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
   }
   .hero__content {
     display: block;
@@ -839,16 +863,16 @@ body {
   .hero__title {
     font-weight: 700;
     font-size: 40px;
-    color: #fff;
+    color: #67CEEF;
     font-family: "Montserrat";
     margin-bottom: 5px;
     letter-spacing: 0.05em;
   }
   .hero-title__sub {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 1.5;
-    color: #fff;
+    color: #d5d2d2;
     margin-bottom: 5px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -856,7 +880,7 @@ body {
   }
   .hero__text {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
     color: #fff;
     margin-bottom: 30px;
@@ -873,9 +897,8 @@ body {
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
-    background-color: #d9d9d9;
-    box-shadow: 0px 6px 4px 0px rgba(201, 185, 185, 0.25);
-    color: #635959;
+    background-color: #67CEEF;
+    color: #2c4da1;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -883,19 +906,14 @@ body {
   }
   .button:hover,
   .button:focus {
-    background-color: #104eab;
-    color: #fff;
-    box-shadow: none;
-    transform: scale(1.05);
+    background-color: #30e7ed;
+    transform: scale(1.02);
   }
   .hero__wrap-img {
     display: none;
   }
   .hero__img {
     max-width: 400px;
-  }
-  .section {
-    padding: 70px 0px;
   }
   #scrollToTopBtn {
     display: none;
@@ -911,6 +929,9 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
+  .hero {
+    background-image: url("../../image/головний екран.png");
+  }
   .hero__content {
     display: flex;
     justify-content: space-between;
@@ -953,6 +974,9 @@ body {
   }
 }
 @media screen and (min-width: 1200px) {
+  .hero {
+    background-image: url("../../image/головний екран.png");
+  }
   .television__inner {
     display: flex;
     justify-content: space-between;
@@ -967,9 +991,14 @@ body {
     padding: 120px 0px 0px 0px;
   }
 }
+@media screen and (min-width: 1400px) {
+  .hero {
+    background-image: url("../../image/головний екран.png");
+  }
+}
 @media screen and (min-width: 320px) {
   .preference__section {
-    background-color: #ddedf6;
+    width: 100%;
   }
   .preference__list {
     display: flex;
@@ -986,18 +1015,22 @@ body {
     flex-basis: calc((100% - 100px) / 3);
     align-items: center;
   }
-  .icon__svg {
-    filter: drop-shadow(0px 8px 7px rgba(0, 0, 0, 0.4));
+  .preference__icon {
+    margin-bottom: 15px;
+  }
+  .preference__number {
     margin-bottom: 30px;
+    font-size: 120px;
+    color: rgb(11, 71, 238);
   }
   .preference__title {
-    color: #061e7d;
+    color: #67CEEF;
     text-align: center;
-    margin-bottom: 12px;
+    padding-bottom: 5px;
   }
   .preference__text {
     width: 400px;
-    color: #1a1616;
+    color: #d5d2d2;
     text-align: center;
   }
 }
@@ -1026,6 +1059,9 @@ body {
   }
 }
 @media screen and (min-width: 320px) {
+  .tariffs__section {
+    width: 100%;
+  }
   .tariffs__list {
     display: flex;
     gap: 30px;
@@ -1036,11 +1072,11 @@ body {
   .tariffs__item {
     height: auto;
     width: 284px;
-    height: 420px;
     padding: 50px 20px;
     display: flex;
-    background-color: #e2e5e8;
-    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+    border-style: solid;
+    background-color: rgb(6, 30, 111);
+    border: none;
     border-radius: 20px;
     position: relative;
     text-align: center;
@@ -1062,21 +1098,21 @@ body {
     font-weight: 900;
     font-size: 18px;
     line-height: 1.7;
-    color: #061e7d;
+    color: #67CEEF;
     margin-bottom: 10px;
   }
   .tariffs__price {
     font-weight: 700;
     font-size: 22px;
     line-height: 1.7;
-    color: #1a1616;
+    color: #fff;
     margin-bottom: 10px;
   }
   .tariffs__text {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    color: #1a1616;
+    color: #fff;
     margin-bottom: 30px;
   }
   .button__connect {
@@ -1085,8 +1121,8 @@ body {
     font-size: 16px;
     text-align: center;
     text-decoration: none;
-    background-color: #2c4da1;
-    color: #fff;
+    background-color: #67CEEF;
+    color: #2c4da1;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -1095,7 +1131,7 @@ body {
   }
   .button__connect:hover,
   .button__connect:focus {
-    background-color: #061e7d;
+    background-color: #67CEEF;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1137,12 +1173,17 @@ body {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.7;
-  color: #1a1616;
+  color: #fff;
+}
+
+.services__align {
+  color: #0e099f;
+  opacity: 0.1;
 }
 
 @media screen and (min-width: 320px) {
   .details-section {
-    background-color: #ddedf6;
+    width: 100%;
   }
   .details__description {
     font-family: "Montserrat";
@@ -1158,18 +1199,22 @@ body {
   }
   .details__internet-text {
     line-height: 1.7;
+    color: #fff;
   }
   .details__cable-tv {
     color: #2c4da1;
   }
   .details__cable-tv-title {
     margin-bottom: 20px;
+    color: #0a90d8;
   }
   .details__internet-title {
     margin-bottom: 20px;
+    color: #0a90d8;
   }
   .details__cable-tv-text {
     line-height: 1.7;
+    color: #fff;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1198,7 +1243,6 @@ body {
 @media screen and (min-width: 320px) {
   .internet-connection {
     position: relative;
-    background-color: #7DCAE4;
     overflow: hidden;
     width: 100%;
     right: 0;
@@ -1236,21 +1280,21 @@ body {
     font-weight: 700;
     font-size: 40px;
     line-height: 1.5;
-    color: #061e7d;
+    color: #67CEEF;
     margin-bottom: 0px;
   }
   .internet__speed {
     font-weight: 500;
     font-size: 24px;
     line-height: 1.7;
-    color: #061e7d;
+    color: #0a90d8;
     margin-bottom: 10px;
   }
   .price__description {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    color: #1a1616;
+    color: #fff;
     margin-bottom: 10px;
   }
   .form__internet-connection {
@@ -1266,7 +1310,7 @@ body {
     font-weight: 700;
     font-size: 32px;
     line-height: 1.5;
-    color: #061e7d;
+    color: #67CEEF;
     text-align: center;
     margin-bottom: 10px;
   }
@@ -1274,7 +1318,7 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 2;
-    color: #1a1616;
+    color: #0a90d8;
     margin-bottom: 32px;
     max-width: 450px;
   }
@@ -1303,8 +1347,8 @@ body {
     font-size: 16px;
     text-align: center;
     text-decoration: none;
-    background-color: #e2e5e8;
-    color: #635959;
+    background-color: #67CEEF;
+    color: #2c4da1;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -1381,7 +1425,6 @@ body {
     font-weight: 500;
     font-size: 24px;
     line-height: 1.7;
-    color: #061e7d;
     margin-bottom: 20px;
   }
   .form__title {
@@ -1399,7 +1442,7 @@ body {
 }
 @media screen and (min-width: 320px) {
   .contacts__section {
-    background-color: #ddedf6;
+    background-color: #083284;
   }
   .address {
     display: flex;
@@ -1425,7 +1468,7 @@ body {
     font-weight: 600;
     font-size: 18px;
     line-height: 1.5;
-    color: #061e7d;
+    color: #67CEEF;
     margin-bottom: 30px;
   }
   .contacts__tel {
@@ -1439,7 +1482,7 @@ body {
     font-weight: 600;
     font-size: 18px;
     line-height: 1.5;
-    color: #061e7d;
+    color: #67CEEF;
   }
   .social__list {
     display: flex;

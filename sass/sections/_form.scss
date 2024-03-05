@@ -1,7 +1,6 @@
 @media screen and (min-width: 320px) {
 	.internet-connection {
 	position: relative;
-    background-color:#7DCAE4;
     overflow: hidden;
 	width: 100%;
 	right:0;
@@ -43,12 +42,12 @@ width: 100%;
 }
 .internet__speed {
 	@include font(500, 24px, 1.7, null);
-	color: $accent-color;
+	color: $premium-color;
 	margin-bottom: 10px;
 }
 .price__description {
 	@include font(500, 16px, 1.5, null);
-	color: $textColor;
+	color: $white-color;
 	margin-bottom: 10px;
 }
 .form__internet-connection {
@@ -69,7 +68,7 @@ width: 100%;
 }
 .form__text {
 	@include font(500, 16px, 2.0, null);
-	color: #1a1616;
+	color: $premium-color;
 	margin-bottom: 32px;
 	max-width: 450px;
 }
@@ -97,8 +96,8 @@ select,
 	font-size: 16px;
 	text-align: center;
 	text-decoration: none;
-	background-color: $background-color;
-	color: #635959;
+	background-color: $accent-color;
+	color: $second-color;
 	border: none;
 	border-radius: 50px;
 	cursor: pointer;
@@ -171,7 +170,6 @@ select,
     font-weight: 500;
     font-size: 24px;
     line-height: 1.7;
-    color: #061e7d;
     margin-bottom: 20px;
 }
 .form__title {

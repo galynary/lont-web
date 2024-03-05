@@ -1,11 +1,19 @@
 @media screen and (min-width: 320px) {
-    .header__container {
+    .header {
+      position: absolute;
+      z-index: 1;
        width: 100%;
-       padding: 10px 20px;
-       display: flex;
-        align-items: center;
-        gap:10px;
-        justify-content: space-between;
+       right: 0px;
+       left: 0px;
+      
+    }
+    .header__inner {
+        padding: 10px 20px;
+        display: flex;
+         align-items: center;
+         gap:10px;
+         justify-content: space-between;
+         background-color: transparent;
     }
     .header__container {
         gap: 0px;
@@ -41,8 +49,8 @@
         display: none;
     }
     .nav-link__tel {
-        @include font(700, 16px, 1.2, 0.03em);
-        color:#104EAB;
+        @include font(700, 16px, 1.2, 0.10em);
+        color:$accent-color;
         display: flex;
         align-items: center;
         gap: 10px;
@@ -191,11 +199,11 @@
     }
     
     .nav__link {
-        font-weight: 600;
+        font-weight: 400;
         font-size: 16px;
         line-height: 24 / 16;
-        letter-spacing: 0.03em;
-        color: #635959;
+        letter-spacing: 0.15em;
+        color: #fff;
     }
     .nav__link:hover,
     .nav__link:focus {
@@ -245,15 +253,5 @@
         gap: 25px;
     }
 
-    .nav__link {
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 24 / 16;
-        letter-spacing: 0.03em;
-        color: #635959;
-    }
-    .nav__link:hover,
-    .nav__link:focus {
-        color: #2C4DA1;
-    }
+   
 }

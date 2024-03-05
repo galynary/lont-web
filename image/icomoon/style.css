@@ -14,3 +14,27 @@ Single-colored icons can be modified like so:
   color: red;
 }
 ========================================== */
+
+.icon-1 {
+  width: 0.3955078125em;
+}
+
+.icon-2 {
+  width: 0.712890625em;
+}
+
+.icon-3 {
+  width: 0.7314453125em;
+}
+
+.icon-4 {
+  width: 0.771484375em;
+}
+
+.icon-5 {
+  width: 0.7626953125em;
+}
+
+.icon-6 {
+  width: 0.744140625em;
+}
