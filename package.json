@@ -2,20 +2,20 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://galynary.github.io/lont-web/",
+  "homepage": "https://galynary.github.io/Lont-Web",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /lont-web/"
+    "build": "parcel build src/*.html --public-url /Lont-Web/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://galynary.github.io/lont-web/git"
+    "url": "git+https://galynary.github.io/Lont-Web/git"
   },
   "keywords": [],
   "author": "Halyna",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/galynary/lont-web/issues"
+    "url": "https://github.com/galynary/Lont-Web/issues"
   },
   "dependencies": {
     "image-webpack-loader": "^8.1.0",
