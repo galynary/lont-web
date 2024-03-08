@@ -1,25 +1,33 @@
 @media screen and (min-width: 320px) {
-.contacts__section {
-	background-color: #083284;
-}
+	.wraper__address  {
+		display: flex;
+		flex-direction: column;
+		gap:50px;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
 .address {
-	@include flex2(flex, column, flex-start);
+	@include flex2(flex, column, null);
 	margin-top: 50px;
+	text-align: center;
 }
 .contacts__address {
 	@include font(600, 18px, 1.5, null);
-	color: $textColor;
+	color: $gray-color;
 	margin-bottom: 30px;
 }
 .work__time {
 	@include font(500, 18px, 1.5, null);
-	color: $textColor;
+	color: $gray-color;
 	margin-bottom: 10px;
 }
 .free__time {
 	@include font(600, 18px, 1.5, null);
-	color: $accent-color;
+	color: $gray-color;
 	margin-bottom: 30px;
+	
 }
 
 .contacts__tel {
@@ -49,5 +57,21 @@
 	display: block;
 	width: 50px;
 	height: 150px;
+}
+.wrap__map {
+	max-width: 600px;
+	display: block;
+	border: 1px solid $accent-color;
+}
+}
+@media screen and (min-width: 1200px) {
+	.wraper__address  {
+	flex-direction: row;
+		gap:50px;
+		justify-content: space-between;
+		text-align: left;
+	}
+	.address {
+	text-align: left;
 }
 }

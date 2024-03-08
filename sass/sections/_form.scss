@@ -41,7 +41,7 @@ width: 100%;
 	margin-bottom: 0px;
 }
 .internet__speed {
-	@include font(500, 24px, 1.7, null);
+	@include font(null, 24px, 1.7, null);
 	color: $premium-color;
 	margin-bottom: 10px;
 }
@@ -67,8 +67,8 @@ width: 100%;
     margin-bottom: 10px;
 }
 .form__text {
-	@include font(500, 16px, 2.0, null);
-	color: $premium-color;
+	@include font(null, 16px, 2.0, null);
+	color: $gray-color;
 	margin-bottom: 32px;
 	max-width: 450px;
 }

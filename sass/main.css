@@ -23,14 +23,14 @@
 }
 @media screen and (min-width: 1400px) {
   .container {
-    max-width: 1600px;
+    max-width: 1200px;
   }
 }
 .section__title {
   font-weight: 700;
   font-size: 30px;
   line-height: 1.5;
-  color: #67CEEF;
+  color: #06daf9;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 10px;
@@ -373,15 +373,38 @@ img {
 body {
   font-family: "Monserrat", sans-serif;
   font-size: 16px;
+  position: relative;
   justify-content: center;
+  display: block;
   background-color: #083284;
-  background-image: url("../../image/lont-web.png");
   width: 100%;
+  height: auto;
+  max-width: 1600px;
+  top: 0px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
+@media screen and (min-width: 540px) {
+  body {
+    background-image: url("../../image/lont-web 540.png");
+  }
+}
+body {
+  background-image: url("../../image/lont-web 768.png");
+}
+
+@media screen and (min-width: 920px) {
+  body {
+    background-image: url("../../image/lont-web 920.png");
+  }
+}
+@media screen and (min-width: 1200px) {
+  body {
+    background-image: url("../../image/lont-web.png");
+  }
+}
 .container {
   margin: 0 auto;
   padding: 0px 15px;
@@ -396,7 +419,7 @@ body {
     left: 0px;
   }
   .header__inner {
-    padding: 10px 20px;
+    padding: 10px 0px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -411,21 +434,17 @@ body {
     gap: 5px;
     align-items: center;
   }
-  .logo__icon {
-    width: 70px;
-    height: 60px;
-  }
   .logo__text1 {
     font-weight: 600;
     font-size: 14px;
     line-height: 1.5;
-    color: #104eab;
+    color: #06daf9;
   }
   .logo__text2 {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.5;
-    color: #104eab;
+    color: #06daf9;
   }
   .logo__description {
     display: flex;
@@ -440,7 +459,7 @@ body {
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.1em;
-    color: #67CEEF;
+    color: #06daf9;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -545,7 +564,7 @@ body {
     transform: translateX(-50%);
   }
   .user__text {
-    color: #67CEEF;
+    color: #06daf9;
     font-size: 30px;
     text-align: center;
     line-height: 1.7;
@@ -611,7 +630,12 @@ body {
     gap: 25px;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
+  .slide {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
   .slider__container {
     width: 100%;
     overflow: hidden;
@@ -671,7 +695,7 @@ body {
     cursor: pointer;
   }
   .active {
-    background-color: #67CEEF;
+    background-color: #06daf9;
   }
 }
 @media screen and (min-width: 320px) {
@@ -694,13 +718,13 @@ body {
     line-height: 1.2;
     font-weight: 700;
     letter-spacing: 0.03em;
-    color: #67CEEF;
+    color: #06daf9;
     text-transform: uppercase;
     font-size: 30px;
     margin-bottom: 30px;
   }
   .television__span {
-    color: #67CEEF;
+    color: #06daf9;
     font-size: 40px;
     font-weight: 700;
   }
@@ -716,7 +740,7 @@ body {
     line-height: 1.5;
     text-align: center;
     /*background: linear-gradient(to top left,#0033FD, #67CEEF);*/
-    background-color: #67CEEF;
+    background-color: #06daf9;
     color: #2c4da1;
     border: none;
     border-radius: 50px;
@@ -833,8 +857,6 @@ body {
 }
 @media screen and (min-width: 320px) {
   .hero {
-    position: relative;
-    top: 50px;
     background-repeat: no-repeat;
     background-position: right;
     flex: 1;
@@ -846,8 +868,6 @@ body {
   .hero__inner {
     display: flex;
     flex-direction: column;
-    padding: 0px 0px 250px 0px;
-    position: relative;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -863,7 +883,7 @@ body {
   .hero__title {
     font-weight: 700;
     font-size: 40px;
-    color: #67CEEF;
+    color: #06daf9;
     font-family: "Montserrat";
     margin-bottom: 5px;
     letter-spacing: 0.05em;
@@ -897,7 +917,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
-    background-color: #67CEEF;
+    background-color: #06daf9;
     color: #2c4da1;
     border: none;
     border-radius: 50px;
@@ -928,9 +948,14 @@ body {
     cursor: pointer;
   }
 }
+@media screen and (min-width: 540px) {
+  .hero {
+    background-image: url("../../image/головний екран 540.png");
+  }
+}
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url("../../image/головний екран.png");
+    background-image: url("../../image/головний екран 768.png");
   }
   .hero__content {
     display: flex;
@@ -945,7 +970,7 @@ body {
   .hero__description {
     display: flex;
     flex-direction: column;
-    padding: 120px 0px 0px 0px;
+    padding: 150px 0px 0px 0px;
     text-align: left;
     align-items: start;
   }
@@ -971,6 +996,11 @@ body {
   }
   .svg__icon2 {
     right: -100px;
+  }
+}
+@media screen and (min-width: 920px) {
+  .hero {
+    background-image: url("../../image/головний екран 920.png");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1024,7 +1054,7 @@ body {
     color: rgb(11, 71, 238);
   }
   .preference__title {
-    color: #67CEEF;
+    color: #06daf9;
     text-align: center;
     padding-bottom: 5px;
   }
@@ -1075,8 +1105,8 @@ body {
     padding: 50px 20px;
     display: flex;
     border-style: solid;
-    background-color: rgb(6, 30, 111);
-    border: none;
+    background: linear-gradient(180deg, rgb(22, 65, 236) 0%, rgb(6, 30, 125) 100%);
+    border: 0.05px solid #67CEEF;
     border-radius: 20px;
     position: relative;
     text-align: center;
@@ -1084,21 +1114,11 @@ body {
     flex-direction: column;
     align-items: center;
   }
-  .icon__ellipse {
-    position: absolute;
-    top: -100px;
-    left: -100px;
-    filter: drop-shadow(0px 8px 7px rgba(0, 0, 0, 0.3));
-  }
-  .tariffs__icon {
-    margin-bottom: 10px;
-    filter: drop-shadow(0px 8px 7px rgba(0, 0, 0, 0.4));
-  }
   .tariffs__title {
     font-weight: 900;
     font-size: 18px;
     line-height: 1.7;
-    color: #67CEEF;
+    color: #1f91f5;
     margin-bottom: 10px;
   }
   .tariffs__price {
@@ -1112,7 +1132,7 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    color: #fff;
+    color: #d5d2d2;
     margin-bottom: 30px;
   }
   .button__connect {
@@ -1121,7 +1141,7 @@ body {
     font-size: 16px;
     text-align: center;
     text-decoration: none;
-    background-color: #67CEEF;
+    background-color: #06daf9;
     color: #2c4da1;
     border: none;
     border-radius: 50px;
@@ -1131,7 +1151,7 @@ body {
   }
   .button__connect:hover,
   .button__connect:focus {
-    background-color: #67CEEF;
+    background-color: #06daf9;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1280,11 +1300,10 @@ body {
     font-weight: 700;
     font-size: 40px;
     line-height: 1.5;
-    color: #67CEEF;
+    color: #06daf9;
     margin-bottom: 0px;
   }
   .internet__speed {
-    font-weight: 500;
     font-size: 24px;
     line-height: 1.7;
     color: #0a90d8;
@@ -1310,15 +1329,14 @@ body {
     font-weight: 700;
     font-size: 32px;
     line-height: 1.5;
-    color: #67CEEF;
+    color: #06daf9;
     text-align: center;
     margin-bottom: 10px;
   }
   .form__text {
-    font-weight: 500;
     font-size: 16px;
     line-height: 2;
-    color: #0a90d8;
+    color: #d5d2d2;
     margin-bottom: 32px;
     max-width: 450px;
   }
@@ -1347,7 +1365,7 @@ body {
     font-size: 16px;
     text-align: center;
     text-decoration: none;
-    background-color: #67CEEF;
+    background-color: #06daf9;
     color: #2c4da1;
     border: none;
     border-radius: 50px;
@@ -1441,34 +1459,39 @@ body {
   }
 }
 @media screen and (min-width: 320px) {
-  .contacts__section {
-    background-color: #083284;
+  .wraper__address {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   .address {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     margin-top: 50px;
+    text-align: center;
   }
   .contacts__address {
     font-weight: 600;
     font-size: 18px;
     line-height: 1.5;
-    color: #1a1616;
+    color: #d5d2d2;
     margin-bottom: 30px;
   }
   .work__time {
     font-weight: 500;
     font-size: 18px;
     line-height: 1.5;
-    color: #1a1616;
+    color: #d5d2d2;
     margin-bottom: 10px;
   }
   .free__time {
     font-weight: 600;
     font-size: 18px;
     line-height: 1.5;
-    color: #67CEEF;
+    color: #d5d2d2;
     margin-bottom: 30px;
   }
   .contacts__tel {
@@ -1482,7 +1505,7 @@ body {
     font-weight: 600;
     font-size: 18px;
     line-height: 1.5;
-    color: #67CEEF;
+    color: #06daf9;
   }
   .social__list {
     display: flex;
@@ -1502,6 +1525,22 @@ body {
     width: 50px;
     height: 150px;
   }
+  .wrap__map {
+    max-width: 600px;
+    display: block;
+    border: 1px solid #06daf9;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .wraper__address {
+    flex-direction: row;
+    gap: 50px;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .address {
+    text-align: left;
+  }
 }
 .footer__section {
   padding: 40px 0px;
@@ -1516,4 +1555,5 @@ body {
 .footer__copyright {
   margin-right: 5px;
   font-size: 12px;
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */

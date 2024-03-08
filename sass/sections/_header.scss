@@ -8,7 +8,7 @@
       
     }
     .header__inner {
-        padding: 10px 20px;
+        padding: 10px 0px;
         display: flex;
          align-items: center;
          gap:10px;
@@ -23,21 +23,18 @@
         gap: 5px;
         align-items: center;
     }
-    .logo__icon {
-        width: 70px;
-        height: 60px;
-    }
+   
     .logo__text1 {
         font-weight: 600;
         font-size: 14px;
         line-height: 1.5;
-        color: #104eab;
+        color: $accent-color;
     }
     .logo__text2 {
         font-weight: 500;
         font-size: 12px;
         line-height: 1.5;
-        color: #104eab;
+        color: $accent-color;
     }
     .logo__description {
         display: flex;

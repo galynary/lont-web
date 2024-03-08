@@ -44,16 +44,38 @@ img {
 body {
 	font-family: "Monserrat", sans-serif;
 	font-size: 16px;
+	position: relative;
 	justify-content: center;
+	display: block;
 	background-color: #083284;
-	background-image: url("../../image/lont-web.png");
-		width: 100%;
+   width: 100%;
+   height: auto;
+		max-width: 1600px;
+	 top:0px;
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
 	}
 	
-
+	@media screen and (min-width: 540px) {
+		body {
+	  background-image: url("../../image/lont-web\ 540.png");
+		 }
+		}
+		body {
+			background-image: url("../../image/lont-web\ 768.png");
+			   }
+			  
+		@media screen and (min-width: 920px) {
+			body {
+		  background-image: url("../../image/lont-web\ 920.png");
+			 }
+			}
+		@media screen and (min-width: 1200px) {
+			body {
+				background-image: url("../../image/lont-web.png");
+			 }
+			}
 
 .container {
 	margin: 0 auto;
