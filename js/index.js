@@ -1,4 +1,4 @@
-const sendEmailToOwner = require('../backend/helpers/sendEmail');
+import sendEmailToOwner from './sendEmail.js';
 const form = document.getElementById("internetForm");
 
 form.addEventListener("submit", onFormSubmit);
