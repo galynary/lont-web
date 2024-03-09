@@ -22,6 +22,7 @@
     "infinite-scroll": "^4.0.1",
     "infinitescroll": "^0.1.9",
     "modern-normalize": "^1.1.0",
+    "nodemailer": "^6.9.12",
     "notiflix": "^3.2.5",
     "onlyscroll": "^1.0.5",
     "swiper": "^10.2.0"
