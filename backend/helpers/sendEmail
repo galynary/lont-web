@@ -1,35 +1,36 @@
-const nodemailer = require("nodemailer");
+const nodemailer = require('nodemailer');
 
-const { PASSWORD } = process.env;
+// Функция для отправки письма на электронную почту
+async function sendEmailToOwner(data) {
+  // Настройки для отправки письма через Gmail
+  let transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: 'ваш_адрес@gmail.com', 
+      pass: 'ваш_пароль'
+    }
+  });
 
-require("dotenv").config();
+  let mailOptions = {
+    from: 'ваш_адрес@gmail.com', // От кого
+    to: 'galyna.rybak.789@gmail.com', // Кому
+    subject: 'Новая заявка на подключение интернета',
+    text: `
+      Полное имя: ${data.name}
+      Email: ${data.email}
+      Адрес: ${data.address}
+      Телефон: ${data.phone}
+      Тариф: ${data.tariff}
+    `
+  };
 
-const config = {
-	service: "gmail",
-	host: "smtp.gmail.com",
-	port: 587,
-	secure: false,
-	auth: {
-		user: "galyna.rybak789@gmail.com",
-		pass: PASSWORD,
-	},
-};
+  // Отправка письма
+  try {
+    let info = await transporter.sendMail(mailOptions);
+    console.log("Письмо отправлено: %s", info.messageId);
+  } catch (error) {
+    console.error("Ошибка отправки письма:", error);
+  }
+}
 
-const sendEmail = async () => {
-	const transporter = nodemailer.createTransport(config);
-	const email = {
-		from: "galyna.rybak789@gmail.com",
-		to: "halyna1010@meta.ua",
-		subject: "заявка на підключення!",
-		html: "<p>Прийшла нова заявка на підключення!</p>",
-	};
-
-	try {
-		await transporter.sendMail(email);
-		console.log("Email send success");
-	} catch (err) {
-		console.log(err);
-	}
-};
-
-module.exports = sendEmail;
+module.exports = sendEmailToOwner;
