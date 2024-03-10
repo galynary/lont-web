@@ -20,7 +20,7 @@ function onFormSubmit(evt) {
       tariff: tariff
     };
 
-    const url = "http://localhost:2000/api/register"; // Замените на реальный URL
+    const url = "http://localhost:2000"; // Замените на реальный URL
 
     fetch(url, {
       method: "POST",
