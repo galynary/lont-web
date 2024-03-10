@@ -1,4 +1,4 @@
-import sendEmailToOwner from '../backend/helpers/sendEmail';
+
 const form = document.getElementById("internetForm");
 
 form.addEventListener("submit", onFormSubmit);
@@ -6,7 +6,7 @@ form.addEventListener("submit", onFormSubmit);
 function onFormSubmit(evt) {
   evt.preventDefault();
 
-  const name = document.getElementById("fullName").value;
+  const name = document.getElementById("name").value;
   const address = document.getElementById("address").value;
   const phone = document.getElementById("phone").value;
   const tariff = document.getElementById("tariff").value;
@@ -14,7 +14,7 @@ function onFormSubmit(evt) {
   if (validateForm(name, address, phone, tariff)) {
     // Если все поля заполнены, продолжаем отправку данных
     const data = {
-      name: fullName,
+      name: name,
       address: address,
       phone: phone,
       tariff: tariff
