@@ -20,8 +20,10 @@ function onFormSubmit(evt) {
       tariff: tariff
     };
 
-    const url = "http://localhost:2000"; // Замените на реальный URL
+    const url = "http://localhost:2000/api/users/register"; // Замените на реальный URL
 
+
+    // eslint-disable-next-line no-undef
     fetch(url, {
       method: "POST",
       headers: {
