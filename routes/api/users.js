@@ -6,7 +6,7 @@ const { validateBody, isValidId } = require("../../middlewares"); // Зміни�
 
 const router = express.Router();
 
-router.post("/register", validateBody(schemas.registerSchema), ctrl.registerUser);
+router.post("/api/register", validateBody(schemas.registerSchema), ctrl.registerUser);
 router.delete("/:id", isValidId, ctrl.removeUser);
 router.get("/:id", ctrl.getUserById); // Виправили функцію getUserById
 router.put("/:id", isValidId, validateBody(schemas.updateSchema), ctrl.updateUser);

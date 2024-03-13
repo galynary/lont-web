@@ -1,70 +1,65 @@
+function submitForm() {
+    // Отримання даних з форми
+    const name = document.getElementById("name").value;
+    const phone = document.getElementById("phone").value;
+    const address = document.getElementById("address").value;
+    const tariff = document.getElementById("tariff").value;
 
-const form = document.getElementById("internetForm");
+    // Перевірка форми перед відправкою
+    if (!validateForm(name, address, phone, tariff)) {
+        return;
+    }
 
-form.addEventListener("submit", onFormSubmit);
-
-function onFormSubmit(evt) {
-  evt.preventDefault();
-
-  const name = document.getElementById("name").value;
-  const address = document.getElementById("address").value;
-  const phone = document.getElementById("phone").value;
-  const tariff = document.getElementById("tariff").value;
-
-  if (validateForm(name, address, phone, tariff)) {
-    // Если все поля заполнены, продолжаем отправку данных
+    // Створення об'єкта з даними для відправки
     const data = {
-      name: name,
-      address: address,
-      phone: phone,
-      tariff: tariff
+        name,
+        phone,
+        address,
+        tariff
     };
 
-    const url = "http://localhost:2000/api/users/register"; // Замените на реальный URL
-
-
-    // eslint-disable-next-line no-undef
-    fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(data)
+    // Відправка даних на сервер за допомогою API Fetch
+    fetch('url_вашого_серверу', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
     })
     .then(response => response.json())
-    .then(result => {
-      if (result.success) {
-        // Если данные успешно отправлены на сервер, отправляем письмо на электронную почту владельца компании
-        sendEmailToOwner(data);
-        alert("Заявка успешно отправлена!");
-        // Можно также перенаправить пользователя на страницу "спасибо" или что-то подобное
-      } else {
-        alert("Произошла ошибка при отправке заявки.");
-      }
+    .then(data => {
+        console.log('Відповідь від серверу:', data);
+        // Тут ви можете обробити відповідь від серверу
+        alert('Ваша заявка успішно відправлена!');
     })
     .catch(error => {
-      console.error("Ошибка отправки заявки:", error);
-      alert("Произошла ошибка при отправке заявки.");
+        console.error('Помилка відправки даних на сервер:', error);
+        alert('Виникла помилка під час відправки заявки. Будь ласка, спробуйте пізніше.');
     });
-  }
 }
 
 function validateForm(name, address, phone, tariff) {
-  if (!name) {
-    alert("Заполните поле 'Имя'");
-    return false;
-  }
-  if (!address) {
-    alert("Заполните поле 'Адрес'");
-    return false;
-  }
-  if (!phone) {
-    alert("Заполните поле 'Телефон'");
-    return false;
-  }
-  if (!tariff) {
-    alert("Заполните поле 'Тариф'");
-    return false;
-  }
-  return true; // Все поля заполнены
+    if (!name.trim()) {
+        alert("Заповніть поле 'Ім'я'");
+        return false;
+    }
+    if (!address.trim()) {
+        alert("Заповніть поле 'Адреса'");
+        return false;
+    }
+    if (!phone.trim()) {
+        alert("Заповніть поле 'Телефон'");
+        return false;
+    }
+    if (!tariff.trim()) {
+        alert("Виберіть тариф");
+        return false;
+    }
+    // Перевірка номера телефону за допомогою регулярного виразу
+    const phonePattern = /^\d{11}$/;
+    if (!phonePattern.test(phone)) {
+        alert("Введіть коректний номер телефону (11 цифр)");
+        return false;
+    }
+    return true;
 }
