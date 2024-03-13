@@ -1,31 +1,58 @@
-function submitForm() {
-    // Отримання даних з форми
-    const name = document.getElementById("name");
-    const phone = document.getElementById("phone");
-    const address = document.getElementById("address");
+const nodemailer = require('nodemailer');
 
-    // Створення об'єкта з даними для відправки
-    const data = {
-        name: name.value,
-        phone: phone.value,
-        address: address.value,
-    };
-   console.log(data);
+// Функція для відправлення листа
+async function sendEmail(name, address, phone, tariff) {
+  // Налаштовуємо відправника листа
+  let transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: 'your_email@gmail.com', // Ваша адреса електронної пошти
+      pass: 'your_password' // Ваш пароль
+    }
+  });
 
-    // Відправка даних на сервер за допомогою API Fetch
-    fetch('url_вашого_серверу', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
-    })
-    .then(response => response.json())
-    .then(data => {
-        console.log('Відповідь від серверу:', data);
-        // Тут ви можете обробити відповідь від серверу
-    })
-    .catch(error => {
-        console.error('Помилка відправки даних на сервер:', error);
-    });
+  // Налаштовуємо отримувача, тему і тіло листа
+  let mailOptions = {
+    from: 'your_email@gmail.com', // Ваша адреса електронної пошти
+    to: 'recipient_email@example.com', // Адреса отримувача
+    subject: 'Заявка на підключення інтернету',
+    text: `Ім'я: ${name}\nАдреса: ${address}\nТелефон: ${phone}\nТариф: ${tariff}`
+  };
+
+  // Відправляємо лист
+  try {
+    let info = await transporter.sendMail(mailOptions);
+    console.log('Email sent: ' + info.response);
+  } catch (error) {
+    console.log('Error sending email: ', error);
+  }
+}
+
+// Функція для валідації форми
+function validateForm(name, address, phone, tariff) {
+  if (!name.trim()) {
+    alert("Заполните поле 'Имя'");
+    return false;
+  }
+  if (!address.trim()) {
+    alert("Заполните поле 'Адрес'");
+    return false;
+  }
+  if (!phone.trim()) {
+    alert("Заполните поле 'Телефон'");
+    return false;
+  }
+  if (!tariff.trim()) {
+    alert("Заполните поле 'Тариф'");
+    return false;
+  }
+  // Проверка номера телефона с использованием регулярного выражения
+  const phonePattern = /^\d{11}$/;
+  if (!phonePattern.test(phone)) {
+    alert("Введите корректный номер телефона");
+    return false;
+  }
+  // Якщо валідація успішна, відправляємо лист
+  sendEmail(name, address, phone, tariff);
+  return true;
 }
