@@ -17,8 +17,7 @@
 	border-style: solid;
 	background: linear-gradient(180deg, rgb(22, 65, 236) 0%, rgb(6, 30, 125) 100%);
 	border: 0.05px solid #67CEEF;
-
-	border-radius: 20px;
+     border-radius: 20px;
 	 position: relative;
 	 text-align: center;
 	 @include flex2(flex, column, center)
@@ -27,7 +26,7 @@
 
 .tariffs__title {
 	@include font(900, 18px, 1.7, null);
-	color: #1f91f5;
+	color: $white-color;
 	margin-bottom: 10px;
 }
 .tariffs__price {

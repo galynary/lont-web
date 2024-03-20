@@ -4,15 +4,19 @@
     display: none;
     width: 100%;
     text-align: center;
+  
   }
   .slider__container {
     width: 100%;
     overflow: hidden;
+    background-image: linear-gradient(to left, rgba(5, 30, 125, 0.6), rgba(9, 38, 149, 0.7));
+   height: 600px;
+ 
+   
   }
   .slider-inner__container {
     display: flex;
-  height: 500px;
-  }
+}
   .dots {
     position: absolute;
     left:50%;
@@ -24,6 +28,7 @@
   .slider__container {
     width: 100%;
     overflow: hidden;
+
   }
   .slider-inner__container {
     display: flex;

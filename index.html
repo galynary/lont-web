@@ -39,60 +39,54 @@
 					</ul>
 					<div class="nav__tel">
 						<a href="tel:+30502623123" class="nav-link__tel">
-							<svg class="icon__tel" width="25px" height="35px">
-								<use href="./image/sprite.svg#icon-phonesvg"></use>
-							</svg>
+							<img class="icon__phone" src="./image/phone.png">
 							+3 (050) 26 23 123</a
 						>
 					</div>
 					<div class="client">
-						<a href="user.html" class="client-link">
-							<svg class="icon__tel" width="25px" height="35px">
-								<use href="./image/sprite.svg#icon-client"></use>
-							</svg>
-							</a
-						>
+						<a href="user.html" class="client__link">
+							<img class="client__img" src="./image/user.png">
+						</a>
+							<p class="client__text">Oсобистий<br> кабінет</p>
+						
 					</div>
 					<button
 						type="button"
 						class="menu-toggle js-open-menu"
+						data-menu-open
 						aria-expanded="false"
 						aria-controls="mobile-menu"
 					>
-						<svg class="icon-open" data-menu-open width="40">
-							<use class="icon__menu" href="./image/sprite.svg#icon-menu"></use>
-						</svg>
+					<span class="button__item"></span>
 					</button>
-					<div class="menu__container js-menu-container" id="mobile__menu">
-						<button
-							type="button"
-							class="menu-toggle js-close-menu"
-							data-menu-close
-						>
-							<svg class="icon-close" data-menu-close width="40">
-								<use class="icon-close" href="./image/sprite.svg#"></use>
-							</svg>
+				
+				</div>
+				<div class="menu__container js-menu-container" id="mobile__menu">
+					<button
+						type="button"
+						class="menu-toggle js-close-menu"
+						data-menu-close
+					><img class="icon-close" src="./image/стрілка.png">
 						</button>
-						<div class="mobile-menu__container">
-							<ul class="mobile__nav list">
-								<li class="mobile-nav__item">
-									<a href="#preference" class="mobile-nav__link">Переваги</a>
-								</li>
-								<li class="mobile-nav__item">
-									<a href="#services
-									" class="mobile-nav__link">Послуги</a>
-								</li>
-								<li class="mobile-nav__item">
-									<a href="#tariffs" class="mobile-nav__link">Тарифи</a>
-								</li>
-								<li class="mobile-nav__item">
-									<a href="#details" class="mobile-nav__link">Реквізити</a>
-								</li>
-								<li class="mobile-nav__item">
-									<a href="#contacts" class="mobile-nav__link">Контакти</a>
-								</li>
-							</ul>
-						</div>
+					<div class="mobile-menu__container">
+						<ul class="mobile__nav list">
+							<li class="mobile-nav__item">
+								<a href="#preference" class="mobile-nav__link">Переваги</a>
+							</li>
+							<li class="mobile-nav__item">
+								<a href="#services
+								" class="mobile-nav__link">Послуги</a>
+							</li>
+							<li class="mobile-nav__item">
+								<a href="#tariffs" class="mobile-nav__link">Тарифи</a>
+							</li>
+							<li class="mobile-nav__item">
+								<a href="#details" class="mobile-nav__link">Реквізити</a>
+							</li>
+							<li class="mobile-nav__item">
+								<a href="#contacts" class="mobile-nav__link">Контакти</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			
@@ -117,11 +111,14 @@
 										</div>
 									</div>
 									<ul class="television__list">
-										<li class="television__item"> <p class="television__item">56 каналів у цифровій якості формату DVB-C</p></li>
-										<li class="television__item"><p class="television__item">Кілька десятків каналів в HD якості</p></li>
-										<li class="television__item"><p class="television__item">Висока якість зображення та звуку</p></li>
-										<li class="television__item"><p class="television__item">Електронний телегід</p></li>
+										<li class="television__item"> <p class="television__text2">56 каналів у цифровій якості формату DVB-C</p></li>
+										<li class="television__item"><p class="television__text2">Кілька десятків каналів в HD якості</p></li>
+										<li class="television__item"><p class="television__text2">Висока якість зображення та звуку</p></li>
+										<li class="television__item"><p class="television__text2">Електронний телегід</p></li>
 									</ul>
+								</div>
+								<div class="hero__wrap-img">
+									<img class="hero__img" src="./image/головний екран 1200.png">
 								</div>
 								</div>
 								</div>
@@ -134,7 +131,7 @@
 									<span class="dot" onclick="currentSlide(1)"></span>
 									<span class="dot" onclick="currentSlide(2)"></span>
 								  </div>
-		<!--<div class="slide television">
+		<div class="slide television">
 			 <div class="television__container container">
 							<div class="television__inner">
 								<div class="television__description">
@@ -144,20 +141,21 @@
 											Дізнатися тарифи
 										</a>
 								</div>
-									
-									
-										<ul class="television__list">
-											<li class="television__item"> <p class="television__item">56 каналів у цифровій якості формату DVB-C</p></li>
-											<li class="television__item"><p class="television__item">Кілька десятків каналів в HD якості</p></li>
-											<li class="television__item"><p class="television__item">Висока якість зображення та звуку</p></li>
-											<li class="television__item"><p class="television__item">Електронний телегід</p></li>
-										</ul>
+								<ul class="television__list">
+									<li class="television__item"> <p class="television__text2">56 каналів у цифровій якості формату DVB-C</p></li>
+									<li class="television__item"><p class="television__text2">Кілька десятків каналів в HD якості</p></li>
+									<li class="television__item"><p class="television__text2">Висока якість зображення та звуку</p></li>
+									<li class="television__item"><p class="television__text2">Електронний телегід</p></li>
+								</ul>
+								</div>
+								<div class="television__wrap-img">
+									<img class="television__img" src="./image/канали.png">
 								</div>
 							
 								
 							</div>
 						</div>
-					</div>-->
+					</div>
 				</div>
 			</div>
 			 <!--- <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
@@ -174,7 +172,7 @@
 					<ul class="preference__list">
 						<li class="preference__item">
 							<div class="preference__icon">
-								<svg class="preference__icon"
+								<svg class="preference__icon2"
 							xmlns="http://www.w3.org/2000/svg"
 							xmlns:xlink="http://www.w3.org/1999/xlink"
 							width="40px" height="100px">
@@ -189,7 +187,7 @@
 						</li>
 						<li class="preference__item">
 							<div class="preference__icon">
-								<svg class="preference__icon"
+								<svg class="preference__icon2"
 								xmlns="http://www.w3.org/2000/svg"
 								xmlns:xlink="http://www.w3.org/1999/xlink"
 								width="71px" height="100px">
@@ -204,7 +202,7 @@
 						</li>
 						<li class="preference__item">
 							<div class="preference__icon">
-								<svg class="preference__icon" 
+								<svg class="preference__icon2" 
 								xmlns="http://www.w3.org/2000/svg"
 								xmlns:xlink="http://www.w3.org/1999/xlink"
 								width="85px" height="119px">
@@ -224,7 +222,7 @@
 						</li>
 						<li class="preference__item">
 							<div class="preference__icon">
-								<svg class="preference__icon"
+								<svg class="preference__icon2"
 								xmlns="http://www.w3.org/2000/svg"
 								xmlns:xlink="http://www.w3.org/1999/xlink"
 								width="77px" height="100px">
@@ -237,7 +235,7 @@
 						</li>
 						<li class="preference__item">
 							<div class="preference__icon">
-							<svg class="preference__icon"
+							<svg class="preference__icon2"
 							xmlns="http://www.w3.org/2000/svg"
 							xmlns:xlink="http://www.w3.org/1999/xlink"
 							width="76px" height="100px">
@@ -253,7 +251,7 @@
 						</li>
 						<li class="preference__item">
 							<div class="preference__icon">
-								<svg class="preference__icon"
+								<svg class="preference__icon2"
 								xmlns="http://www.w3.org/2000/svg"
 								xmlns:xlink="http://www.w3.org/1999/xlink"
 								width="74px" height="100px">
@@ -431,25 +429,30 @@
 					<h2 class="section__title">Реквізити для оплати</h2>
 					<ul class="details__description">
 						<li class="details__internet">
-							<h3 class="details__internet-title">Інтернет</h3>
-							<p class="details__internet-text">ФОП Білкей А.Й.<br>
-								Код: 1721602779<br>
-								Банк: АТ КБ “Приватбанк”<br>
-								Рахунок:<br>
-								UA503052990000026000043603326<br>
-								Призначення платежу:<br>
-								Ваша адресa</p>
+							<div class="wrap-details__internet">
+								<h3 class="details__internet-title">Інтернет</h3>
+							
+								<p class="details__internet-text">ФОП Білкей А.Й.<br>
+									Код: 1721602779<br>
+									Банк: АТ КБ “Приватбанк”<br>
+									Рахунок:<br>
+									UA503052990000026000043603326<br>
+									Призначення платежу:<br>
+									Ваша адресa</p>
+							</div>
 						</li>
 						<li class="details__cable-tv">
-							<h3 class="details__cable-tv-title">Кабельне ТБ</h3>
-							<p class="details__cable-tv-text">ТОВ “Лонт Веб”
-								Код: 40986273 <br>
-								Банк: АТ КБ “Приватбанк” <br>
-								Рахунок: <br>
-								UA333052990000026000043602662 <br>
-								Призначення платежу: <br>
-								Ваша адреса</p>
-						</li>
+							<div class="wrap-details__cable-tv">
+								<h3 class="details__cable-tv-title">Кабельне ТБ</h3>
+								<p class="details__cable-tv-text">ТОВ “Лонт Веб”
+										  Код: 40986273 <br>
+										  Банк: АТ КБ “Приватбанк” <br>
+										  Рахунок: <br>
+										  UA333052990000026000043602662 <br>
+										  Призначення платежу: <br>
+										  Ваша адреса</p>
+							</div>
+					</li>
 					</ul>
 					</div>
 			</section>
@@ -485,7 +488,7 @@
 								Підключаючись до мережі Лонт Веб — Ви отримаєте швидкісний
 								безперебійний інтернет за низькими тарифами
 							</h3>
-							<form autocomplete="on" class="form" id ="internetForm">
+							<form autocomplete="on" class="form" id ="internetForm" method="post" action="sendmail.php">
 							
 								<input
 									type="name"
@@ -540,9 +543,7 @@
 							<p class="free__time">Неділя - вихідний</p>
 							<div class="contacts__tel">
 								<a href="tel:+14251234563" class="contact__tel">
-									<svg class="icon-contact__tel" width="25px" height="35px">
-										<use href="./image/sprite.svg#icon-phonesvg"></use>
-									</svg>
+									<img class="icon__phone" src="./image/phone.png">
 									+3 (050) 26 23 123</a
 								>
 							</div>
@@ -568,6 +569,27 @@
 				
 				</div>
 			</section>
+			<div class="thankyou__page">
+				<div class="thankyou-page__container container">
+<div class="thankyou-page__inner">
+	<div class="thankyou-page__description">
+		<div class="thankyou-page-logo__content">
+			<img class="logo__icon" src="./image/Logo2.png">
+			<div class="logo__description">
+				<p class="thankyou-page-logo__text1">ТОВ "Лонт Веб"</p>
+				<p class="thankyou-page-logo__text2">Інтернет сервіс провайдер</p>
+			</div>
+		</div>
+		<h3 class="thankyou-page__title">
+			ДЯКУЄМО, ВАША ЗАЯВКА ПРИЙНЯТА!</h3>
+		<p class="thankyou-page__text">Ми зв'яжемося з Вами найближчим часом.</p>
+	</div>
+	<div class="wrap-thankyou-page__img">
+		<img clas="thankyou-page__img">
+	</div>
+</div>
+				</div>
+			</div>
 		</main>
 	
 			<section class="footer__section section" id="footer">
@@ -575,9 +597,7 @@
 					<div class="footer__inner">
 						
 						<div class="logo__content">
-							<svg class="logo__icon">
-								<use href="./image/sprite.svg#icon-Logo"></use>
-							</svg>
+							<img class="logo__icon" src="./image/Logo.png">
 							<div class="logo__description">
 								<p class="logo__text1 footer-logo">ТОВ “Лонт Веб”</p>
 								<p class="logo__text2 footer-logo">Інтернет сервіс провайдер</p>

@@ -1,12 +1,13 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
+    $address = $_POST['address'];
+    $phone = $_POST['phone'];
+    $tariff = $_POST['tariff'];
     
-    $to = 'адреса_електронної_пошти_отримувача@example.com';
+    $to = 'ryvolodya@gmail.com';
     $subject = 'Повідомлення від ' . $name;
-    $body = "Ім'я: $name\nЕлектронна адреса: $email\nПовідомлення:\n$message";
+    $body = "Ім'я: $name\nАдреса:  $address\nТелефон:\n$phone\nТариф:\n$tariff";
     
     if (mail($to, $subject, $body)) {
         echo 'Повідомлення успішно відправлено!';

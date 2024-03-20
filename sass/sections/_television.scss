@@ -34,7 +34,10 @@ width: 100%;
 }
 .television__list {
     position: relative;
-    display: none;
+   text-align: left;
+}
+.wrap-television__button {
+margin-bottom: 50px;
 }
 .television__button {
         display: inline-block;
@@ -48,7 +51,7 @@ width: 100%;
         border-radius: 50px;
         cursor: pointer;
         transition: background-color 0.3s;
-        margin-bottom: 20px;
+       
 
     }
   
@@ -60,24 +63,19 @@ width: 100%;
     }
 
 
-.television__item {
+.television__text2 {
     @include font(500, 16px, 1.7, 0.10em);
     color: rgb(203, 198, 198);
     position: relative;
- 
-              
-}
-.television__item::before {
-    content: '';
-    display: block;
+    left: 20px;
+ }
+ .television__item::before {
+    content: "\2713";
+    display: inline-block;
     position: absolute;
-    background-image: url("../../image/marker.png");
-    background-repeat: no-repeat;
-    font-size: 18px; 
-    line-height: 1;
-    background-size: cover;
-   
+   color: $card-decoration-color;
 }
+
 .television__wrap-img {
     position: relative;
     display: none;
@@ -95,6 +93,8 @@ width: 100%;
     .television__inner {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+       
     }
     .television__text {
         display: block;
@@ -113,8 +113,9 @@ width: 100%;
     
     .television__wrap-img {
         display: block; 
-max-width: 400px;
-        top:100px;
+max-width: 350px;
+right: 0px;
+      
     }
     .television__text {
         bottom: -40px;
@@ -153,6 +154,7 @@ max-width: 400px;
             .television__inner {
                 display: flex;
                 justify-content: space-between;
+                gap: 0px;
             }
             .television__title {
                 font-size: 30px;
@@ -160,11 +162,7 @@ max-width: 400px;
             }
             .television__list {
                 display: block;
-                padding-top: 150px;
-            }
+               
 }
-@media screen and (min-width: 1400px) {
-    .television {
-    background-image: url("../../image/фон\ цифрове\ телебачення\ 1600.png");
-    }
 }
+

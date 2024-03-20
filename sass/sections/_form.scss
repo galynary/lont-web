@@ -30,6 +30,9 @@ width: 100%;
 .internet-connection__wrap-img {
 	display: none;
 }
+.price__list {
+	text-align: left;
+}
 
 .internet-connection__price {
 	@include flex2(flex, column, null);
@@ -42,21 +45,25 @@ width: 100%;
 }
 .internet__speed {
 	@include font(null, 24px, 1.7, null);
-	color: $premium-color;
+	color: #0a90d8;
 	margin-bottom: 10px;
 }
 .price__description {
 	@include font(500, 16px, 1.5, null);
 	color: $white-color;
 	margin-bottom: 10px;
+	padding-left: 20px;
+}
+.price__item::before {
+    content: "\2713";
+    display: inline-block;
+    position: absolute;
+   color: $card-decoration-color;
 }
 .form__internet-connection {
 	text-align: center;
 	align-items: center;
 	position: relative;
-width: 100%;
-	height: auto;
-	
 @include flex2(flex, column, null);
 	
 }
@@ -105,7 +112,7 @@ select,
 }
 .button__form:hover,
 .button__form:focus {
-	background-color:#104eab;
+	background-color:#30e7ed;
  }
 .smart__price {
 	position: absolute;
@@ -146,19 +153,12 @@ select,
 	.internet-connection__wrap-img {
 		max-width: 500px;
 	}
-	.form__internet-connection {
-		align-items: end;
-}
-	.form__title {
-		text-align: right;
-}
-.form__internet-connection {
-	text-align: right;
-}
+
+
 
 .internet-connection__price {
 	@include flex2(flex, column, null);
-	text-align: left;
+
 }   
 .brand__text {
     font-weight: 700;
@@ -167,7 +167,7 @@ select,
     margin-bottom: 10px;
 }
 .internet__speed {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 24px;
     line-height: 1.7;
     margin-bottom: 20px;
@@ -177,8 +177,9 @@ select,
     margin-bottom: 25px;
 }
 .form__text {
-	@include font(500, 18px, 1.7, null);
+	@include font(700, 18px, 1.7, null);
 	 margin-bottom: 32px;
+	 color:#0a90d8;
 }
 
 }

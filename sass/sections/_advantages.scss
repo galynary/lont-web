@@ -5,12 +5,10 @@
 }
    
     .preference__list {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+       display: block;
     }
-    .preference__item :not(:last-child) {
-        margin-bottom: 50px;
+    .preference__item:not(:last-child) {
+        margin-bottom: 40px;
     }
 
     .preference__item {
@@ -19,10 +17,14 @@
         justify-content: center;
         flex-basis: calc((100% - 100px) / 3);
         align-items: center;
+     
     }
     .preference__icon {
-        margin-bottom: 15px;  
-    }
+        position: relative;
+        display: block;
+        margin-bottom: 20px;
+   }
+   
     .preference__number {
         margin-bottom: 30px;
         font-size: 120px;
@@ -35,7 +37,7 @@
       padding-bottom: 5px;
     }
     .preference__text {
-        width: 400px;
+      max-width: 400px;
         color: #d5d2d2;
         text-align: center;
     }
@@ -43,25 +45,29 @@
 }
 @media screen and (min-width: 768px) {
     .preference__list {
+        display: flex;
+       flex-wrap: wrap;
         gap: 30px;
-        justify-content: space-between;
+        justify-content: center;
     }
-    .preference__list :not(:last-child) {
-        margin-bottom: 0px;
-    }
+  
     .preference__item {
         flex-basis: calc((50% - 15px));
+     margin-bottom: 0px;
+    }
+    .preference__item:not(:last-child) {
+        margin-bottom: 0px;
     }
     .preference__text {
         width: 300px;
     }
+    .preference__icon {
+        margin-bottom: 20px;
+   }
 }
 @media screen and (min-width: 1200px) {
     .preference__item {
         flex-basis: calc((25% - 15px));
     }
-    .preference__list {
-       gap: 50px;
-        width: 100%;
-    }
+  
 }

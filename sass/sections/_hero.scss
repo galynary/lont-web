@@ -1,5 +1,6 @@
 @media screen and (min-width: 320px) {
     .hero {
+       justify-content: center;
         background-repeat: no-repeat;
 	    background-position: right;
         flex:1;
@@ -20,7 +21,7 @@
     .hero__description {
         display: flex;
         flex-direction: column;
-        padding: 100px 0px 130px 0px;
+        padding: 100px 0px 70px 0px;
         position: relative;
         text-align: center;
         align-items: center;
@@ -77,6 +78,7 @@
     }
     .hero__img {
         max-width: 400px;
+        width: 100%;
     }
    
     #scrollToTopBtn {
@@ -85,6 +87,8 @@
         bottom: 20px;
         right: 20px;
         padding: 10px;
+        width: 70px;
+        height: auto;
         background-color: transparent;
         color: #fff;
         border: none;
@@ -92,19 +96,14 @@
         cursor: pointer;
     }
 }
-@media screen and (min-width: 540px) {
-    .hero {
-  background-image: url("../../image/головний\ екран\ 540.png");
-     }
-    }
+
 @media screen and (min-width: 768px) {
-    .hero {
-  background-image: url("../../image/головний\ екран\ 768.png");
-     }
+   
     .hero__content {
         display: flex;
+       align-items: center;
         justify-content: space-between;
-       }
+     }
        .hero__inner {
         display: flex;
         align-items: start;
@@ -114,7 +113,7 @@
     .hero__description {
         display: flex;
         flex-direction: column;
-         padding: 150px 0px 0px 0px;
+         padding: 150px 0px 50px 0px;
         text-align: left;
         align-items:start;
     }
@@ -124,6 +123,7 @@
         justify-content:flex-start;
     }
     .hero__wrap-img {
+        padding-top: 70px;
         display: block;
     }
     .hero__img {
@@ -143,15 +143,9 @@
         right: -100px;
     }
 }
-@media screen and (min-width: 920px) {
-    .hero {
-       background-image: url("../../image/головний\ екран\ 920.png");
-     }
-    }
+
 @media screen and (min-width: 1200px) {
-    .hero {
-        background-image: url("../../image/головний\ екран.png");
-     }
+  
     .television__inner {
         display: flex;
         justify-content: space-between;
@@ -164,13 +158,8 @@
      justify-content:flex-start;
     }  
     .hero__description {
-        padding: 120px 0px 0px 0px;
+        padding: 120px 0px 100px 0px;
 
     }
     
-}
-@media screen and (min-width: 1400px) {
-.hero {
-   background-image: url("../../image/головний\ екран.png");
-}
 }

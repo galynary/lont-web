@@ -14,9 +14,17 @@ width: 100%;
 .details__internet {
 	color:$card-button-color;
 }
+.wrap-details__internet {
+	display: inline-block;
+	text-align: left;
+}
+.wrap-details__cable-tv {
+	display: inline-block;
+}
 .details__internet-text {
 	line-height: 1.7;
 	color: $white-color;
+	text-align: left;
 }
 .details__cable-tv {
 	color:$card-button-color;
@@ -24,6 +32,7 @@ width: 100%;
 .details__cable-tv-title {
 	margin-bottom: 20px;
 	color:$premium-color;
+
 }
 .details__internet-title {
 	margin-bottom: 20px;
@@ -32,6 +41,7 @@ width: 100%;
 .details__cable-tv-text {
 	line-height: 1.7;
 	color: $white-color;
+	text-align: left;
 }
 }
 @media screen and (min-width: 768px) {

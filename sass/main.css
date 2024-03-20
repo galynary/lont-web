@@ -378,31 +378,44 @@ body {
   display: block;
   background-color: #083284;
   width: 100%;
-  height: auto;
+  height: 100%;
   max-width: 1600px;
   top: 0px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-attachment: fixed;
   background-position: center;
+  padding: 0;
+  margin: auto;
 }
 
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 320px) {
   body {
-    background-image: url("../../image/lont-web 540.png");
+    background-image: url("../../image/фон-320.png");
   }
 }
-body {
-  background-image: url("../../image/lont-web 768.png");
+@media screen and (min-width: 540px) {
+  body {
+    background-image: url("../../image/фон-540.png");
+  }
 }
-
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url("../../image/фон-768.png");
+  }
+}
 @media screen and (min-width: 920px) {
   body {
-    background-image: url("../../image/lont-web 920.png");
+    background-image: url("../../image/фон-920.png");
   }
 }
 @media screen and (min-width: 1200px) {
   body {
-    background-image: url("../../image/lont-web.png");
+    background-image: url("../../image/фон-1200.png");
+  }
+}
+@media screen and (min-width: 1600px) {
+  body {
+    background-image: url("../../image/фон-1600.png");
   }
 }
 .container {
@@ -412,19 +425,23 @@ body {
 
 @media screen and (min-width: 320px) {
   .header {
-    position: absolute;
+    position: fixed;
+    background-color: #092695;
     z-index: 1;
     width: 100%;
+    height: 80px;
     right: 0px;
     left: 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   }
   .header__inner {
     padding: 10px 0px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     justify-content: space-between;
     background-color: transparent;
+    font-size: 15px;
   }
   .header__container {
     gap: 0px;
@@ -434,6 +451,9 @@ body {
     gap: 5px;
     align-items: center;
   }
+  .logo__icon {
+    width: 50px;
+  }
   .logo__text1 {
     font-weight: 600;
     font-size: 14px;
@@ -442,27 +462,32 @@ body {
   }
   .logo__text2 {
     font-weight: 500;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 1.5;
     color: #06daf9;
+    display: none;
   }
   .logo__description {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
+  .icon__phone {
+    width: 30px;
+    height: auto;
+  }
   .header__nav {
     display: none;
   }
   .nav-link__tel {
     font-weight: 700;
-    font-size: 16px;
+    font-size: inherit;
     line-height: 1.2;
     letter-spacing: 0.1em;
-    color: #06daf9;
+    color: #fff;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
   }
   .nav__tel {
     display: none;
@@ -472,10 +497,46 @@ body {
     height: 40px;
   }
   .js-open-menu {
-    padding: 20px;
-    border: none;
-    background: rgba(0, 0, 0, 0);
+    width: 30px;
+    padding: 10px 0;
+    display: block;
+    font-size: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 25px;
     z-index: 1;
+  }
+  .button__item {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #06daf9;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+  .button__item::before {
+    top: -8px;
+  }
+  .button__item::after {
+    bottom: -8px;
+  }
+  .button__item::before,
+  .button__item::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #06daf9;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    transition: transform 0.2s linear;
   }
   .icon__menu {
     width: 40px;
@@ -485,20 +546,23 @@ body {
     right: 25px;
   }
   .menu__container {
-    background: #00a5ea;
+    background: linear-gradient(180deg, rgb(22, 65, 236) 0%, rgb(6, 30, 125) 100%);
+    border: 0.05px solid rgba(103, 206, 239, 0.1);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     z-index: 2;
-    transform: translateX(100%);
-    padding: 47px 40px;
-    height: 100%;
+    padding: 30px;
+    position: absolute;
     width: 100%;
-    left: 0;
-    position: fixed;
+    left: 15px;
+    right: 15px;
     top: 0;
     margin: 0 auto;
-    text-align: left;
-    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  .js-menu-container {
+    display: none;
   }
   .js-close-menu {
     position: absolute;
@@ -510,14 +574,12 @@ body {
     height: 40px;
     align-items: center;
     justify-content: center;
-    fill: #212121;
     border: none;
-    background-color: #635959;
+    background-color: transparent;
   }
   .icon-close {
-    width: 40px;
-    height: 40px;
-    fill: #212121;
+    width: 70px;
+    height: auto;
     top: 21px;
     right: 25px;
   }
@@ -525,28 +587,44 @@ body {
     width: 100%;
     height: 100%;
     display: flex;
+    align-items: center;
     flex-direction: column;
-    justify-content: space-between;
+    text-align: left;
   }
   .mobile__nav {
     display: flex;
+    gap: 10px;
     flex-direction: column;
   }
-  .mobile-nav__item {
+  .mobile-nav__item:notl {
     margin-bottom: 36px;
   }
   .mobile-nav__link {
     position: relative;
-    font-size: 40px;
+    font-size: 20px;
     letter-spacing: 0.02em;
     line-height: 1.17;
-    color: #212121;
+    color: #fff;
+  }
+  .mobile-nav__link:hover {
+    color: #06daf9;
   }
   .client {
+    position: absolute;
+    right: 80px;
     display: flex;
+    align-items: center;
   }
-  .client-link {
-    display: flex;
+  .client__img {
+    width: 30px;
+    height: auto;
+  }
+  .client__text {
+    display: none;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    padding-left: 5px;
   }
   .user__backroung {
     display: block;
@@ -570,12 +648,23 @@ body {
     line-height: 1.7;
   }
 }
+@media screen and (min-width: 450px) {
+  .client__text {
+    display: inline-block;
+  }
+  .logo__text2 {
+    display: block;
+  }
+  .client {
+    right: 100px;
+  }
+}
 @media screen and (min-width: 768px) {
   .header__container {
     gap: 0px;
   }
   .logo__text1 {
-    font-size: 18px;
+    font-size: 15px;
   }
   .logo__description {
     display: flex;
@@ -584,21 +673,20 @@ body {
   }
   .nav__link {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24/16;
+    font-size: inherit;
+    line-height: 24/16px;
     letter-spacing: 0.15em;
     color: #fff;
   }
-  .nav__link:hover,
-  .nav__link:focus {
-    color: #a422a7;
-  }
   .nav__tel {
-    display: inline-block;
+    display: flex;
+    position: absolute;
+    right: 250px;
+    font-size: 14px;
   }
-  .menu__container {
-    display: none;
-  }
+  /*  .menu__container {
+        display: none;
+    }*/
 }
 @media screen and (min-width: 1200px) {
   .nav__tel {
@@ -629,6 +717,13 @@ body {
     align-items: center;
     gap: 25px;
   }
+  .client {
+    position: relative;
+    right: 0px;
+  }
+  .client__text {
+    font-size: 16px;
+  }
 }
 @media screen and (min-width: 320px) {
   .slide {
@@ -639,10 +734,11 @@ body {
   .slider__container {
     width: 100%;
     overflow: hidden;
+    background-image: linear-gradient(to left, rgba(5, 30, 125, 0.6), rgba(9, 38, 149, 0.7));
+    height: 600px;
   }
   .slider-inner__container {
     display: flex;
-    height: 500px;
   }
   .dots {
     position: absolute;
@@ -730,7 +826,10 @@ body {
   }
   .television__list {
     position: relative;
-    display: none;
+    text-align: left;
+  }
+  .wrap-television__button {
+    margin-bottom: 50px;
   }
   .television__button {
     display: inline-block;
@@ -746,30 +845,26 @@ body {
     border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s;
-    margin-bottom: 20px;
   }
   .television__button:hover,
   .television__button:focus {
     background-color: #30e7ed;
     transform: scale(1.02);
   }
-  .television__item {
+  .television__text2 {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.7;
     letter-spacing: 0.1em;
     color: rgb(203, 198, 198);
     position: relative;
+    left: 20px;
   }
   .television__item::before {
-    content: "";
-    display: block;
+    content: "✓";
+    display: inline-block;
     position: absolute;
-    background-image: url("../../image/marker.png");
-    background-repeat: no-repeat;
-    font-size: 18px;
-    line-height: 1;
-    background-size: cover;
+    color: #00a5ea;
   }
   .television__wrap-img {
     position: relative;
@@ -788,6 +883,7 @@ body {
   .television__inner {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   .television__text {
     display: block;
@@ -804,8 +900,8 @@ body {
   }
   .television__wrap-img {
     display: block;
-    max-width: 400px;
-    top: 100px;
+    max-width: 350px;
+    right: 0px;
   }
   .television__text {
     bottom: -40px;
@@ -841,22 +937,18 @@ body {
   .television__inner {
     display: flex;
     justify-content: space-between;
+    gap: 0px;
   }
   .television__title {
     font-size: 30px;
   }
   .television__list {
     display: block;
-    padding-top: 150px;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .television {
-    background-image: url("../../image/фон цифрове телебачення 1600.png");
   }
 }
 @media screen and (min-width: 320px) {
   .hero {
+    justify-content: center;
     background-repeat: no-repeat;
     background-position: right;
     flex: 1;
@@ -875,7 +967,7 @@ body {
   .hero__description {
     display: flex;
     flex-direction: column;
-    padding: 100px 0px 130px 0px;
+    padding: 100px 0px 70px 0px;
     position: relative;
     text-align: center;
     align-items: center;
@@ -934,6 +1026,7 @@ body {
   }
   .hero__img {
     max-width: 400px;
+    width: 100%;
   }
   #scrollToTopBtn {
     display: none;
@@ -941,6 +1034,8 @@ body {
     bottom: 20px;
     right: 20px;
     padding: 10px;
+    width: 70px;
+    height: auto;
     background-color: transparent;
     color: #fff;
     border: none;
@@ -948,17 +1043,10 @@ body {
     cursor: pointer;
   }
 }
-@media screen and (min-width: 540px) {
-  .hero {
-    background-image: url("../../image/головний екран 540.png");
-  }
-}
 @media screen and (min-width: 768px) {
-  .hero {
-    background-image: url("../../image/головний екран 768.png");
-  }
   .hero__content {
     display: flex;
+    align-items: center;
     justify-content: space-between;
   }
   .hero__inner {
@@ -970,7 +1058,7 @@ body {
   .hero__description {
     display: flex;
     flex-direction: column;
-    padding: 150px 0px 0px 0px;
+    padding: 150px 0px 50px 0px;
     text-align: left;
     align-items: start;
   }
@@ -980,6 +1068,7 @@ body {
     justify-content: flex-start;
   }
   .hero__wrap-img {
+    padding-top: 70px;
     display: block;
   }
   .hero__img {
@@ -998,15 +1087,7 @@ body {
     right: -100px;
   }
 }
-@media screen and (min-width: 920px) {
-  .hero {
-    background-image: url("../../image/головний екран 920.png");
-  }
-}
 @media screen and (min-width: 1200px) {
-  .hero {
-    background-image: url("../../image/головний екран.png");
-  }
   .television__inner {
     display: flex;
     justify-content: space-between;
@@ -1018,12 +1099,7 @@ body {
     justify-content: flex-start;
   }
   .hero__description {
-    padding: 120px 0px 0px 0px;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .hero {
-    background-image: url("../../image/головний екран.png");
+    padding: 120px 0px 100px 0px;
   }
 }
 @media screen and (min-width: 320px) {
@@ -1031,12 +1107,10 @@ body {
     width: 100%;
   }
   .preference__list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: block;
   }
-  .preference__item :not(:last-child) {
-    margin-bottom: 50px;
+  .preference__item:not(:last-child) {
+    margin-bottom: 40px;
   }
   .preference__item {
     display: flex;
@@ -1046,7 +1120,9 @@ body {
     align-items: center;
   }
   .preference__icon {
-    margin-bottom: 15px;
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
   }
   .preference__number {
     margin-bottom: 30px;
@@ -1059,33 +1135,35 @@ body {
     padding-bottom: 5px;
   }
   .preference__text {
-    width: 400px;
+    max-width: 400px;
     color: #d5d2d2;
     text-align: center;
   }
 }
 @media screen and (min-width: 768px) {
   .preference__list {
+    display: flex;
+    flex-wrap: wrap;
     gap: 30px;
-    justify-content: space-between;
-  }
-  .preference__list :not(:last-child) {
-    margin-bottom: 0px;
+    justify-content: center;
   }
   .preference__item {
     flex-basis: calc(50% - 15px);
+    margin-bottom: 0px;
+  }
+  .preference__item:not(:last-child) {
+    margin-bottom: 0px;
   }
   .preference__text {
     width: 300px;
+  }
+  .preference__icon {
+    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 1200px) {
   .preference__item {
     flex-basis: calc(25% - 15px);
-  }
-  .preference__list {
-    gap: 50px;
-    width: 100%;
   }
 }
 @media screen and (min-width: 320px) {
@@ -1118,7 +1196,7 @@ body {
     font-weight: 900;
     font-size: 18px;
     line-height: 1.7;
-    color: #1f91f5;
+    color: #fff;
     margin-bottom: 10px;
   }
   .tariffs__price {
@@ -1217,9 +1295,17 @@ body {
   .details__internet {
     color: #2c4da1;
   }
+  .wrap-details__internet {
+    display: inline-block;
+    text-align: left;
+  }
+  .wrap-details__cable-tv {
+    display: inline-block;
+  }
   .details__internet-text {
     line-height: 1.7;
     color: #fff;
+    text-align: left;
   }
   .details__cable-tv {
     color: #2c4da1;
@@ -1235,6 +1321,7 @@ body {
   .details__cable-tv-text {
     line-height: 1.7;
     color: #fff;
+    text-align: left;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1291,6 +1378,9 @@ body {
   .internet-connection__wrap-img {
     display: none;
   }
+  .price__list {
+    text-align: left;
+  }
   .internet-connection__price {
     display: flex;
     flex-direction: column;
@@ -1315,13 +1405,18 @@ body {
     line-height: 1.5;
     color: #fff;
     margin-bottom: 10px;
+    padding-left: 20px;
+  }
+  .price__item::before {
+    content: "✓";
+    display: inline-block;
+    position: absolute;
+    color: #00a5ea;
   }
   .form__internet-connection {
     text-align: center;
     align-items: center;
     position: relative;
-    width: 100%;
-    height: auto;
     display: flex;
     flex-direction: column;
   }
@@ -1374,7 +1469,7 @@ body {
   }
   .button__form:hover,
   .button__form:focus {
-    background-color: #104eab;
+    background-color: #30e7ed;
   }
   .smart__price {
     position: absolute;
@@ -1419,19 +1514,9 @@ body {
   .internet-connection__wrap-img {
     max-width: 500px;
   }
-  .form__internet-connection {
-    align-items: end;
-  }
-  .form__title {
-    text-align: right;
-  }
-  .form__internet-connection {
-    text-align: right;
-  }
   .internet-connection__price {
     display: flex;
     flex-direction: column;
-    text-align: left;
   }
   .brand__text {
     font-weight: 700;
@@ -1440,7 +1525,7 @@ body {
     margin-bottom: 10px;
   }
   .internet__speed {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 24px;
     line-height: 1.7;
     margin-bottom: 20px;
@@ -1452,10 +1537,11 @@ body {
     margin-bottom: 25px;
   }
   .form__text {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 18px;
     line-height: 1.7;
     margin-bottom: 32px;
+    color: #0a90d8;
   }
 }
 @media screen and (min-width: 320px) {
@@ -1496,16 +1582,17 @@ body {
   }
   .contacts__tel {
     margin-bottom: 30px;
+    justify-content: center;
   }
   .contact__tel {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 10px;
     font-weight: 600;
     font-size: 18px;
     line-height: 1.5;
     color: #06daf9;
+    text-align: center;
   }
   .social__list {
     display: flex;
@@ -1556,4 +1643,62 @@ body {
   margin-right: 5px;
   font-size: 12px;
   color: #fff;
+}
+
+@media screen and (min-width: 320px) {
+  .thankyou__page {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    background-color: #06daf9;
+    top: 0px;
+    margin: 0 auto;
+  }
+  .thankyou-page__inner {
+    position: relative;
+    padding: 100px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    flex-direction: column;
+    color: #2c4da1;
+  }
+  .thankyou-page__description {
+    text-align: center;
+  }
+  .thankyou-page-logo__content {
+    flex-direction: row;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .thankyou-page-logo__content {
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+  }
+  .thankyou-page-logo__text1 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .thankyou-page-logo__text2 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .thankyou-page__title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 400px) {
+  .thankyou-page__inner {
+    padding: 100px 50px;
+  }
 }/*# sourceMappingURL=main.css.map */

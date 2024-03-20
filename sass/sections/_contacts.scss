@@ -32,11 +32,13 @@
 
 .contacts__tel {
 	margin-bottom: 30px;
+justify-content: center;
 }
 .contact__tel {
-	@include flex(flex, center, center, 10px);
+	@include flex(flex, center, null, 10px);
 	@include font(600, 18px, 1.5, null);
 	color: $accent-color;
+	text-align: center;
 }
 
 .social__list {
