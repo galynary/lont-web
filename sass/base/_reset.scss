@@ -47,8 +47,8 @@ body {
 	position: relative;
 	justify-content: center;
 	display: block;
-	background-color: #083284;
-   width: 100%;
+	 background-image: linear-gradient(to left, rgba(5, 30, 125), rgba(9, 38, 149));
+	 width: 100%;
    height: 100%;
 max-width: 1600px;
 	 top:0px;
@@ -58,41 +58,55 @@ max-width: 1600px;
 	   padding: 0;
 	   margin: auto;
 	}
+
+/*body {
 	@media screen and (min-width: 320px) {
 		body {
-	  background-image: url("../../image/фон-320.png");
+			margin: 0 auto;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	  background-image: url("../../image/фон-1-320.png");
 	
 		 }
-		}
-	
-	@media screen and (min-width: 540px) {
+		 @media (min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi),
+	(min-resolution: 2dppx) {
 		body {
-	  background-image: url("../../image/фон-540.png");
-	
-		 }
+			background-image: url("../../image/фон-2-320.png");
 		}
+	}
+}
+
+	
 		@media screen and (min-width: 768px) {
-		body {
-			background-image: url("../../image/фон-768.png");
-			   }
+			body {
+				background-image: url("../../image/фон-1-768.png");
+			}
+			@media (min-device-pixel-ratio: 2),
+			(min-resolution: 192dpi),
+			(min-resolution: 2dppx) {
+				body {
+					background-image: url("../../image/фон-2-768.png");
+				}
+			}
 			}
 			  
-		@media screen and (min-width: 920px) {
-			body {
-		  background-image: url("../../image/фон-920.png");
-			 }
-			}
+		
 			@media screen and (min-width: 1200px) {
 				body {
-					background-image: url("../../image/фон-1200.png");
-				 }
+					background-image: url("../../image/фон-1-1200.png");
 				}
-		@media screen and (min-width: 1600px) {
-			body {
-				background-image: url("../../image/фон-1600.png");
-			 }
-			}
-
+				@media (min-device-pixel-ratio: 2),
+				(min-resolution: 192dpi),
+				(min-resolution: 2dppx) {
+					body {
+						background-image: url("../../image/фон-2-1200.png");
+					}
+				}
+				}
+		
+			}*/
 .container {
 	margin: 0 auto;
 	padding: 0px 15px;
