@@ -6,6 +6,7 @@
     background-color: $accent-color;
     top:0px;
     margin: 0 auto;
+    display: none;
 }
 .thankyou-page__inner {
     position: relative;
@@ -43,7 +44,7 @@ margin-bottom: 30px;
 }
 .thankyou-page__title {
     @include font(700, 22px, 1.5, null);
-    margin-bottom: 15px;
+    margin-bottom: 15px; 
 }
 }
 @media screen and (min-width: 400px) {
