@@ -9,6 +9,7 @@
   .section {
     width: 100%;
     display: block;
+    padding-top: 80px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -389,43 +390,25 @@ body {
 }
 
 @media screen and (min-width: 320px) {
-  body body {
-    margin: 0 auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../../image/фон-1-320.png");
-  }
-}
-@media screen and (min-width: 320px) and (min-device-pixel-ratio: 2), screen and (min-width: 320px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 320px) and (min-resolution: 192dpi), screen and (min-width: 320px) and (min-resolution: 2dppx) {
-  body body {
-    background-image: url("../../image/фон-2-320.png");
+  body {
+    background-image: url("../../image/фон-320.png");
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
-  body body {
-    background-image: url("../../image/фон-1-768.png");
-  }
-}
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  body body {
-    background-image: url("../../image/фон-2-768.png");
+  body {
+    background-image: url("../../image/фон-768.png");
   }
 }
 @media screen and (min-width: 1200px) {
-  body body {
-    background-image: url("../../image/фон-1-1200.png");
+  body {
+    background-image: url("../../image/фон-1200.png");
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  body body {
-    background-image: url("../../image/фон-2-1200.png");
-  }
-}
-
 .container {
   margin: 0 auto;
   padding: 0px 15px;
+  max-width: 1600px;
 }
 
 @media screen and (min-width: 320px) {
@@ -739,7 +722,7 @@ body {
   .slider__container {
     width: 100%;
     overflow: hidden;
-    background-image: linear-gradient(to left, rgba(5, 30, 125, 0.6), rgba(9, 38, 149, 0.7));
+    background-image: linear-gradient(to left, rgb(5, 30, 125), rgb(9, 38, 149));
     height: 600px;
   }
   .slider-inner__container {
@@ -1125,9 +1108,22 @@ body {
     align-items: center;
   }
   .preference__icon {
-    position: relative;
+    font-weight: 900;
+    font-size: 50px;
+    color: #083284;
+  }
+  .preference__icon2 {
     display: block;
-    margin-bottom: 20px;
+  }
+  .preference__icon::after {
+    content: attr(data-number); /* використання значення атрибута data-number як тексту псевдоелемента */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    color: #000; /* колір обводки */
+    -webkit-text-stroke: 2px #fff; /* ширина та колір обводки */
+    text-stroke: 2px #fff; /* ширина та колір обводки */
   }
   .preference__number {
     margin-bottom: 30px;
@@ -1161,9 +1157,6 @@ body {
   }
   .preference__text {
     width: 300px;
-  }
-  .preference__icon {
-    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 1200px) {
