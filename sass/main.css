@@ -391,7 +391,7 @@ body {
 
 @media screen and (min-width: 320px) {
   body {
-    /* background-image: url("../../image/фон-320.png");*/
+    background-image: url("../../image/фон-1200.png");
     width: 100%;
   }
 }
