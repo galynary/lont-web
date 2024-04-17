@@ -28,6 +28,7 @@
 	@include font(900, 18px, 1.7, null);
 	color: $white-color;
 	margin-bottom: 10px;
+	align-items: baseline;
 }
 .tariffs__price {
 	@include font(700, 22px, 1.7, null);
@@ -67,6 +68,7 @@
 		flex-wrap: wrap;
 		gap: 30px;
 		margin: 0 auto;
+		align-items: baseline;
 	}
 
 	
