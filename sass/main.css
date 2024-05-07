@@ -876,7 +876,8 @@ body {
     font-size: 16px;
     line-height: 1.7;
     letter-spacing: 0.1em;
-    color: rgb(203, 198, 198);
+    /*  color: rgb(203, 198, 198);*/
+    color: #fff;
     position: relative;
     left: 20px;
   }
@@ -962,9 +963,6 @@ body {
   .television__title {
     font-size: 30px;
   }
-  .television__list {
-    display: block;
-  }
 }
 @media screen and (min-width: 320px) {
   .wrap-page {
@@ -983,12 +981,13 @@ body {
   .hero__content {
     display: block;
   }
-  .hero__inner {
+  .slide__inner {
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
+    gap: 50px;
   }
   .hero__description {
     display: flex;
@@ -1011,7 +1010,7 @@ body {
     font-size: 25px;
     line-height: 1.5;
     color: #d5d2d2;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     font-family: "Montserrat";
@@ -1070,12 +1069,12 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
-  .hero__content {
+  .slide__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  .hero__inner {
+  .slide__inner {
     display: flex;
     align-items: start;
     text-align: start;
@@ -1125,7 +1124,7 @@ body {
     justify-content: flex-start;
   }
   .hero__description {
-    padding: 120px 0px 100px 0px;
+    padding: 70px 0px 60px 0px;
   }
 }
 @media screen and (min-width: 320px) {

@@ -15,12 +15,13 @@
     .hero__content {
         display: block;
     }
-    .hero__inner {
+    .slide__inner {
         display: flex;
         flex-direction: column;
         text-align: center;
         align-items: center;
         justify-content: center;
+        gap: 50px;
     }
     .hero__description {
         display: flex;
@@ -40,7 +41,7 @@
     .hero-title__sub {
         @include font(700, 25px, 1.5, null);
         color: $gray-color;
-        margin-bottom: 5px;
+        margin-bottom: 8px;
         letter-spacing: 0.05em;
         text-transform: uppercase;
         font-family: 'Montserrat';
@@ -99,12 +100,12 @@
 }
 
 @media screen and (min-width: 768px) {
-    .hero__content {
+    .slide__content {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-    .hero__inner {
+    .slide__inner {
         display: flex;
         align-items: start;
         text-align: start;
@@ -157,6 +158,6 @@
         justify-content: flex-start;
     }
     .hero__description {
-        padding: 120px 0px 100px 0px;
+        padding: 70px 0px 60px 0px;
     }
 }
