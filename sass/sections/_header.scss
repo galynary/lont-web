@@ -48,6 +48,9 @@
         color: $white-color;
         letter-spacing: 0.15em;
     }
+    .client__text {
+        display: none;
+    }
 
     .header__nav {
         display: none;
@@ -236,9 +239,6 @@
     }
 }
 @media screen and (min-width: 450px) {
-    .client__text {
-        display: inline-block;
-    }
     .logo__text2 {
         display: block;
     }
@@ -274,10 +274,9 @@
         right: 350px;
         font-size: 14px;
     }
-
-    /*  .menu__container {
-        display: none;
-    }*/
+    .client__text {
+        display: inline-block;
+    }
 }
 @media screen and (min-width: 1200px) {
     .nav__tel {
