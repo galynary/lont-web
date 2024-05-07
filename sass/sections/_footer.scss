@@ -1,13 +1,14 @@
 .footer__section {
-padding: 40px 0px;
-}.footer__inner {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+    background-color: rgb(9, 38, 149);
+    padding: 40px 0px;
+}
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .footer__copyright {
-margin-right: 5px;
-	font-size: 12px;
-	color: $white-color;
+    margin-right: 5px;
+    font-size: 12px;
+    color: $white-color;
 }
-

@@ -1,40 +1,41 @@
 @mixin flex($d, $ai, $jc, $g) {
-	display: $d;
-	align-items: $ai;
-	justify-content: $jc;
-	gap: $g;
+    display: $d;
+    align-items: $ai;
+    justify-content: $jc;
+    gap: $g;
 }
-@mixin flex2($d, $fd, $ai) {
-	display: $d;
-	flex-direction: $fd;
-	align-items: $ai;
+@mixin flex2($d, $fd, $ai, $g) {
+    display: $d;
+    flex-direction: $fd;
+    align-items: $ai;
+    gap: $g;
 }
 @mixin flex-wrap($df, $dw, $gp) {
-	display: $df;
-	flex-wrap: $dw;
-	gap: $gp;
+    display: $df;
+    flex-wrap: $dw;
+    gap: $gp;
 }
 @mixin font($fw, $fs, $lh, $ls) {
-	font-weight: $fw;
-	font-size: $fs;
-	line-height: $lh;
-	letter-spacing: $ls;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    letter-spacing: $ls;
 }
 
 @mixin mobile {
-	@media screen and (min-width: 480px) {
-		@content;
-	}
+    @media screen and (min-width: 480px) {
+        @content;
+    }
 }
 
 @mixin tablet {
-	@media screen and (min-width: 768px) {
-		@content;
-	}
+    @media screen and (min-width: 768px) {
+        @content;
+    }
 }
 
 @mixin desktop {
-	@media screen and (min-width: 1200px) {
-		@content;
-	}
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
 }

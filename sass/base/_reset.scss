@@ -65,7 +65,7 @@ img {
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', 'Ramona Bold', sans-serif;
     font-size: 16px;
     background-color: rgb(9, 38, 149);
     width: 100%;
@@ -77,27 +77,26 @@ body {
     padding: 0;
     margin: auto;
 }
-/*@media screen and (min-width: 320px) {
-    body {
-        background-image: url('../../image/фон-1200.png');
-        width: 100%;
+@media screen and (min-width: 320px) {
+    .container {
+        margin: 0 auto;
+        padding: 0px 15px;
+        max-width: 540px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    body {
-        	background-image: url("../../image/фон-768.png");
+    .container {
+        margin: 0 auto;
+        padding: 0px 15px;
+        max-width: 768px;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    body {
-        background-image: url('../../image/фон-1200.png');
+    .container {
+        margin: 0 auto;
+        padding: 0px 15px;
+        max-width: 1400px;
     }
-}*/
-
-.container {
-    margin: 0 auto;
-    padding: 0px 15px;
-    max-width: 1400px;
 }

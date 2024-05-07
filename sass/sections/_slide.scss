@@ -1,77 +1,75 @@
-
 @media screen and (min-width: 320px) {
-  .slide {
-    display: none;
-    width: 100%;
-    text-align: center;
-  
-  }
-  .slider__container {
-    width: 100%;
-   overflow: hidden;
-  /*  background-image: linear-gradient(to left, rgba(5, 30, 125), rgba(9, 38, 149));*/
-   height: 600px;
- 
-   
-  }
-  .slider-inner__container {
-    display: flex;
-}
-  .dots {
-    position: absolute;
-    left:50%;
-   top:720px;
-    
-  }
+    .slide {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+    .slider__container {
+        width: 100%;
+        overflow: hidden;
+        /*  background-image: linear-gradient(to left, rgba(5, 30, 125), rgba(9, 38, 149));*/
+        height: 600px;
+    }
+    .slider-inner__container {
+        display: flex;
+    }
+    .dots {
+        position: absolute;
+        left: 50%;
+        top: 720px;
+    }
 }
 @media screen and (min-width: 1200px) {
-  .slider__container {
-    width: 100%;
-    overflow: hidden;
+    .slider__container {
+        width: 100%;
+        overflow: hidden;
+    }
+    .slider-inner__container {
+        display: flex;
+        height: 700px;
+    }
 
-  }
-  .slider-inner__container {
-    display: flex;
-  height: 700px;
-  }
+    .slide {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+    .prev,
+    .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 24px;
+        cursor: pointer;
+        color: #fff;
+        background-color: #0f0a4e;
+        border: none;
+        padding: 10px;
+    }
 
-  .slide {
-    display: none;
-    width: 100%;
-    text-align: center;
-  }
-  .prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 24px;
-    cursor: pointer;
-    color: #fff;
-    background-color: #0f0a4e;
-    border: none;
-    padding: 10px;
-  }
+    .prev {
+        left: 0;
+    }
+    .next {
+        right: 0;
+    }
 
-  .prev { left: 0; }
-  .next { right: 0; }
+    .dots {
+        text-align: center;
+        margin-top: 20px;
+    }
 
-  .dots {
-    text-align: center;
-    margin-top: 20px;
-  }
+    .dot {
+        height: 8px;
+        width: 8px;
+        margin: 0 5px;
+        background-color: #150e75;
+        border-radius: 50%;
+        display: inline-block;
+        cursor: pointer;
+    }
 
-  .dot {
-    height: 8px;
-    width: 8px;
-    margin: 0 5px;
-    background-color:  #150e75;
-    border-radius: 50%;
-    display: inline-block;
-    cursor: pointer;
-  }
-
-  .active {
-    background-color: $accent-color
-  }
- 
+    .active {
+        background-color: $accent-color;
+    }
 }
