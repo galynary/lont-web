@@ -389,10 +389,7 @@ img {
 .particles-js-canvas-el {
   position: fixed;
   top: 0px;
-  z-index: 0;
   background-attachment: fixed;
-  width: 100%;
-  height: 100%;
 }
 
 body {
@@ -960,6 +957,7 @@ body {
 @media screen and (min-width: 320px) {
   .wrap-page {
     background-color: rgba(9, 38, 149, 0.8);
+    width: 100%;
     position: absolute;
     z-index: 2;
   }
