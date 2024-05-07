@@ -40,13 +40,31 @@ img {
     max-width: 100%;
     height: auto;
 }
-#animated-body {
+/*#animated-body {
     width: 100%;
     height: auto;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     z-index: -1;
+}*/
+#particles-js {
+    width: 100%;
+    height: 100%;
+    background-color: #092695;
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+}
+.particles-js-canvas-el {
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
 }
 
 body {

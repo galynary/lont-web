@@ -1,22 +1,23 @@
 @media screen and (min-width: 320px) {
+    .wrap-page {
+        background-color: rgb(9, 38, 149, 0.7);
+    }
     .hero {
-       justify-content: center;
+        justify-content: center;
         background-repeat: no-repeat;
-	    background-position: right;
-        flex:1;
+        background-position: right;
+        flex: 1;
         margin: 0 auto;
-      
     }
     .hero__content {
-     display:block;
+        display: block;
     }
     .hero__inner {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
     }
     .hero__description {
         display: flex;
@@ -25,23 +26,21 @@
         position: relative;
         text-align: center;
         align-items: center;
-
     }
     .hero__title {
         @include font(700, 40px, null, null);
-        color:$accent-color;
-        font-family: "Montserrat";
+        color: $accent-color;
+        font-family: 'Montserrat';
         margin-bottom: 5px;
         letter-spacing: 0.05em;
-    
-       }
+    }
     .hero-title__sub {
-        @include font(700,25px, 1.5, null);
+        @include font(700, 25px, 1.5, null);
         color: $gray-color;
         margin-bottom: 5px;
         letter-spacing: 0.05em;
         text-transform: uppercase;
-        font-family: "Montserrat";
+        font-family: 'Montserrat';
     }
     .hero__text {
         @include font(500, 16px, 1.5, null);
@@ -72,7 +71,6 @@
         transform: scale(1.02);
     }
 
-    
     .hero__wrap-img {
         display: none;
     }
@@ -80,7 +78,7 @@
         max-width: 400px;
         width: 100%;
     }
-   
+
     #scrollToTopBtn {
         display: none;
         position: fixed;
@@ -98,29 +96,28 @@
 }
 
 @media screen and (min-width: 768px) {
-   
     .hero__content {
         display: flex;
-       align-items: center;
+        align-items: center;
         justify-content: space-between;
-     }
-       .hero__inner {
+    }
+    .hero__inner {
         display: flex;
         align-items: start;
         text-align: start;
         justify-content: space-between;
-       }
+    }
     .hero__description {
         display: flex;
         flex-direction: column;
-         padding: 150px 0px 50px 0px;
+        padding: 150px 0px 50px 0px;
         text-align: left;
-        align-items:start;
+        align-items: start;
     }
-     .hero__buttons {
+    .hero__buttons {
         display: flex;
         gap: 30px;
-        justify-content:flex-start;
+        justify-content: flex-start;
     }
     .hero__wrap-img {
         padding-top: 70px;
@@ -129,7 +126,7 @@
     .hero__img {
         max-width: 400px;
     }
-  
+
     .ellipse3 {
         top: -500px;
         right: -600px;
@@ -145,7 +142,6 @@
 }
 
 @media screen and (min-width: 1200px) {
-  
     .television__inner {
         display: flex;
         justify-content: space-between;
@@ -153,13 +149,11 @@
     .hero__img {
         max-width: 600px;
     }
-  
+
     .hero__buttons {
-     justify-content:flex-start;
-    }  
+        justify-content: flex-start;
+    }
     .hero__description {
         padding: 120px 0px 100px 0px;
-
     }
-    
 }
