@@ -15,6 +15,12 @@
     .hero__content {
         display: block;
     }
+    .slide__content {
+        padding-top: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
     .slide__inner {
         display: flex;
         flex-direction: column;
@@ -35,13 +41,12 @@
         @include font(700, 40px, null, null);
         color: $accent-color;
         font-family: 'Montserrat';
-        margin-bottom: 5px;
         letter-spacing: 0.05em;
     }
     .hero-title__sub {
         @include font(700, 25px, 1.5, null);
         color: $gray-color;
-        margin-bottom: 8px;
+        margin-bottom: 5px;
         letter-spacing: 0.05em;
         text-transform: uppercase;
         font-family: 'Montserrat';
@@ -79,7 +84,6 @@
         display: none;
     }
     .hero__img {
-        max-width: 400px;
         width: 100%;
     }
 
@@ -101,6 +105,7 @@
 
 @media screen and (min-width: 768px) {
     .slide__content {
+        padding-top: 100px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -110,6 +115,9 @@
         align-items: start;
         text-align: start;
         justify-content: space-between;
+    }
+    .slide__inner-hero {
+        top: 50px;
     }
     .hero__description {
         display: flex;
@@ -124,11 +132,8 @@
         justify-content: flex-start;
     }
     .hero__wrap-img {
-        padding-top: 70px;
         display: block;
-    }
-    .hero__img {
-        max-width: 800px;
+        max-width: 500px;
     }
 
     .ellipse3 {
@@ -143,6 +148,18 @@
     .svg__icon2 {
         right: -100px;
     }
+    .hero__wrap-img {
+        display: block;
+        max-width: 350px;
+    }
+}
+@media screen and (min-width: 920px) {
+    .slide__content {
+        padding-top: 50px;
+    }
+    .hero__wrap-img {
+        max-width: 450px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -150,8 +167,8 @@
         display: flex;
         justify-content: space-between;
     }
-    .hero__img {
-        max-width: 600px;
+    .hero__wrap-img {
+        max-width: 500px;
     }
 
     .hero__buttons {

@@ -30,6 +30,7 @@
     }
 
     .contacts__tel {
+        display: flex;
         margin-bottom: 30px;
         justify-content: center;
     }
@@ -65,6 +66,21 @@
         border: 1px solid $accent-color;
     }
 }
+@media screen and (min-width: 920px) {
+    .wraper__address {
+        flex-direction: row;
+        gap: 50px;
+        justify-content: space-between;
+        text-align: left;
+    }
+    .address {
+        text-align: left;
+    }
+    .contacts__tel {
+        justify-content: flex-start;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .wraper__address {
         flex-direction: row;

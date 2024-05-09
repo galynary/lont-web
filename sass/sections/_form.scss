@@ -137,14 +137,16 @@
         max-width: 250px;
     }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 920px) {
     .internet-connection__description {
         padding: 100px 0px;
         @include flex(flex, null, space-between, null);
         flex-direction: row;
-        gap: 0px;
+        gap: 70px;
         align-items: baseline;
     }
+}
+@media screen and (min-width: 1200px) {
     .internet-connection__wrap-img {
         max-width: 500px;
     }

@@ -1,22 +1,21 @@
 .services__list {
-	display: flex;
-	flex-direction: column;
-	gap: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 .services__item:not(:last-child) {
-	margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 .services__content {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	padding: 0px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .services__text {
-	@include font(500, 18px, 1.7, null);
-	color: $white-color;
+    @include font(500, 18px, 1.7, null);
+    color: $white-color;
 }
 .services__align {
-	color: #0e099f;
-	opacity: 0.1;
+    color: #0e099f;
+    opacity: 0.1;
 }
