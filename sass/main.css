@@ -28,16 +28,14 @@
   }
 }
 .section__title {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 30px;
   line-height: 1.5;
   color: #06daf9;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 10px;
-  padding-top: 70px;
   letter-spacing: 0.05em;
-  font-family: "Ramona Bold";
 }
 
 .section__text {
@@ -328,6 +326,13 @@ summary {
   font-weight: bold;
   font-style: normal;
 }
+@font-face {
+  font-family: "Revans-Medium";
+  src: url("/fonts/revans/Revans-Medium.ttf") format("truetype");
+  src: url("/fonts/revans/Revans-Medium.otf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
 *,
 ::after,
 ::before {
@@ -461,7 +466,7 @@ body {
   .logo__content {
     display: flex;
     align-items: center;
-    gap: 5;
+    gap: 10px;
   }
   .logo__icon {
     width: 50px;
@@ -495,6 +500,9 @@ body {
     color: #fff;
     letter-spacing: 0.15em;
   }
+  .client__link:hover {
+    color: #06daf9;
+  }
   .client__text {
     display: none;
   }
@@ -509,7 +517,11 @@ body {
     color: #fff;
     display: flex;
     align-items: center;
+    font-size: inherit;
     gap: 5px;
+  }
+  .nav-link__tel:hover {
+    color: #06daf9;
   }
   .nav__tel {
     display: none;
@@ -570,22 +582,21 @@ body {
   .menu__container {
     background: linear-gradient(180deg, rgb(22, 65, 236) 0%, rgb(6, 30, 125) 100%);
     border: 0.05px solid rgba(103, 206, 239, 0.1);
-    /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);*/
     border-radius: 4px;
     z-index: 2;
     padding: 30px;
     position: absolute;
     width: 100%;
     left: 0px;
+    transform: translateX(0%);
     right: 0px;
     top: 0;
     margin: 0 auto;
     text-align: center;
-    transition: all 0.3s ease;
+    transition: all 0.7s ease;
   }
   .js-menu-container {
-    display: none;
+    transform: translateX(100%);
   }
   .js-close-menu {
     position: absolute;
@@ -649,6 +660,9 @@ body {
     letter-spacing: 0.1em;
     padding-left: 5px;
   }
+  .client__text:hover {
+    color: #06daf9;
+  }
   .user__backroung {
     display: block;
     width: 100%;
@@ -697,6 +711,10 @@ body {
     line-height: 24/16px;
     letter-spacing: 0.15em;
     color: #fff;
+    transition: font-size 0.3s ease;
+  }
+  .nav__link:hover {
+    color: #06daf9;
   }
   .nav__tel {
     display: flex;
@@ -852,7 +870,7 @@ body {
   .television__span {
     color: #06daf9;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 500;
   }
   .television__list {
     position: relative;
@@ -1032,18 +1050,18 @@ body {
     align-items: center;
   }
   .hero__title {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 40px;
     color: #06daf9;
-    font-family: "Montserrat";
     letter-spacing: 0.05em;
+    margin-bottom: 5px;
   }
   .hero-title__sub {
     font-weight: 700;
-    font-size: 25px;
+    font-size: 29px;
     line-height: 1.5;
     color: #d5d2d2;
-    margin-bottom: 5px;
+    margin-bottom: 30px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     font-family: "Montserrat";
@@ -1164,6 +1182,7 @@ body {
   }
   .hero__wrap-img {
     max-width: 500px;
+    margin-right: 70px;
   }
   .hero__buttons {
     justify-content: flex-start;
@@ -1277,10 +1296,10 @@ body {
     padding: 50px 0px;
   }
   .tariffs__title {
-    font-weight: 900;
+    font-weight: 500;
     font-size: 18px;
     line-height: 1.7;
-    color: #fff;
+    color: #06daf9;
     margin-bottom: 10px;
     align-items: baseline;
   }
@@ -1288,7 +1307,7 @@ body {
     font-weight: 700;
     font-size: 22px;
     line-height: 1.7;
-    color: #fff;
+    color: #cbcbcb;
     margin-bottom: 10px;
   }
   .tariffs__text {
@@ -1365,7 +1384,6 @@ body {
     width: 100%;
   }
   .details__description {
-    font-family: "Montserrat";
     margin-top: 50px;
     display: flex;
     text-align: center;
@@ -1394,15 +1412,18 @@ body {
   .details__cable-tv-title {
     margin-bottom: 20px;
     color: #0a90d8;
+    padding-left: 20px;
   }
   .details__internet-title {
     margin-bottom: 20px;
     color: #0a90d8;
+    padding-left: 20px;
   }
   .details__cable-tv-text {
     line-height: 1.7;
     color: #fff;
     text-align: left;
+    letter-spacing: 0.04em;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1414,19 +1435,10 @@ body {
     text-align: left;
   }
 }
-@font-face {
-  font-family: "deserta";
-  src: local("deserta Regular"), local("deserta-Regular"), url(../fonts/deserta.woff2) format("woff2"), url(../fonts/deserta.woff) format("woff"), url(../fonts/deserta.eot) format("eot"), url(../fonts/deserta.ttf) format("ttf");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "JournalSans";
-  src: local("JournalSans Regular"), local("JournalSans-Regular"), url(../fonts/journalSans.woff2) format("woff2"), url(../fonts/JournalSans.woff) format("woff"), url(../fonts/JournalSans-Italic.woff) format("woff"), url(../fonts/JournalSans-Italic.ttf) format("ttf"), url(../fonts/JournalSans.eot) format("eot"), url(../fonts/JournalSans.ttf) format("ttf");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+@media screen and (min-width: 1200px) {
+  .details__description {
+    justify-content: space-around;
+  }
 }
 @media screen and (min-width: 320px) {
   .internet-connection {
@@ -1523,6 +1535,9 @@ body {
     align-items: center;
     gap: 10px;
   }
+  .mb {
+    font-weight: 600;
+  }
   select,
   .input {
     max-width: 400px;
@@ -1602,7 +1617,7 @@ body {
     flex-direction: column;
   }
   .brand__text {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 50px;
     line-height: 1.5;
     margin-bottom: 10px;
@@ -1614,7 +1629,7 @@ body {
     margin-bottom: 20px;
   }
   .form__title {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 35px;
     line-height: 1.5;
     margin-bottom: 25px;
@@ -1635,11 +1650,11 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 50px;
   }
   .address {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
     text-align: center;
   }
   .contacts__address {
@@ -1697,9 +1712,11 @@ body {
     height: 150px;
   }
   .wrap__map {
-    max-width: 600px;
     display: block;
     border: 1px solid #06daf9;
+  }
+  .map {
+    max-width: 60%;
   }
 }
 @media screen and (min-width: 920px) {

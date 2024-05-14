@@ -81,6 +81,9 @@
         position: relative;
         @include flex2(flex, column, center, 10px);
     }
+    .mb {
+        font-weight: 600;
+    }
     select,
     .input {
         max-width: 400px;
@@ -155,7 +158,7 @@
         @include flex2(flex, column, null, null);
     }
     .brand__text {
-        font-weight: 700;
+        font-weight: 500;
         font-size: 50px;
         line-height: 1.5;
         margin-bottom: 10px;
@@ -167,7 +170,7 @@
         margin-bottom: 20px;
     }
     .form__title {
-        @include font(700, 35px, 1.5, null);
+        @include font(500, 35px, 1.5, null);
         margin-bottom: 25px;
     }
     .form__text {

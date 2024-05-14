@@ -3,7 +3,6 @@
         width: 100%;
     }
     .details__description {
-        font-family: 'Montserrat';
         margin-top: 50px;
         display: flex;
         text-align: center;
@@ -32,15 +31,18 @@
     .details__cable-tv-title {
         margin-bottom: 20px;
         color: $premium-color;
+        padding-left: 20px;
     }
     .details__internet-title {
         margin-bottom: 20px;
         color: $premium-color;
+        padding-left: 20px;
     }
     .details__cable-tv-text {
         line-height: 1.7;
         color: $white-color;
         text-align: left;
+        letter-spacing: 0.04em;
     }
 }
 @media screen and (min-width: 768px) {
@@ -53,4 +55,7 @@
     }
 }
 @media screen and (min-width: 1200px) {
+    .details__description {
+        justify-content: space-around;
+    }
 }

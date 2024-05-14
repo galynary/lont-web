@@ -31,14 +31,14 @@
     }
 
     .tariffs__title {
-        @include font(900, 18px, 1.7, null);
-        color: $white-color;
+        @include font(500, 18px, 1.7, null);
+        color: $accent-color;
         margin-bottom: 10px;
         align-items: baseline;
     }
     .tariffs__price {
         @include font(700, 22px, 1.7, null);
-        color: $white-color;
+        color: #cbcbcb;
         margin-bottom: 10px;
     }
     .tariffs__text {

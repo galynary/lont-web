@@ -6,11 +6,11 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        margin-top: 50px;
     }
 
     .address {
         @include flex2(flex, column, null, null);
-        margin-top: 50px;
         text-align: center;
     }
     .contacts__address {
@@ -61,9 +61,11 @@
         height: 150px;
     }
     .wrap__map {
-        max-width: 600px;
         display: block;
         border: 1px solid $accent-color;
+    }
+    .map {
+        max-width: 60%;
     }
 }
 @media screen and (min-width: 920px) {

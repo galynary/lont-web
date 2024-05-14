@@ -5,22 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lont Web</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&family=Kanit:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://myfonts.ru/myfonts?fonts=bryndan-write"
-      rel="stylesheet"
-      type="text/css"
     />
 
     <link rel="stylesheet" href="./sass/main.css" />
@@ -114,10 +102,9 @@
                   <div class="slide__inner">
                     <div class="slide__description">
                       <h1 class="hero__title">ЛОНТ ВЕБ</h1>
-                      <p class="hero-title__sub">інтернет провайдер</p>
-                      <p class="hero__text">
-                        Швидкісний інтернет за доступною ціною
-                      </p>
+                      <h2 class="hero-title__sub">
+                        швидкий інтернет <br />за доступною ціною
+                      </h2>
                       <div class="hero__buttons">
                         <a href="#form" class="button__conect button">
                           Замовити підключення
@@ -206,7 +193,7 @@
 
         <section class="preference__section section" id="preference">
           <div class="section__container container">
-            <h2 class="section__title">НАШІ ПЕРЕВАГИ</h2>
+            <h2 class="section__title">Наші переваги</h2>
             <p class="section__text">
               Підключайте швидкий і стабільний інтернет від Лонт Веб
             </p>
@@ -247,7 +234,7 @@
                 </div>
                 <h3 class="preference__title title">Швидкісний інтернет</h3>
                 <p class="preference__text text">
-                  Швидкість інтернету до 100Мб./с.
+                  Швидкість інтернету до Мбіт/с
                 </p>
               </li>
               <li class="preference__item">
@@ -286,18 +273,18 @@
                 <div class="icon__ellipse">
                   <img class="icon__ellipse" src="image/планета.png" />
                 </div>
-                <h3 class="tariffs__title">Багатоквартирні будинки</h3>
-                <p class="tariffs__price">150 грн./місдо 50 Мб/с</p>
-                <p class="tariffs__text">190 грн./міс до 100 Мб/с</p>
+                <h3 class="tariffs__title">Тариф "Економ"</h3>
+                <p class="tariffs__price">150 грн./міс.</p>
+                <p class="tariffs__text">швидкість до 40 Мбіт/с</p>
                 <a href="#form" class="button__connect button"> Замовити </a>
               </li>
               <li class="tariffs__item items">
                 <div class="icon__ellipse">
                   <img class="icon__ellipse" src="image/планета.png" />
                 </div>
-                <h3 class="tariffs__title">Приватні будинки</h3>
+                <h3 class="tariffs__title">Тариф "Максимум"</h3>
                 <p class="tariffs__price">190 грн./міс</p>
-                <p class="tariffs__text">швидкість до 100 Мб/с.</p>
+                <p class="tariffs__text">швидкість до 100 Мбіт/с</p>
                 <a href="#form" class="button__connect button"> Замовити </a>
               </li>
               <li class="tariffs__item">
@@ -305,7 +292,7 @@
                   <img class="icon__ellipse" src="image/планета.png" />
                 </div>
                 <h3 class="tariffs__title">IP-адреса</h3>
-                <p class="tariffs__price">100 грн./міс.</p>
+                <p class="tariffs__price">100 грн./міс</p>
                 <p class="tariffs__text">оренда</p>
                 <a href="#form" class="button__connect button"> Замовити </a>
               </li>
@@ -465,7 +452,7 @@
             <div class="internet-connection__description">
               <div class="internet-connection__price">
                 <h2 class="brand__text">Лонт Веб</h2>
-                <h3 class="internet__speed">Швидкісний інтернет до 100Мб/с</h3>
+                <h3 class="internet__speed">Швидкісний інтернет до Мбіт/с</h3>
                 <ul class="price__list">
                   <li class="price__item">
                     <p class="price__description">
@@ -529,9 +516,12 @@
                     <option value="" selected disabled hidden>
                       Виберіть тариф
                     </option>
-                    <option value="basic">Базовий тариф</option>
-                    <option value="standard">Стандартний тариф</option>
-                    <option value="premium">Преміум тариф</option>
+                    <option value="basic" class="tariff">
+                      Тариф <span class="mb">"Економ"</span> до 50Мб.
+                    </option>
+                    <option value="vaximum" class="tariff">
+                      Тариф <span class="mb">"Максимальний"</span> до 100Мб.
+                    </option>
                   </select>
 
                   <button
@@ -583,15 +573,17 @@
                   </li>
                 </ul>-->
               </address>
-              <div class="wrap__map">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21105.80888922983!2d22.25861965!3d48.60551499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd98516044ebd215c!2z0KLQntCSICLQm9Ce0J3QoiDQktCV0JEi!5e0!3m2!1suk!2scz!4v1614518733982!5m2!1suk!2scz"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  class="maps"
-                ></iframe>
-              </div>
+
+              <iframe
+                class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d659.5147281070953!2d22.26712026967521!3d48.60871558494175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473918fbe1655555%3A0xd98516044ebd215c!2z0KLQntCSICLQm9Ce0J3QoiDQktCV0JEi!5e0!3m2!1suk!2sua!4v1715416683771!5m2!1suk!2sua"
+                width="800"
+                height="250"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </section>
@@ -634,7 +626,7 @@
               </div>
             </div>
             <p class="footer__copyright">
-              2023 Лонт Веб Ваш інтернет провайдер
+              2024 Лонт Веб Ваш інтернет провайдер
             </p>
             <a href="#" id="scrollToTopBtn" onclick="scrollToTop()">
               <img class="img__btn" src="./image/arow-top.png"

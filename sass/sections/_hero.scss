@@ -38,15 +38,15 @@
         align-items: center;
     }
     .hero__title {
-        @include font(700, 40px, null, null);
+        @include font(500, 40px, null, null);
         color: $accent-color;
-        font-family: 'Montserrat';
         letter-spacing: 0.05em;
+        margin-bottom: 5px;
     }
     .hero-title__sub {
-        @include font(700, 25px, 1.5, null);
+        @include font(700, 29px, 1.5, null);
         color: $gray-color;
-        margin-bottom: 5px;
+        margin-bottom: 30px;
         letter-spacing: 0.05em;
         text-transform: uppercase;
         font-family: 'Montserrat';
@@ -169,6 +169,7 @@
     }
     .hero__wrap-img {
         max-width: 500px;
+        margin-right: 70px;
     }
 
     .hero__buttons {
