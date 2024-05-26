@@ -54,6 +54,10 @@
         margin-bottom: 10px;
         padding-left: 20px;
     }
+    .price {
+        color: $accent-color;
+        font-weight: 600;
+    }
     .price__item::before {
         content: '\2713';
         display: inline-block;
