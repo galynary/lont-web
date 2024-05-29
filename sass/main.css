@@ -2,7 +2,6 @@
 @media screen and (min-width: 320px) {
   .container {
     width: 100%;
-    max-width: 540px;
     padding: 0px 20px;
     font-family: "Monserrat", sans-serif, "Roboto", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   }
@@ -15,6 +14,7 @@
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -405,7 +405,7 @@ img {
 }
 
 body {
-  font-family: "Montserrat", "Ramona Bold", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   background-color: rgb(9, 38, 149);
   width: 100%;
@@ -421,8 +421,8 @@ body {
 @media screen and (min-width: 320px) {
   .container {
     margin: 0 auto;
-    padding: 0px 25px;
-    max-width: 540px;
+    padding: 0px 20px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -857,20 +857,24 @@ body {
     text-align: center;
     align-items: center;
   }
+  .hero__title,
   .television__title {
+    font-family: "Montserrat";
     position: relative;
-    line-height: 1.2;
+    line-height: 1.5;
     font-weight: 700;
     letter-spacing: 0.03em;
     color: #ebf1f5;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 30px;
   }
+  .hero__span,
   .television__span {
     color: #06daf9;
     font-size: 40px;
     font-weight: 500;
+    display: inline-block;
   }
   .television__list {
     position: relative;
@@ -937,6 +941,10 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
+  .hero__title,
+  .television__title {
+    line-height: 1.4;
+  }
   .television__inner {
     display: flex;
     justify-content: space-between;
@@ -973,18 +981,14 @@ body {
     font-size: 17px;
   }
   .television__title {
-    position: relative;
-    font-family: "Montserrat";
-    line-height: 1.5;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    color: #ebf1f5;
-    text-transform: uppercase;
     font-size: 20px;
-    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 920px) {
+  .hero__title,
+  .television__title {
+    line-height: 1.5;
+  }
   .television__wrap-img {
     max-width: 600px;
   }
@@ -993,6 +997,10 @@ body {
   }
 }
 @media screen and (min-width: 1200px) {
+  .hero__title,
+  .television__title {
+    font-size: 30px;
+  }
   .television__text {
     bottom: 100px;
     right: -150px;
@@ -1028,10 +1036,10 @@ body {
     display: block;
   }
   .slide__content {
-    padding-top: 100px;
+    padding-top: 120px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
   }
   .slide__inner {
     display: flex;
@@ -1048,13 +1056,6 @@ body {
     position: relative;
     text-align: center;
     align-items: center;
-  }
-  .hero__title {
-    font-weight: 500;
-    font-size: 40px;
-    color: #06daf9;
-    letter-spacing: 0.05em;
-    margin-bottom: 5px;
   }
   .hero-title__sub {
     font-weight: 700;
@@ -1121,8 +1122,6 @@ body {
 @media screen and (min-width: 768px) {
   .slide__content {
     padding-top: 100px;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
   }
   .slide__inner {
@@ -1192,10 +1191,6 @@ body {
   }
 }
 @media screen and (min-width: 320px) {
-  .preference__section {
-    width: 100%;
-    padding-top: 0px;
-  }
   .preference__list {
     display: block;
   }
@@ -1386,7 +1381,7 @@ body {
   .details__description {
     margin-top: 50px;
     display: flex;
-    text-align: center;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
     gap: 50px;
@@ -1720,7 +1715,7 @@ body {
     border: 1px solid #06daf9;
   }
   .map {
-    max-width: 60%;
+    max-width: 100%;
   }
 }
 @media screen and (min-width: 920px) {
@@ -1732,6 +1727,9 @@ body {
   }
   .address {
     text-align: left;
+  }
+  .map {
+    max-width: 60%;
   }
   .contacts__tel {
     justify-content: flex-start;
@@ -1755,33 +1753,20 @@ body {
 
 .footer__inner {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 30px;
 }
 
-.footer__link {
-  font-size: 16px;
-  color: #06daf9;
-  text-decoration: underline;
+.footer__copyright {
+  font-size: 12px;
+  color: #fff;
+  margin-right: 100px;
 }
 
-@media screen and (min-width: 768px) {
-  .footer__inner {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 50px;
-  }
-}
 @media screen and (min-width: 920px) {
   .footer__inner {
     gap: 200px;
     justify-content: space-between;
-  }
-  .footer__copyright {
-    margin-right: 200px;
   }
 }
 @media screen and (min-width: 320px) {

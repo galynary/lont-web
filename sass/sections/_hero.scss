@@ -16,10 +16,10 @@
         display: block;
     }
     .slide__content {
-        padding-top: 100px;
+        padding-top: 120px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
     }
     .slide__inner {
         display: flex;
@@ -37,12 +37,7 @@
         text-align: center;
         align-items: center;
     }
-    .hero__title {
-        @include font(500, 40px, null, null);
-        color: $accent-color;
-        letter-spacing: 0.05em;
-        margin-bottom: 5px;
-    }
+
     .hero-title__sub {
         @include font(700, 29px, 1.5, null);
         color: $gray-color;
@@ -106,8 +101,6 @@
 @media screen and (min-width: 768px) {
     .slide__content {
         padding-top: 100px;
-        display: flex;
-        align-items: center;
         justify-content: space-between;
     }
     .slide__inner {

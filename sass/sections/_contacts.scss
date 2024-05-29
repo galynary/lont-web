@@ -65,7 +65,7 @@
         border: 1px solid $accent-color;
     }
     .map {
-        max-width: 60%;
+        max-width: 100%;
     }
 }
 @media screen and (min-width: 920px) {
@@ -77,6 +77,9 @@
     }
     .address {
         text-align: left;
+    }
+    .map {
+        max-width: 60%;
     }
     .contacts__tel {
         justify-content: flex-start;
