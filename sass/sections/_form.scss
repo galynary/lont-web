@@ -11,6 +11,9 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
+    .internet__speed {
+        margin-bottom: 0px;
+    }
 
     .internet-connection__description {
         padding: 70px 0px;
@@ -41,7 +44,7 @@
     .brand__text {
         @include font(700, 40px, 1.5, null);
         color: $accent-color;
-        margin-bottom: 0px;
+        margin-bottom: 10px;
     }
     .internet__speed {
         @include font(null, 24px, 1.7, null);
@@ -75,9 +78,16 @@
         text-align: center;
         margin-bottom: 10px;
     }
+    .internet__speed {
+        @include font(700, 16px, 1.7, null);
+        margin-bottom: 32px;
+        color: #0a90d8;
+        margin-bottom: 10px;
+    }
+
     .form__text {
         @include font(null, 16px, 2, null);
-        color: $gray-color;
+        color: #0a90d8;
         margin-bottom: 32px;
         max-width: 450px;
     }
@@ -107,10 +117,11 @@
         border: 2px solid green;
     }
     .button__form {
-        display: inline-block;
+        display: block;
         margin-top: 10px;
-        padding: 15px 120px;
-        font-size: 16px;
+        padding: 15px 90px;
+        max-width: 400px;
+        font-size: 14px;
         text-align: center;
         text-decoration: none;
         background-color: $accent-color;
@@ -138,11 +149,12 @@
         color: $white-color;
     }
 }
-@media screen and (min-width: 768px) {
-    .internet-connection__description {
-        flex-direction: column;
+@media screen and (min-width: 540px) {
+    .button__form {
+        font-size: 16px;
     }
-
+}
+@media screen and (min-width: 768px) {
     .internet-connection__wrap-img {
         display: block;
         position: absolute;
@@ -151,7 +163,12 @@
         max-width: 250px;
     }
 }
-@media screen and (min-width: 920px) {
+
+@media screen and (min-width: 1200px) {
+    .internet-connection__wrap-img {
+        max-width: 500px;
+    }
+
     .internet-connection__description {
         padding: 100px 0px;
         @include flex(flex, null, space-between, null);
@@ -159,12 +176,6 @@
         gap: 70px;
         align-items: baseline;
     }
-}
-@media screen and (min-width: 1200px) {
-    .internet-connection__wrap-img {
-        max-width: 500px;
-    }
-
     .internet-connection__price {
         @include flex2(flex, column, null, null);
     }
@@ -175,15 +186,16 @@
         margin-bottom: 10px;
     }
     .internet__speed {
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 1.7;
-        margin-bottom: 20px;
+        @include font(700, 18px, 1.7, null);
+        margin-bottom: 32px;
+        color: #0a90d8;
     }
+
     .form__title {
         @include font(500, 35px, 1.5, null);
         margin-bottom: 25px;
     }
+
     .form__text {
         @include font(700, 18px, 1.7, null);
         margin-bottom: 32px;

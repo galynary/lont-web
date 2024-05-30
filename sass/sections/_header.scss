@@ -34,7 +34,6 @@
     .logo__text2 {
         @include flex2(500, 10px, 1.5, null);
         color: $accent-color;
-        display: none;
     }
     .logo__description {
         @include flex2(flex, column, flex-start, null);

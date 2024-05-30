@@ -23,7 +23,6 @@
     .details__internet-text {
         line-height: 1.7;
         color: $white-color;
-        text-align: left;
     }
     .details__cable-tv {
         color: $card-button-color;
@@ -31,17 +30,15 @@
     .details__cable-tv-title {
         margin-bottom: 20px;
         color: $premium-color;
-        padding-left: 20px;
     }
     .details__internet-title {
         margin-bottom: 20px;
         color: $premium-color;
-        padding-left: 20px;
     }
     .details__cable-tv-text {
         line-height: 1.7;
         color: $white-color;
-        text-align: left;
+
         letter-spacing: 0.04em;
     }
 }
@@ -51,6 +48,9 @@
         flex-direction: row;
         gap: 0px;
         justify-content: space-between;
+        text-align: left;
+    }
+    .wrap-details__internet {
         text-align: left;
     }
 }
