@@ -7,8 +7,8 @@ async function sendEmail(name, address, phone, tariff) {
     service: 'gmail',
     auth: {
       user: 'your_email@gmail.com', // Ваша адреса електронної пошти
-      pass: 'your_password' // Ваш пароль
-    }
+      pass: 'your_password', // Ваш пароль
+    },
   });
 
   // Налаштовуємо отримувача, тему і тіло листа
@@ -16,7 +16,7 @@ async function sendEmail(name, address, phone, tariff) {
     from: 'your_email@gmail.com', // Ваша адреса електронної пошти
     to: 'recipient_email@example.com', // Адреса отримувача
     subject: 'Заявка на підключення інтернету',
-    text: `Ім'я: ${name}\nАдреса: ${address}\nТелефон: ${phone}\nТариф: ${tariff}`
+    text: `Ім'я: ${name}\nАдреса: ${address}\nТелефон: ${phone}\nТариф: ${tariff}`,
   };
 
   // Відправляємо лист
@@ -47,11 +47,11 @@ function validateForm(name, address, phone, tariff) {
     return false;
   }
   // Проверка номера телефона с использованием регулярного выражения
-  const phonePattern = /^\d{11}$/;
+  /*const phonePattern = /^\d{10}$/;
   if (!phonePattern.test(phone)) {
-    alert("Введите корректный номер телефона");
+    alert('Введите корректный номер телефона');
     return false;
-  }
+  }*/
   // Якщо валідація успішна, відправляємо лист
   sendEmail(name, address, phone, tariff);
   return true;

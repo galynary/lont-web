@@ -1548,6 +1548,12 @@ body {
     border-radius: 50px;
     border: 1px solid #7dcae4;
   }
+  input.input-error {
+    border: 2px solid red;
+  }
+  input.input-success {
+    border: 2px solid green;
+  }
   .button__form {
     display: inline-block;
     margin-top: 10px;
